@@ -42,6 +42,10 @@ martinize2 will be installed with vermouth:
 dssp will be installed through conda (MAKE SURE conda installs version >= 3.0.0): 
     
     conda install -c salilab dssp
+    
+On a mac, to get version 3.0+:
+
+    conda install -c salilab dssp=3.0.0   
 
 After dssp is installed, find the path to the dssp executable and replace the dssppath variable in martinize.sh.
 You will also need the structure pdb in a directory named orig, and martinize.sh in a sibling directory to orig (i.e. accessible through ../orig).
