@@ -27,6 +27,12 @@ In ChimeraX, select the problem residue(s), then go Tools->Structure Editing->Ro
 After that, a box will appear with many possible rotamers. Select one (I just use the top pick), and hit "use chosen rotamer(s)", and you're done.
 
 For scwrl, follow scwrl's included usage instructions.
+Also, you will have to remove a few lines at the top of the scwrl'd file, that start with SCWRL
+
+NOTE:
+It seems that scwrl'ing dotb makes martinize2 fail on HIS/HSD.
+It recognizes that the HIS *should* be a HSD, but then it doesn't know what to do with HSD.
+This is an interesting bug we should look into.
 
 
 # Martinize
