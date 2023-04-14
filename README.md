@@ -55,7 +55,7 @@ IMPORTANT:
 martinize2 looks for an executable named dssp, but conda installs an exe named mkdssp. You will need to either alias mkdssp to dssp or create a copy named dssp.
 
 IMPORTANT:
-The martinize.sh script renames the .itp files, but it doesn't change the [ moleculename ] inside the itp itself, which needs to be done separately.
+The `martinize.sh` script renames the `.itp` files, but it doesn't change the [ moleculename ] inside the itp itself, which needs to be done separately.
 I should probably just put it into the same script, but right now there is a rename.sh script to do that.
 
 
@@ -92,7 +92,7 @@ You can copy and paste this list in both the include section, and the molecules.
 
 
 # Run Simulations
-Copy martini .itp files, .mdp files, and submit.sh into desired directory, and you should be good to run.
+Copy martini `.itp` files, `.mdp` files, and submit.sh into desired directory, and you should be good to run.
 You will also need to create an index.ndx file. No new fields are required, just create the index with gmx make_ndx.
 
 IMPORTANT:
