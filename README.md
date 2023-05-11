@@ -1,5 +1,6 @@
 # T4SS simulations
-Instructions for taking original PDB structure all the way to full course-grain simulations, using DotB and DotO complexes as examples.
+Instructions for taking original PDB structure all the way to full course-grain simulations.
+I've included an example icmf directory as an example file structure.
 
 
 # Splitting
@@ -64,6 +65,15 @@ IMPORTANT:
 The `martinize.sh` script renames the `.itp` files, but it doesn't change the [ moleculename ] inside the itp itself, which needs to be done separately.
 I should probably just put it into the same script, but right now there is a rename.sh script to do that.
 
+EDIT:
+It also seems that martinize doesn't like when the chain identifier is two letters. I thought I did that before, but now it's not working. 
+Use obabel to quickly rewrite chain identifiers.
+
+IMPORTANT:
+martinize includes the dssp sequence in the .itp files it creates.
+This can be a problem for longer chains, as the sequence can be longer than 4096 characters.
+This will break some parsers (eg. insane.py), so simply delete the line from the .itp.
+
 
 # Putting together Full Structure
 Open Babel can be used to concat all the cg models together. Move all models into new directory, then run:
@@ -106,3 +116,37 @@ There seems to be some disconnect between the ion names that Insane generates an
 The workaround I'm using is modifying the names in the martini_v3.0.0_ions_v1.itp from NA and CL to NA+ and CL-
 in both [moleculetype] and [atoms].
 We can probably combine them into a single Ions group, but haven't tested that
+
+
+# Combining models
+To create larger systems from smaller, already tested systems, simply combine the CG models using cat or obabel.
+Make sure to keep track of which order you combine the models in, so that you can input the molecules in the .top file in the correct order.
+(obabel will automatically label which parts came from which file, so that can be helpful for ordering things).
+.itps should be able to be reused from smaller systems to combined systems, just copy them over.
+
+After the CG models are combined, continue with the same procedure, starting with the insane.py step
+
+NOTE:
+Some models may introduce clashes by combining them together. This is where user judgement comes into play.
+Either delete or move problematic chains, or otherwise move models until the run successfully makes it past the equilibration phase.
+
+NOTE:
+Sometimes when combining CG models, the system.gro and system.top will have different #'s of atoms.
+This isn't very consistent, and I'm not sure where it's coming from.
+My best guess would be copying the wrong cg and/or itp files.
+If this happens, my best suggestion is just restarting by copying the correct files again and running from insane.
+
+
+# Steps
+1. Create model file, with < 99,999 Atoms
+    1a. (if necessary) Fix structure/side chains/missing atoms
+2. Martinize structure(s) (using martinize.sh)
+    2a. (If using multiple structures) Combine structures, keeping track of molecule order
+    2b. Use rename.sh to rename molecule names within .itp files
+3. Solvate using insane.py on cg file
+4. Fill out .top file with .itp includes and molecule names
+5. Create index.ndx file with gmx make_ndx
+6. Copy all necessary files (including .mdp files) to simulation directory, if desired
+    6a. Double check all paths are correct, especially paths to .itps in .top file
+7. Start simulation using submit.sh (modify dssp path within submit.sh first)
+8. Pray everything works :)

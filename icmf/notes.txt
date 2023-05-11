@@ -1,0 +1,11 @@
+Initial run had too many LINCS warnings to finish minimization.
+
+Will try martinizing again, this time with explicit TERs in the original pdb.
+
+TERs didn't work, now deleting all CONECTs
+Still too many LINCS warnings: ATOM 3614-3622
+Previously was ATOM ~1450, and ATOM ~8500 ish (not sure exactly which ones)
+
+Will try changing the LINCS warning angle to 45 to try to make it past minimization
+
+Changing the warning angle allowed the whole thing to finish, no problems in Equilibration

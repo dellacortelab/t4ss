@@ -1,0 +1,24 @@
+#include "../itps/martini_v3.0.0.itp"
+#include "../itps/martini_v3.0.0_solvents_v1.itp"
+#include "../itps/martini_v3.0.0_ions_v1.itp"
+#include "../itps/IcmF_0.itp"
+#include "../itps/IcmF_1.itp"
+#include "../itps/IcmF_2.itp"
+#include "../itps/IcmF_3.itp"
+#include "../itps/IcmF_4.itp"
+#include "../itps/IcmF_5.itp"
+
+[ system ]
+; name
+Insanely solvated protein.
+
+[ molecules ]
+; name  number
+IcmF_0      1
+IcmF_1      1
+IcmF_2      1
+IcmF_3      1
+IcmF_4      1
+IcmF_5      1
+W           343217
+NA+              6
