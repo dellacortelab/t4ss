@@ -1,10 +1,10 @@
 #!/bin/bash
 
-#SBATCH --time=72:00:00   # walltime
+#SBATCH --time=2:00:00   # walltime
 #SBATCH --ntasks=6  # number of processor cores (i.e. tasks)
 #SBATCH --nodes=1   # number of nodes
 #SBATCH --gres=gpu:1
-#SBATCH --mem-per-cpu=10G   # memory per CPU core
+#SBATCH --mem-per-cpu=1G   # memory per CPU core
 #SBATCH -J "gmx run"   # job name
 
 # Set the max number of threads to use for programs using OpenMP. Should be <= ppn. Does nothing if the program doesn't use OpenMP.
