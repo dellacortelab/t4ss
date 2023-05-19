@@ -76,16 +76,23 @@ This will break some parsers (eg. insane.py), so simply delete the line from the
 
 
 # Putting together Full Structure
-Open Babel can be used to concat all the cg models together. Move all models into new directory, then run:
+Open Babel or cat can be used to concat all the cg models together. Move all models into new directory, then run:
 
     obabel *_cg.pdb -O {full_name}.pdb
 
-This will combine all the models together. To find the order they were combined in, simply grep all lines starting with COMPND:
+or
+
+    cat * >> {full_name}.pdb
+
+Be careful when using cat that there is a newline after every file, otherwise gromacs will say you are missing atoms in the structure.
+
+This will combine all the models together. If you used obabel, to find the order they were combined in, simply grep all lines starting with COMPND:
 
     grep ^COMPND {full_name}.pdb > temp.txt
     cut -c 11- temp.txt > order.txt
 
 This model order will be used in determining the order of the itps and molecule names in the .top file.
+
 
 
 # Insane
@@ -112,8 +119,11 @@ Then, you need to fix the includes and molecule names in the .top file.
 #include "martini_v3.0.0_solvents_v1.itp"
 #include "martini_v3.0.0_ions_v1.itp"
 
-gen_true.sh will create an .txt file with all the itp basenames in proper order.
+DEPRECATED: gen_true.sh will create an .txt file with all the itp basenames in proper order. 
 You can copy and paste this list in both the include section, and the molecules.
+
+You can just copy the includes and molecules from the .top file created from martinizing.
+Make sure the names are accurate.
 
 NOTE:
 Martinize allows identical chains to share .itp files. This can mess up the order of molecules.
