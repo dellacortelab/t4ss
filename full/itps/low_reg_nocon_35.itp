@@ -1,0 +1,1487 @@
+; This file was generated using the following command:
+; /home/sethang/.conda/envs/martinize_env/bin/martinize2 -f low_reg_nocon.pdb -o low_reg_nocon.top -x low_reg_nocon_cg.pdb -dssp /home/sethang/.conda/envs/second_env/bin/dssp -p backbone -ff martini3001 -elastic -ef 700.0 -el 0.5 -eu 0.9 -ea 0 -ep 0 -scfix -cys auto -maxwarn 30
+; martinize with vermouth 0.9.1
+; The following sequence of secondary structure 
+; was used for the full system:
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+[ moleculetype ]
+low_reg_nocon_35 1
+
+[ atoms ]
+  1 Q5    1 ASP BB    1    1     
+  2 SQ5n  1 ASP SC1   2 -1.0     
+  3 P2    2 LEU BB    3  0.0     
+  4 SC2   2 LEU SC1   4  0.0     
+  5 P2    3 LEU BB    5  0.0     
+  6 SC2   3 LEU SC1   6  0.0     
+  7 P2    4 LEU BB    7  0.0     
+  8 SC2   4 LEU SC1   8  0.0     
+  9 P2    5 HIS BB    9  0.0     
+ 10 TC4   5 HIS SC1  10  0.0     
+ 11 TN6d  5 HIS SC2  11  0.0     
+ 12 TN5a  5 HIS SC3  12  0.0     
+ 13 SP2   6 VAL BB   13  0.0     
+ 14 SC3   6 VAL SC1  14  0.0     
+ 15 P2    7 LEU BB   15  0.0     
+ 16 SC2   7 LEU SC1  16  0.0     
+ 17 P2    8 GLU BB   17  0.0     
+ 18 Q5n   8 GLU SC1  18 -1.0     
+ 19 SP1   9 GLY BB   19  0.0     
+ 20 SP2  10 VAL BB   20  0.0     
+ 21 SC3  10 VAL SC1  21  0.0     
+ 22 SP2a 11 PRO BB   22  0.0     
+ 23 SC3  11 PRO SC1  23  0.0     
+ 24 SP2a 12 PRO BB   24  0.0     
+ 25 SC3  12 PRO SC1  25  0.0     
+ 26 SP2a 13 PRO BB   26  0.0     
+ 27 SC3  13 PRO SC1  27  0.0     
+ 28 SP1  14 GLY BB   28  0.0     
+ 29 P2   15 SER BB   29  0.0     
+ 30 TP1  15 SER SC1  30  0.0     
+ 31 P2   16 ARG BB   31  0.0     
+ 32 SC3  16 ARG SC1  32  0.0     
+ 33 SQ3p 16 ARG SC2  33  1.0     
+ 34 P2   17 ARG BB   34  0.0     
+ 35 SC3  17 ARG SC1  35  0.0     
+ 36 SQ3p 17 ARG SC2  36  1.0     
+ 37 P2   18 LEU BB   37  0.0     
+ 38 SC2  18 LEU SC1  38  0.0     
+ 39 SP2  19 VAL BB   39  0.0     
+ 40 SC3  19 VAL SC1  40  0.0     
+ 41 SP2  20 VAL BB   41  0.0     
+ 42 SC3  20 VAL SC1  42  0.0     
+ 43 P2   21 SER BB   43  0.0     
+ 44 TP1  21 SER SC1  44  0.0     
+ 45 SP1  22 GLY BB   45  0.0     
+ 46 SP1  23 GLY BB   46  0.0     
+ 47 P2   24 ASP BB   47  0.0     
+ 48 SQ5n 24 ASP SC1  48 -1.0     
+ 49 SP2  25 ALA BB   49  0.0     
+ 50 TC3  25 ALA SC1  50  0.0     
+ 51 P2   26 ARG BB   51  0.0     
+ 52 SC3  26 ARG SC1  52  0.0     
+ 53 SQ3p 26 ARG SC2  53  1.0     
+ 54 SP2  27 ALA BB   54  0.0     
+ 55 TC3  27 ALA SC1  55  0.0     
+ 56 P2   28 TRP BB   56  0.0     
+ 57 TC4  28 TRP SC1  57  0.0 36.0
+ 58 TN6d 28 TRP SC2  58  0.0 36.0
+ 59 TC5  28 TRP SC3  59  0.0  0.0
+ 60 TC5  28 TRP SC4  60  0.0 36.0
+ 61 TC5  28 TRP SC5  61  0.0 36.0
+ 62 P2   29 LEU BB   62  0.0     
+ 63 SC2  29 LEU SC1  63  0.0     
+ 64 P2   30 SER BB   64  0.0     
+ 65 TP1  30 SER SC1  65  0.0     
+ 66 P2   31 ASN BB   66  0.0     
+ 67 SP5  31 ASN SC1  67  0.0     
+ 68 P2   32 GLU BB   68  0.0     
+ 69 Q5n  32 GLU SC1  69 -1.0     
+ 70 P2   33 LYS BB   70  0.0     
+ 71 SC3  33 LYS SC1  71  0.0     
+ 72 SQ4p 33 LYS SC2  72  1.0     
+ 73 P2   34 MET BB   73  0.0     
+ 74 C6   34 MET SC1  74  0.0     
+ 75 P2   35 TYR BB   75  0.0     
+ 76 TC4  35 TYR SC1  76  0.0     
+ 77 TC5  35 TYR SC2  77  0.0     
+ 78 TC5  35 TYR SC3  78  0.0     
+ 79 TN6  35 TYR SC4  79  0.0     
+ 80 SP2  36 VAL BB   80  0.0     
+ 81 SC3  36 VAL SC1  81  0.0     
+ 82 P2   37 ARG BB   82  0.0     
+ 83 SC3  37 ARG SC1  83  0.0     
+ 84 SQ3p 37 ARG SC2  84  1.0     
+ 85 P2   38 THR BB   85  0.0     
+ 86 SP1  38 THR SC1  86  0.0     
+ 87 P2   39 ASN BB   87  0.0     
+ 88 SP5  39 ASN SC1  88  0.0     
+ 89 P2   40 LEU BB   89  0.0     
+ 90 SC2  40 LEU SC1  90  0.0     
+ 91 P2   41 THR BB   91  0.0     
+ 92 SP1  41 THR SC1  92  0.0     
+ 93 P2   42 ILE BB   93  0.0     
+ 94 SC2  42 ILE SC1  94  0.0     
+ 95 P2   43 LEU BB   95  0.0     
+ 96 SC2  43 LEU SC1  96  0.0     
+ 97 P2   44 SER BB   97  0.0     
+ 98 TP1  44 SER SC1  98  0.0     
+ 99 SP2a 45 PRO BB   99  0.0     
+100 SC3  45 PRO SC1 100  0.0     
+101 SP1  46 GLY BB  101  0.0     
+102 P2   47 TRP BB  102  0.0     
+103 TC4  47 TRP SC1 103  0.0 36.0
+104 TN6d 47 TRP SC2 104  0.0 36.0
+105 TC5  47 TRP SC3 105  0.0  0.0
+106 TC5  47 TRP SC4 106  0.0 36.0
+107 TC5  47 TRP SC5 107  0.0 36.0
+108 P2   48 LEU BB  108  0.0     
+109 SC2  48 LEU SC1 109  0.0     
+110 SP2  49 ALA BB  110  0.0     
+111 TC3  49 ALA SC1 111  0.0     
+112 P2   50 SER BB  112  0.0     
+113 TP1  50 SER SC1 113  0.0     
+114 P2   51 MET BB  114  0.0     
+115 C6   51 MET SC1 115  0.0     
+116 P2   52 THR BB  116  0.0     
+117 SP1  52 THR SC1 117  0.0     
+118 P2   53 SER BB  118  0.0     
+119 TP1  53 SER SC1 119  0.0     
+120 SP2  54 ALA BB  120  0.0     
+121 TC3  54 ALA SC1 121  0.0     
+122 P2   55 ASP BB  122  0.0     
+123 SQ5n 55 ASP SC1 123 -1.0     
+124 SP1  56 GLY BB  124  0.0     
+125 P2   57 THR BB  125  0.0     
+126 SP1  57 THR SC1 126  0.0     
+127 P2   58 HIS BB  127  0.0     
+128 TC4  58 HIS SC1 128  0.0     
+129 TN6d 58 HIS SC2 129  0.0     
+130 TN5a 58 HIS SC3 130  0.0     
+131 SP2  59 ALA BB  131  0.0     
+132 TC3  59 ALA SC1 132  0.0     
+133 P2   60 TYR BB  133  0.0     
+134 TC4  60 TYR SC1 134  0.0     
+135 TC5  60 TYR SC2 135  0.0     
+136 TC5  60 TYR SC3 136  0.0     
+137 TN6  60 TYR SC4 137  0.0     
+138 P2   61 GLU BB  138  0.0     
+139 Q5n  61 GLU SC1 139 -1.0     
+140 P2   62 MET BB  140  0.0     
+141 C6   62 MET SC1 141  0.0     
+142 P2   63 GLN BB  142  0.0     
+143 P5   63 GLN SC1 143  0.0     
+144 P2   64 LYS BB  144  0.0     
+145 SC3  64 LYS SC1 145  0.0     
+146 SQ4p 64 LYS SC2 146  1.0     
+147 P2   65 SER BB  147  0.0     
+148 TP1  65 SER SC1 148  0.0     
+149 SP2a 66 PRO BB  149  0.0     
+150 SC3  66 PRO SC1 150  0.0     
+151 SP2  67 VAL BB  151  0.0     
+152 SC3  67 VAL SC1 152  0.0     
+153 P2   68 LEU BB  153  0.0     
+154 SC2  68 LEU SC1 154  0.0     
+155 P2   69 LEU BB  155  0.0     
+156 SC2  69 LEU SC1 156  0.0     
+157 SP2  70 VAL BB  157  0.0     
+158 SC3  70 VAL SC1 158  0.0     
+159 P2   71 SER BB  159  0.0     
+160 TP1  71 SER SC1 160  0.0     
+161 P2   72 TRP BB  161  0.0     
+162 TC4  72 TRP SC1 162  0.0 36.0
+163 TN6d 72 TRP SC2 163  0.0 36.0
+164 TC5  72 TRP SC3 164  0.0  0.0
+165 TC5  72 TRP SC4 165  0.0 36.0
+166 TC5  72 TRP SC5 166  0.0 36.0
+167 P2   73 HIS BB  167  0.0     
+168 TC4  73 HIS SC1 168  0.0     
+169 TN6d 73 HIS SC2 169  0.0     
+170 TN5a 73 HIS SC3 170  0.0     
+171 SP1  74 GLY BB  171  0.0     
+172 P2   75 LYS BB  172  0.0     
+173 SC3  75 LYS SC1 173  0.0     
+174 SQ4p 75 LYS SC2 174  1.0     
+175 SP2  76 VAL BB  175  0.0     
+176 SC3  76 VAL SC1 176  0.0     
+177 P2   77 MET BB  177  0.0     
+178 C6   77 MET SC1 178  0.0     
+179 P2   78 GLN BB  179  0.0     
+180 P5   78 GLN SC1 180  0.0     
+181 P2   79 LEU BB  181  0.0     
+182 SC2  79 LEU SC1 182  0.0     
+183 P2   80 LYS BB  183  0.0     
+184 SC3  80 LYS SC1 184  0.0     
+185 SQ4p 80 LYS SC2 185  1.0     
+186 SP2  81 VAL BB  186  0.0     
+187 SC3  81 VAL SC1 187  0.0     
+188 P2   82 GLU BB  188  0.0     
+189 Q5n  82 GLU SC1 189 -1.0     
+190 Q5   83 GLY BB  190   -1     
+
+[ position_restraints ]
+#ifdef POSRES
+  1 1 1000 1000 1000
+  3 1 1000 1000 1000
+  5 1 1000 1000 1000
+  7 1 1000 1000 1000
+  9 1 1000 1000 1000
+ 13 1 1000 1000 1000
+ 15 1 1000 1000 1000
+ 17 1 1000 1000 1000
+ 19 1 1000 1000 1000
+ 20 1 1000 1000 1000
+ 22 1 1000 1000 1000
+ 24 1 1000 1000 1000
+ 26 1 1000 1000 1000
+ 28 1 1000 1000 1000
+ 29 1 1000 1000 1000
+ 31 1 1000 1000 1000
+ 34 1 1000 1000 1000
+ 37 1 1000 1000 1000
+ 39 1 1000 1000 1000
+ 41 1 1000 1000 1000
+ 43 1 1000 1000 1000
+ 45 1 1000 1000 1000
+ 46 1 1000 1000 1000
+ 47 1 1000 1000 1000
+ 49 1 1000 1000 1000
+ 51 1 1000 1000 1000
+ 54 1 1000 1000 1000
+ 56 1 1000 1000 1000
+ 62 1 1000 1000 1000
+ 64 1 1000 1000 1000
+ 66 1 1000 1000 1000
+ 68 1 1000 1000 1000
+ 70 1 1000 1000 1000
+ 73 1 1000 1000 1000
+ 75 1 1000 1000 1000
+ 80 1 1000 1000 1000
+ 82 1 1000 1000 1000
+ 85 1 1000 1000 1000
+ 87 1 1000 1000 1000
+ 89 1 1000 1000 1000
+ 91 1 1000 1000 1000
+ 93 1 1000 1000 1000
+ 95 1 1000 1000 1000
+ 97 1 1000 1000 1000
+ 99 1 1000 1000 1000
+101 1 1000 1000 1000
+102 1 1000 1000 1000
+108 1 1000 1000 1000
+110 1 1000 1000 1000
+112 1 1000 1000 1000
+114 1 1000 1000 1000
+116 1 1000 1000 1000
+118 1 1000 1000 1000
+120 1 1000 1000 1000
+122 1 1000 1000 1000
+124 1 1000 1000 1000
+125 1 1000 1000 1000
+127 1 1000 1000 1000
+131 1 1000 1000 1000
+133 1 1000 1000 1000
+138 1 1000 1000 1000
+140 1 1000 1000 1000
+142 1 1000 1000 1000
+144 1 1000 1000 1000
+147 1 1000 1000 1000
+149 1 1000 1000 1000
+151 1 1000 1000 1000
+153 1 1000 1000 1000
+155 1 1000 1000 1000
+157 1 1000 1000 1000
+159 1 1000 1000 1000
+161 1 1000 1000 1000
+167 1 1000 1000 1000
+171 1 1000 1000 1000
+172 1 1000 1000 1000
+175 1 1000 1000 1000
+177 1 1000 1000 1000
+179 1 1000 1000 1000
+181 1 1000 1000 1000
+183 1 1000 1000 1000
+186 1 1000 1000 1000
+188 1 1000 1000 1000
+190 1 1000 1000 1000
+#endif
+
+[ bonds ]
+; Backbone bonds
+ 19  20 1 0.350 4000
+ 20  22 1 0.350 4000
+ 22  24 1 0.350 4000
+ 24  26 1 0.350 4000
+ 26  28 1 0.350 4000
+ 28  29 1 0.350 4000
+ 29  31 1 0.350 4000
+ 31  34 1 0.350 4000
+ 34  37 1 0.350 4000
+ 37  39 1 0.350 4000
+ 39  41 1 0.350 4000
+ 41  43 1 0.350 4000
+ 43  45 1 0.350 4000
+ 45  46 1 0.350 4000
+ 46  47 1 0.350 4000
+ 47  49 1 0.350 4000
+ 49  51 1 0.350 4000
+ 51  54 1 0.350 4000
+ 54  56 1 0.350 4000
+ 56  62 1 0.350 4000
+ 62  64 1 0.350 4000
+ 64  66 1 0.350 4000
+ 66  68 1 0.350 4000
+ 68  70 1 0.350 4000
+ 70  73 1 0.350 4000
+ 73  75 1 0.350 4000
+ 75  80 1 0.350 4000
+ 80  82 1 0.350 4000
+ 82  85 1 0.350 4000
+ 85  87 1 0.350 4000
+ 87  89 1 0.350 4000
+ 89  91 1 0.350 4000
+ 91  93 1 0.350 4000
+ 93  95 1 0.350 4000
+ 95  97 1 0.350 4000
+ 97  99 1 0.350 4000
+ 99 101 1 0.350 4000
+101 102 1 0.350 4000
+102 108 1 0.350 4000
+108 110 1 0.350 4000
+110 112 1 0.350 4000
+112 114 1 0.350 4000
+114 116 1 0.350 4000
+116 118 1 0.350 4000
+118 120 1 0.350 4000
+120 122 1 0.350 4000
+122 124 1 0.350 4000
+124 125 1 0.350 4000
+125 127 1 0.350 4000
+127 131 1 0.350 4000
+131 133 1 0.350 4000
+133 138 1 0.350 4000
+138 140 1 0.350 4000
+140 142 1 0.350 4000
+142 144 1 0.350 4000
+144 147 1 0.350 4000
+147 149 1 0.350 4000
+149 151 1 0.350 4000
+151 153 1 0.350 4000
+153 155 1 0.350 4000
+155 157 1 0.350 4000
+157 159 1 0.350 4000
+159 161 1 0.350 4000
+161 167 1 0.350 4000
+167 171 1 0.350 4000
+171 172 1 0.350 4000
+172 175 1 0.350 4000
+175 177 1 0.350 4000
+177 179 1 0.350 4000
+179 181 1 0.350 4000
+181 183 1 0.350 4000
+183 186 1 0.350 4000
+186 188 1 0.350 4000
+188 190 1 0.350 4000
+
+; Long elastic bonds for extended regions
+ 51  62 1 0.970 2500
+ 70  80 1 0.970 2500
+ 73  82 1 0.970 2500
+ 75  85 1 0.970 2500
+110 116 1 0.970 2500
+127 138 1 0.970 2500
+131 140 1 0.970 2500
+133 142 1 0.970 2500
+151 157 1 0.970 2500
+153 159 1 0.970 2500
+155 161 1 0.970 2500
+172 179 1 0.970 2500
+175 181 1 0.970 2500
+177 183 1 0.970 2500
+179 186 1 0.970 2500
+
+; Rubber band
+  1   7 1 0.53221 700.0
+  1   9 1 0.68991 700.0
+  1  13 1 0.87362 700.0
+  3   9 1 0.50039 700.0
+  3  13 1 0.60865 700.0
+  3  15 1 0.81795 700.0
+  3  20 1 0.7948 700.0
+  3  22 1 0.84267 700.0
+  3  24 1 0.80681 700.0
+  5  13 1 0.4733 700.0
+  5  15 1 0.59449 700.0
+  5  17 1 0.80822 700.0
+  5  20 1 0.81399 700.0
+  5 112 1 0.83571 700.0
+  5 114 1 0.73072 700.0
+  5 116 1 0.87978 700.0
+  5 131 1 0.70927 700.0
+  5 133 1 0.81485 700.0
+  7  15 1 0.48186 700.0
+  7  17 1 0.60447 700.0
+  7  19 1 0.78276 700.0
+  7  20 1 0.73655 700.0
+  7 114 1 0.84647 700.0
+  7 116 1 0.86774 700.0
+  7 131 1 0.87036 700.0
+  9  17 1 0.4821 700.0
+  9  19 1 0.53024 700.0
+  9  20 1 0.43239 700.0
+  9  22 1 0.65538 700.0
+  9  24 1 0.81873 700.0
+ 13  19 1 0.46981 700.0
+ 13  20 1 0.43937 700.0
+ 13  22 1 0.6325 700.0
+ 13  24 1 0.79176 700.0
+ 13  75 1 0.80424 700.0
+ 13  80 1 0.72601 700.0
+ 13  82 1 0.73344 700.0
+ 13 114 1 0.88509 700.0
+ 13 127 1 0.80814 700.0
+ 13 131 1 0.70727 700.0
+ 13 133 1 0.82546 700.0
+ 15  20 1 0.63828 700.0
+ 15  80 1 0.85004 700.0
+ 15  82 1 0.75633 700.0
+ 15  85 1 0.82422 700.0
+ 15 114 1 0.77816 700.0
+ 15 116 1 0.75364 700.0
+ 15 118 1 0.80256 700.0
+ 15 125 1 0.73831 700.0
+ 15 127 1 0.6604 700.0
+ 15 131 1 0.68524 700.0
+ 17  22 1 0.87104 700.0
+ 19  24 1 0.87929 700.0
+ 19  82 1 0.86016 700.0
+ 20  26 1 0.89328 700.0
+ 22  28 1 0.85219 700.0
+ 22  29 1 0.74638 700.0
+ 22  31 1 0.86916 700.0
+ 22  56 1 0.85201 700.0
+ 24  29 1 0.53127 700.0
+ 24  31 1 0.74421 700.0
+ 24  56 1 0.73871 700.0
+ 24  62 1 0.75673 700.0
+ 24  64 1 0.80304 700.0
+ 24  75 1 0.84733 700.0
+ 26  31 1 0.8322 700.0
+ 26  62 1 0.79174 700.0
+ 26  64 1 0.6966 700.0
+ 28  56 1 0.8847 700.0
+ 28  62 1 0.63467 700.0
+ 28  64 1 0.50395 700.0
+ 28  66 1 0.81976 700.0
+ 29  56 1 0.67659 700.0
+ 29  62 1 0.48182 700.0
+ 29  64 1 0.55832 700.0
+ 31  54 1 0.64689 700.0
+ 31  56 1 0.50341 700.0
+ 31  62 1 0.40832 700.0
+ 31  64 1 0.69115 700.0
+ 31  75 1 0.87434 700.0
+ 34  41 1 0.89222 700.0
+ 34  51 1 0.83664 700.0
+ 34  54 1 0.5371 700.0
+ 34  56 1 0.60368 700.0
+ 34  62 1 0.67135 700.0
+ 37  49 1 0.87364 700.0
+ 37  51 1 0.74367 700.0
+ 37  54 1 0.48993 700.0
+ 37  56 1 0.64576 700.0
+ 37  62 1 0.78372 700.0
+ 37 186 1 0.84518 700.0
+ 37 188 1 0.72115 700.0
+ 37 190 1 0.85716 700.0
+ 39  49 1 0.87503 700.0
+ 39  51 1 0.87412 700.0
+ 39  54 1 0.73059 700.0
+ 39 183 1 0.73486 700.0
+ 39 186 1 0.65316 700.0
+ 39 188 1 0.58849 700.0
+ 39 190 1 0.81339 700.0
+ 41  46 1 0.61168 700.0
+ 41  47 1 0.80053 700.0
+ 41  49 1 0.65452 700.0
+ 41  51 1 0.78875 700.0
+ 41  54 1 0.80558 700.0
+ 41 181 1 0.82571 700.0
+ 41 183 1 0.59683 700.0
+ 41 186 1 0.70011 700.0
+ 41 188 1 0.80903 700.0
+ 43  47 1 0.82574 700.0
+ 43  49 1 0.81309 700.0
+ 43 179 1 0.74073 700.0
+ 43 181 1 0.57116 700.0
+ 43 183 1 0.41145 700.0
+ 43 186 1 0.68056 700.0
+ 45  49 1 0.83262 700.0
+ 45 179 1 0.66357 700.0
+ 45 181 1 0.69951 700.0
+ 45 183 1 0.72466 700.0
+ 46  51 1 0.87264 700.0
+ 46 179 1 0.84808 700.0
+ 46 181 1 0.84937 700.0
+ 46 183 1 0.87361 700.0
+ 47  82 1 0.79266 700.0
+ 47  85 1 0.74242 700.0
+ 47  87 1 0.78928 700.0
+ 47  89 1 0.88271 700.0
+ 49  80 1 0.80284 700.0
+ 49  82 1 0.56268 700.0
+ 49  85 1 0.67954 700.0
+ 49  87 1 0.88861 700.0
+ 51  75 1 0.64587 700.0
+ 51  80 1 0.51818 700.0
+ 51  82 1 0.36924 700.0
+ 51  85 1 0.66494 700.0
+ 51 133 1 0.88931 700.0
+ 54  73 1 0.7358 700.0
+ 54  75 1 0.4985 700.0
+ 54  80 1 0.60739 700.0
+ 54  82 1 0.65706 700.0
+ 56  66 1 0.88334 700.0
+ 56  68 1 0.84343 700.0
+ 56  70 1 0.62536 700.0
+ 56  73 1 0.50574 700.0
+ 56  75 1 0.382 700.0
+ 56  80 1 0.68784 700.0
+ 56  82 1 0.88437 700.0
+ 56 140 1 0.87045 700.0
+ 62  68 1 0.65378 700.0
+ 62  70 1 0.57499 700.0
+ 62  73 1 0.66029 700.0
+ 62  75 1 0.69791 700.0
+ 64  70 1 0.57745 700.0
+ 64  73 1 0.80893 700.0
+ 66  73 1 0.77124 700.0
+ 68 140 1 0.74423 700.0
+ 68 142 1 0.7065 700.0
+ 68 144 1 0.71067 700.0
+ 70 138 1 0.73173 700.0
+ 70 140 1 0.52101 700.0
+ 70 142 1 0.6257 700.0
+ 70 144 1 0.72931 700.0
+ 73 133 1 0.65256 700.0
+ 73 138 1 0.53529 700.0
+ 73 140 1 0.37048 700.0
+ 73 142 1 0.57205 700.0
+ 73 144 1 0.70295 700.0
+ 75 131 1 0.78326 700.0
+ 75 133 1 0.53561 700.0
+ 75 138 1 0.62981 700.0
+ 75 140 1 0.64906 700.0
+ 75 142 1 0.89379 700.0
+ 80 114 1 0.88722 700.0
+ 80 127 1 0.65508 700.0
+ 80 131 1 0.51468 700.0
+ 80 133 1 0.37429 700.0
+ 80 138 1 0.65144 700.0
+ 80 140 1 0.79141 700.0
+ 82  89 1 0.80258 700.0
+ 82 125 1 0.82202 700.0
+ 82 127 1 0.54639 700.0
+ 82 131 1 0.63079 700.0
+ 82 133 1 0.67387 700.0
+ 85  91 1 0.88105 700.0
+ 85 124 1 0.77176 700.0
+ 85 125 1 0.55497 700.0
+ 85 127 1 0.374 700.0
+ 85 131 1 0.65212 700.0
+ 85 133 1 0.81481 700.0
+ 87 124 1 0.66691 700.0
+ 87 125 1 0.58745 700.0
+ 87 127 1 0.56739 700.0
+ 87 131 1 0.88545 700.0
+ 87 159 1 0.85946 700.0
+ 89 124 1 0.88505 700.0
+ 89 125 1 0.78344 700.0
+ 89 127 1 0.64856 700.0
+ 89 131 1 0.85612 700.0
+ 89 157 1 0.77441 700.0
+ 89 159 1 0.63391 700.0
+ 89 161 1 0.83981 700.0
+ 91 155 1 0.64698 700.0
+ 91 157 1 0.52949 700.0
+ 91 159 1 0.41405 700.0
+ 91 161 1 0.74467 700.0
+ 91 177 1 0.89261 700.0
+ 93  99 1 0.71429 700.0
+ 93 101 1 0.61705 700.0
+ 93 102 1 0.8374 700.0
+ 93 153 1 0.83128 700.0
+ 93 155 1 0.53914 700.0
+ 93 157 1 0.61146 700.0
+ 93 159 1 0.63076 700.0
+ 95 101 1 0.59406 700.0
+ 95 102 1 0.88032 700.0
+ 95 153 1 0.81782 700.0
+ 95 155 1 0.53727 700.0
+ 95 157 1 0.70656 700.0
+ 95 159 1 0.80578 700.0
+ 97 102 1 0.88781 700.0
+ 97 151 1 0.84061 700.0
+ 97 153 1 0.73556 700.0
+ 97 155 1 0.58557 700.0
+ 97 157 1 0.87329 700.0
+ 99 140 1 0.89751 700.0
+ 99 142 1 0.78495 700.0
+ 99 144 1 0.88315 700.0
+ 99 147 1 0.82573 700.0
+ 99 151 1 0.77261 700.0
+ 99 153 1 0.7627 700.0
+ 99 155 1 0.71722 700.0
+101 110 1 0.87585 700.0
+101 138 1 0.75503 700.0
+101 140 1 0.71491 700.0
+101 142 1 0.71586 700.0
+101 155 1 0.82319 700.0
+102 112 1 0.821 700.0
+102 133 1 0.79668 700.0
+102 138 1 0.57768 700.0
+102 140 1 0.66347 700.0
+102 142 1 0.76423 700.0
+108 133 1 0.7795 700.0
+108 138 1 0.5297 700.0
+108 140 1 0.72966 700.0
+110 131 1 0.67479 700.0
+110 133 1 0.55262 700.0
+110 138 1 0.42523 700.0
+110 140 1 0.75781 700.0
+112 127 1 0.78733 700.0
+112 131 1 0.51009 700.0
+112 133 1 0.61125 700.0
+112 138 1 0.69639 700.0
+114 124 1 0.89804 700.0
+114 125 1 0.69408 700.0
+114 127 1 0.53565 700.0
+114 131 1 0.3737 700.0
+114 133 1 0.66031 700.0
+114 138 1 0.88806 700.0
+116 122 1 0.82817 700.0
+116 124 1 0.66361 700.0
+116 125 1 0.53305 700.0
+116 127 1 0.59203 700.0
+116 131 1 0.63783 700.0
+118 124 1 0.45649 700.0
+118 125 1 0.44516 700.0
+118 127 1 0.69974 700.0
+118 131 1 0.88558 700.0
+120 125 1 0.6549 700.0
+140 147 1 0.83746 700.0
+144 151 1 0.812 700.0
+147 153 1 0.74774 700.0
+147 181 1 0.86172 700.0
+147 183 1 0.81613 700.0
+147 186 1 0.6384 700.0
+147 188 1 0.81282 700.0
+149 181 1 0.63396 700.0
+149 183 1 0.54873 700.0
+149 186 1 0.41889 700.0
+149 188 1 0.69311 700.0
+149 190 1 0.89547 700.0
+151 179 1 0.78423 700.0
+151 181 1 0.51727 700.0
+151 183 1 0.63377 700.0
+151 186 1 0.6686 700.0
+153 177 1 0.67375 700.0
+153 179 1 0.51593 700.0
+153 181 1 0.37128 700.0
+153 183 1 0.67009 700.0
+153 186 1 0.84969 700.0
+155 175 1 0.80212 700.0
+155 177 1 0.55197 700.0
+155 179 1 0.60319 700.0
+155 181 1 0.64526 700.0
+157 171 1 0.87372 700.0
+157 172 1 0.64113 700.0
+157 175 1 0.53252 700.0
+157 177 1 0.37009 700.0
+157 179 1 0.59052 700.0
+157 181 1 0.793 700.0
+159 171 1 0.66456 700.0
+159 172 1 0.51439 700.0
+159 175 1 0.62805 700.0
+159 177 1 0.63974 700.0
+161 172 1 0.35668 700.0
+161 175 1 0.63898 700.0
+161 177 1 0.78844 700.0
+167 175 1 0.82914 700.0
+
+; Short elastic bonds for extended regions
+ 51  56 1 0.640 2500
+ 54  62 1 0.640 2500
+ 70  75 1 0.640 2500
+ 73  80 1 0.640 2500
+ 75  82 1 0.640 2500
+ 80  85 1 0.640 2500
+110 114 1 0.640 2500
+112 116 1 0.640 2500
+127 133 1 0.640 2500
+131 138 1 0.640 2500
+133 140 1 0.640 2500
+138 142 1 0.640 2500
+151 155 1 0.640 2500
+153 157 1 0.640 2500
+155 159 1 0.640 2500
+157 161 1 0.640 2500
+172 177 1 0.640 2500
+175 179 1 0.640 2500
+177 181 1 0.640 2500
+179 183 1 0.640 2500
+181 186 1 0.640 2500
+
+; Side chain bonds
+  1   2 1 0.352 7500
+  3   4 1 0.363 7500
+  5   6 1 0.363 7500
+  7   8 1 0.363 7500
+  9  10 1 0.336 7500
+ 15  16 1 0.363 7500
+ 17  18 1 0.400 5000
+ 22  23 1 0.330 7500
+ 24  25 1 0.330 7500
+ 26  27 1 0.330 7500
+ 29  30 1 0.287 7500
+ 31  32 1 0.330 5000
+ 32  33 1 0.380 5000
+ 34  35 1 0.330 5000
+ 35  36 1 0.380 5000
+ 37  38 1 0.363 7500
+ 43  44 1 0.287 7500
+ 47  48 1 0.352 7500
+ 51  52 1 0.330 5000
+ 52  53 1 0.380 5000
+ 56  57 1 0.315 5000
+ 62  63 1 0.363 7500
+ 64  65 1 0.287 7500
+ 66  67 1 0.352 5000
+ 68  69 1 0.400 5000
+ 70  71 1 0.330 5000
+ 71  72 1 0.360 5000
+ 73  74 1 0.40 2500
+ 75  76 1 0.325 5000
+ 82  83 1 0.330 5000
+ 83  84 1 0.380 5000
+ 87  88 1 0.352 5000
+ 89  90 1 0.363 7500
+ 95  96 1 0.363 7500
+ 97  98 1 0.287 7500
+ 99 100 1 0.330 7500
+102 103 1 0.315 5000
+108 109 1 0.363 7500
+112 113 1 0.287 7500
+114 115 1 0.40 2500
+118 119 1 0.287 7500
+122 123 1 0.352 7500
+127 128 1 0.336 7500
+133 134 1 0.325 5000
+138 139 1 0.400 5000
+140 141 1 0.40 2500
+142 143 1 0.400 5000
+144 145 1 0.330 5000
+145 146 1 0.360 5000
+147 148 1 0.287 7500
+149 150 1 0.330 7500
+153 154 1 0.363 7500
+155 156 1 0.363 7500
+159 160 1 0.287 7500
+161 162 1 0.315 5000
+167 168 1 0.336 7500
+172 173 1 0.330 5000
+173 174 1 0.360 5000
+177 178 1 0.40 2500
+179 180 1 0.400 5000
+181 182 1 0.363 7500
+183 184 1 0.330 5000
+184 185 1 0.360 5000
+188 189 1 0.400 5000
+
+#ifdef FLEXIBLE
+; Side chain bonds
+ 10  11 1 0.320 1000000
+ 10  12 1 0.300 1000000
+ 11  12 1 0.270 1000000
+ 13  14 1 0.292 1000000
+ 20  21 1 0.292 1000000
+ 39  40 1 0.292 1000000
+ 41  42 1 0.292 1000000
+ 49  50 1 0.270 1000000
+ 54  55 1 0.270 1000000
+ 57  58 1 0.335 1000000
+ 58  61 1 0.412 1000000
+ 60  61 1 0.293 1000000
+ 57  60 1 0.404 1000000
+ 58  60 1 0.470 1000000
+ 76  77 1 0.300 1000000
+ 76  78 1 0.300 1000000
+ 77  79 1 0.285 1000000
+ 78  79 1 0.285 1000000
+ 77  78 1 0.300 1000000
+ 80  81 1 0.292 1000000
+ 85  86 1 0.305 1000000
+ 91  92 1 0.305 1000000
+ 93  94 1 0.341 1000000
+103 104 1 0.335 1000000
+104 107 1 0.412 1000000
+106 107 1 0.293 1000000
+103 106 1 0.404 1000000
+104 106 1 0.470 1000000
+110 111 1 0.270 1000000
+116 117 1 0.305 1000000
+120 121 1 0.270 1000000
+125 126 1 0.305 1000000
+128 129 1 0.320 1000000
+128 130 1 0.300 1000000
+129 130 1 0.270 1000000
+131 132 1 0.270 1000000
+134 135 1 0.300 1000000
+134 136 1 0.300 1000000
+135 137 1 0.285 1000000
+136 137 1 0.285 1000000
+135 136 1 0.300 1000000
+151 152 1 0.292 1000000
+157 158 1 0.292 1000000
+162 163 1 0.335 1000000
+163 166 1 0.412 1000000
+165 166 1 0.293 1000000
+162 165 1 0.404 1000000
+163 165 1 0.470 1000000
+168 169 1 0.320 1000000
+168 170 1 0.300 1000000
+169 170 1 0.270 1000000
+175 176 1 0.292 1000000
+186 187 1 0.292 1000000
+#endif
+
+[ constraints ]
+; Backbone bonds
+  1   3 1 0.33
+  3   5 1 0.310
+  5   7 1 0.310
+  7   9 1 0.310
+  9  13 1 0.310
+ 13  15 1 0.310
+ 15  17 1 0.310
+ 17  19 1 0.33
+
+#ifndef FLEXIBLE
+; Side chain bonds
+ 10  11 1 0.320
+ 10  12 1 0.300
+ 11  12 1 0.270
+ 13  14 1 0.292
+ 20  21 1 0.292
+ 39  40 1 0.292
+ 41  42 1 0.292
+ 49  50 1 0.270
+ 54  55 1 0.270
+ 57  58 1 0.335
+ 58  61 1 0.412
+ 60  61 1 0.293
+ 57  60 1 0.404
+ 58  60 1 0.470
+ 76  77 1 0.300
+ 76  78 1 0.300
+ 77  79 1 0.285
+ 78  79 1 0.285
+ 77  78 1 0.300
+ 80  81 1 0.292
+ 85  86 1 0.305
+ 91  92 1 0.305
+ 93  94 1 0.341
+103 104 1 0.335
+104 107 1 0.412
+106 107 1 0.293
+103 106 1 0.404
+104 106 1 0.470
+110 111 1 0.270
+116 117 1 0.305
+120 121 1 0.270
+125 126 1 0.305
+128 129 1 0.320
+128 130 1 0.300
+129 130 1 0.270
+131 132 1 0.270
+134 135 1 0.300
+134 136 1 0.300
+135 137 1 0.285
+136 137 1 0.285
+135 136 1 0.300
+151 152 1 0.292
+157 158 1 0.292
+162 163 1 0.335
+163 166 1 0.412
+165 166 1 0.293
+162 165 1 0.404
+163 165 1 0.470
+168 169 1 0.320
+168 170 1 0.300
+169 170 1 0.270
+175 176 1 0.292
+186 187 1 0.292
+#endif
+
+[ angles ]
+; BBB angles
+  1   3   5 10 127 20
+  3   5   7 2 96 700
+  5   7   9 2 96 700
+  7   9  13 2 96 700
+  9  13  15 2 96 700
+ 13  15  17 2 96 700
+ 15  17  19 10 100 20
+ 17  19  20 10 100 20
+ 28  29  31 10 100 20
+ 29  31  34 10 127 20
+ 31  34  37 10 127 20
+ 34  37  39 10 127 20
+ 37  39  41 10 127 20
+ 39  41  43 10 127 20
+ 41  43  45 10 130 20
+ 43  45  46 10 130 20
+ 47  49  51 10 127 20
+ 49  51  54 10 127 20
+ 51  54  56 10 134 25
+ 54  56  62 10 134 25
+ 56  62  64 10 130 20
+ 62  64  66 10 130 20
+ 66  68  70 10 130 20
+ 68  70  73 10 130 20
+ 70  73  75 10 134 25
+ 73  75  80 10 134 25
+ 75  80  82 10 134 25
+ 80  82  85 10 134 25
+ 82  85  87 10 130 20
+ 85  87  89 10 127 20
+ 87  89  91 10 127 20
+ 89  91  93 10 127 20
+ 91  93  95 10 127 20
+ 93  95  97 10 127 20
+102 108 110 10 127 20
+108 110 112 10 130 20
+110 112 114 10 134 25
+112 114 116 10 134 25
+114 116 118 10 127 20
+116 118 120 10 127 20
+124 125 127 10 127 20
+125 127 131 10 127 20
+127 131 133 10 134 25
+131 133 138 10 134 25
+133 138 140 10 134 25
+138 140 142 10 134 25
+140 142 144 10 127 20
+142 144 147 10 127 20
+147 149 151 10 127 20
+149 151 153 10 130 20
+151 153 155 10 134 25
+153 155 157 10 134 25
+155 157 159 10 134 25
+157 159 161 10 134 25
+159 161 167 10 100 20
+161 167 171 10 100 20
+167 171 172 10 100 20
+171 172 175 10 100 20
+172 175 177 10 134 25
+175 177 179 10 134 25
+177 179 181 10 134 25
+179 181 183 10 134 25
+181 183 186 10 134 25
+183 186 188 10 127 20
+186 188 190 10 127 20
+ 95  97  99 10 127 20
+ 97  99 101 10 127 20
+ 99 101 102 10 127 20
+144 147 149 10 127 20
+ 19  20  22 10 100 20
+ 20  22  24 10 127 20
+ 22  24  26 10 100 25
+ 24  26  28 10 100 20
+ 26  28  29 10 100 20
+ 45  46  47 10 130 20
+ 46  47  49 10 127 20
+ 64  66  68 10 130 20
+101 102 108 10 127 20
+118 120 122 10 127 20
+120 122 124 10 130 20
+122 124 125 10 127 20
+
+; BBS angles regular martini
+  1   3   4 2 100 25
+  3   5   6 2 100 25
+  5   7   8 2 100 25
+  7   9  10 2 100 25
+  9  13  14 2 100 25
+ 13  15  16 2 100 25
+ 15  17  18 2 100 25
+ 19  20  21 2 100 25
+ 20  22  23 2 100 25
+ 22  24  25 2 100 25
+ 24  26  27 2 100 25
+ 28  29  30 2 100 25
+ 29  31  32 2 100 25
+ 31  34  35 2 100 25
+ 34  37  38 2 100 25
+ 37  39  40 2 100 25
+ 39  41  42 2 100 25
+ 41  43  44 2 100 25
+ 46  47  48 2 100 25
+ 47  49  50 2 100 25
+ 49  51  52 2 100 25
+ 51  54  55 2 100 25
+ 54  56  57 2 100 25
+ 56  62  63 2 100 25
+ 62  64  65 2 100 25
+ 64  66  67 2 100 25
+ 66  68  69 2 100 25
+ 68  70  71 2 100 25
+ 70  73  74 2 100 25
+ 73  75  76 2 100 25
+ 75  80  81 2 100 25
+ 80  82  83 2 100 25
+ 82  85  86 2 100 25
+ 85  87  88 2 100 25
+ 87  89  90 2 100 25
+ 89  91  92 2 100 25
+ 91  93  94 2 100 25
+ 93  95  96 2 100 25
+ 95  97  98 2 100 25
+ 97  99 100 2 100 25
+101 102 103 2 100 25
+102 108 109 2 100 25
+108 110 111 2 100 25
+110 112 113 2 100 25
+112 114 115 2 100 25
+114 116 117 2 100 25
+116 118 119 2 100 25
+118 120 121 2 100 25
+120 122 123 2 100 25
+124 125 126 2 100 25
+125 127 128 2 100 25
+127 131 132 2 100 25
+131 133 134 2 100 25
+133 138 139 2 100 25
+138 140 141 2 100 25
+140 142 143 2 100 25
+142 144 145 2 100 25
+144 147 148 2 100 25
+147 149 150 2 100 25
+149 151 152 2 100 25
+151 153 154 2 100 25
+153 155 156 2 100 25
+155 157 158 2 100 25
+157 159 160 2 100 25
+159 161 162 2 100 25
+161 167 168 2 100 25
+171 172 173 2 100 25
+172 175 176 2 100 25
+175 177 178 2 100 25
+177 179 180 2 100 25
+179 181 182 2 100 25
+181 183 184 2 100 25
+183 186 187 2 100 25
+186 188 189 2 100 25
+
+; First SBB regular martini
+  2   1   3 2 100 25
+
+; SC-BB-BB and BB-BB-SC scFix
+  2   1   3 10 100 15 ; SC-BB-BB
+  4   3   5 10 100 15 ; SC-BB-BB
+  6   5   7 10 100 15 ; SC-BB-BB
+  8   7   9 10 100 15 ; SC-BB-BB
+ 10   9  13 10 100 15 ; SC-BB-BB
+ 14  13  15 10 100 15 ; SC-BB-BB
+ 16  15  17 10 100 15 ; SC-BB-BB
+ 18  17  19 10 100 15 ; SC-BB-BB
+ 21  20  22 10 100 15 ; SC-BB-BB
+ 23  22  24 10 100 15 ; SC-BB-BB
+ 25  24  26 10 100 15 ; SC-BB-BB
+ 27  26  28 10 100 15 ; SC-BB-BB
+ 30  29  31 10 100 15 ; SC-BB-BB
+ 32  31  34 10 100 15 ; SC-BB-BB
+ 35  34  37 10 100 15 ; SC-BB-BB
+ 38  37  39 10 100 15 ; SC-BB-BB
+ 40  39  41 10 100 15 ; SC-BB-BB
+ 42  41  43 10 100 15 ; SC-BB-BB
+ 44  43  45 10 100 15 ; SC-BB-BB
+ 48  47  49 10 100 15 ; SC-BB-BB
+ 50  49  51 10 100 15 ; SC-BB-BB
+ 52  51  54 10 100 15 ; SC-BB-BB
+ 55  54  56 10 100 15 ; SC-BB-BB
+ 57  56  62 10 100 15 ; SC-BB-BB
+ 63  62  64 10 100 15 ; SC-BB-BB
+ 65  64  66 10 100 15 ; SC-BB-BB
+ 67  66  68 10 100 15 ; SC-BB-BB
+ 69  68  70 10 100 15 ; SC-BB-BB
+ 71  70  73 10 100 15 ; SC-BB-BB
+ 74  73  75 10 100 15 ; SC-BB-BB
+ 76  75  80 10 100 15 ; SC-BB-BB
+ 81  80  82 10 100 15 ; SC-BB-BB
+ 83  82  85 10 100 15 ; SC-BB-BB
+ 86  85  87 10 100 15 ; SC-BB-BB
+ 88  87  89 10 100 15 ; SC-BB-BB
+ 90  89  91 10 100 15 ; SC-BB-BB
+ 92  91  93 10 100 15 ; SC-BB-BB
+ 94  93  95 10 100 15 ; SC-BB-BB
+ 96  95  97 10 100 15 ; SC-BB-BB
+ 98  97  99 10 100 15 ; SC-BB-BB
+100  99 101 10 100 15 ; SC-BB-BB
+103 102 108 10 100 15 ; SC-BB-BB
+109 108 110 10 100 15 ; SC-BB-BB
+111 110 112 10 100 15 ; SC-BB-BB
+113 112 114 10 100 15 ; SC-BB-BB
+115 114 116 10 100 15 ; SC-BB-BB
+117 116 118 10 100 15 ; SC-BB-BB
+119 118 120 10 100 15 ; SC-BB-BB
+121 120 122 10 100 15 ; SC-BB-BB
+123 122 124 10 100 15 ; SC-BB-BB
+126 125 127 10 100 15 ; SC-BB-BB
+128 127 131 10 100 15 ; SC-BB-BB
+132 131 133 10 100 15 ; SC-BB-BB
+134 133 138 10 100 15 ; SC-BB-BB
+139 138 140 10 100 15 ; SC-BB-BB
+141 140 142 10 100 15 ; SC-BB-BB
+143 142 144 10 100 15 ; SC-BB-BB
+145 144 147 10 100 15 ; SC-BB-BB
+148 147 149 10 100 15 ; SC-BB-BB
+150 149 151 10 100 15 ; SC-BB-BB
+152 151 153 10 100 15 ; SC-BB-BB
+154 153 155 10 100 15 ; SC-BB-BB
+156 155 157 10 100 15 ; SC-BB-BB
+158 157 159 10 100 15 ; SC-BB-BB
+160 159 161 10 100 15 ; SC-BB-BB
+162 161 167 10 100 15 ; SC-BB-BB
+168 167 171 10 100 15 ; SC-BB-BB
+173 172 175 10 100 15 ; SC-BB-BB
+176 175 177 10 100 15 ; SC-BB-BB
+178 177 179 10 100 15 ; SC-BB-BB
+180 179 181 10 100 15 ; SC-BB-BB
+182 181 183 10 100 15 ; SC-BB-BB
+184 183 186 10 100 15 ; SC-BB-BB
+187 186 188 10 100 15 ; SC-BB-BB
+189 188 190 10 100 15 ; SC-BB-BB
+  1   3   4 10 100 15 ; BB-BB-SC
+  3   5   6 10 100 15 ; BB-BB-SC
+  5   7   8 10 100 15 ; BB-BB-SC
+  7   9  10 10 100 15 ; BB-BB-SC
+  9  13  14 10 100 15 ; BB-BB-SC
+ 13  15  16 10 100 15 ; BB-BB-SC
+ 15  17  18 10 100 15 ; BB-BB-SC
+ 19  20  21 10 100 15 ; BB-BB-SC
+ 20  22  23 10 100 15 ; BB-BB-SC
+ 22  24  25 10 100 15 ; BB-BB-SC
+ 24  26  27 10 100 15 ; BB-BB-SC
+ 28  29  30 10 100 15 ; BB-BB-SC
+ 29  31  32 10 100 15 ; BB-BB-SC
+ 31  34  35 10 100 15 ; BB-BB-SC
+ 34  37  38 10 100 15 ; BB-BB-SC
+ 37  39  40 10 100 15 ; BB-BB-SC
+ 39  41  42 10 100 15 ; BB-BB-SC
+ 41  43  44 10 100 15 ; BB-BB-SC
+ 46  47  48 10 100 15 ; BB-BB-SC
+ 47  49  50 10 100 15 ; BB-BB-SC
+ 49  51  52 10 100 15 ; BB-BB-SC
+ 51  54  55 10 100 15 ; BB-BB-SC
+ 54  56  57 10 100 15 ; BB-BB-SC
+ 56  62  63 10 100 15 ; BB-BB-SC
+ 62  64  65 10 100 15 ; BB-BB-SC
+ 64  66  67 10 100 15 ; BB-BB-SC
+ 66  68  69 10 100 15 ; BB-BB-SC
+ 68  70  71 10 100 15 ; BB-BB-SC
+ 70  73  74 10 100 15 ; BB-BB-SC
+ 73  75  76 10 100 15 ; BB-BB-SC
+ 75  80  81 10 100 15 ; BB-BB-SC
+ 80  82  83 10 100 15 ; BB-BB-SC
+ 82  85  86 10 100 15 ; BB-BB-SC
+ 85  87  88 10 100 15 ; BB-BB-SC
+ 87  89  90 10 100 15 ; BB-BB-SC
+ 89  91  92 10 100 15 ; BB-BB-SC
+ 91  93  94 10 100 15 ; BB-BB-SC
+ 93  95  96 10 100 15 ; BB-BB-SC
+ 95  97  98 10 100 15 ; BB-BB-SC
+ 97  99 100 10 100 15 ; BB-BB-SC
+101 102 103 10 100 15 ; BB-BB-SC
+102 108 109 10 100 15 ; BB-BB-SC
+108 110 111 10 100 15 ; BB-BB-SC
+110 112 113 10 100 15 ; BB-BB-SC
+112 114 115 10 100 15 ; BB-BB-SC
+114 116 117 10 100 15 ; BB-BB-SC
+116 118 119 10 100 15 ; BB-BB-SC
+118 120 121 10 100 15 ; BB-BB-SC
+120 122 123 10 100 15 ; BB-BB-SC
+124 125 126 10 100 15 ; BB-BB-SC
+125 127 128 10 100 15 ; BB-BB-SC
+127 131 132 10 100 15 ; BB-BB-SC
+131 133 134 10 100 15 ; BB-BB-SC
+133 138 139 10 100 15 ; BB-BB-SC
+138 140 141 10 100 15 ; BB-BB-SC
+140 142 143 10 100 15 ; BB-BB-SC
+142 144 145 10 100 15 ; BB-BB-SC
+144 147 148 10 100 15 ; BB-BB-SC
+147 149 150 10 100 15 ; BB-BB-SC
+149 151 152 10 100 15 ; BB-BB-SC
+151 153 154 10 100 15 ; BB-BB-SC
+153 155 156 10 100 15 ; BB-BB-SC
+155 157 158 10 100 15 ; BB-BB-SC
+157 159 160 10 100 15 ; BB-BB-SC
+159 161 162 10 100 15 ; BB-BB-SC
+161 167 168 10 100 15 ; BB-BB-SC
+171 172 173 10 100 15 ; BB-BB-SC
+172 175 176 10 100 15 ; BB-BB-SC
+175 177 178 10 100 15 ; BB-BB-SC
+177 179 180 10 100 15 ; BB-BB-SC
+179 181 182 10 100 15 ; BB-BB-SC
+181 183 184 10 100 15 ; BB-BB-SC
+183 186 187 10 100 15 ; BB-BB-SC
+186 188 189 10 100 15 ; BB-BB-SC
+
+; Side chain angles
+  9  10  11 2 120.000 50.0
+  9  10  12 2 120.000 50.0
+ 31  32  33 2 180.000 25.0
+ 34  35  36 2 180.000 25.0
+ 51  52  53 2 180.000 25.0
+ 56  57  58 2 120.000 60.0
+ 56  57  60 2 130.000 60.0
+ 70  71  72 2 180.000 25.0
+ 75  76  77 2 120.000 60.0
+ 75  76  78 2 120.000 60.0
+ 82  83  84 2 180.000 25.0
+102 103 104 2 120.000 60.0
+102 103 106 2 130.000 60.0
+127 128 129 2 120.000 50.0
+127 128 130 2 120.000 50.0
+133 134 135 2 120.000 60.0
+133 134 136 2 120.000 60.0
+144 145 146 2 180.000 25.0
+161 162 163 2 120.000 60.0
+161 162 165 2 130.000 60.0
+167 168 169 2 120.000 50.0
+167 168 170 2 120.000 50.0
+172 173 174 2 180.000 25.0
+183 184 185 2 180.000 25.0
+
+[ dihedrals ]
+  3   5   7   9 1 -120 400 1
+  5   7   9  13 1 -120 400 1
+  7   9  13  15 1 -120 400 1
+  9  13  15  17 1 -120 400 1
+
+; SC-BB-BB-SC scFix
+  2   1   3   4 1 92.5 75 1 ; SC-BB-BB-SC
+  4   3   5   6 1 -97.4 75 1 ; SC-BB-BB-SC
+  6   5   7   8 1 -161.2 75 1 ; SC-BB-BB-SC
+  8   7   9  10 1 -148.0 75 1 ; SC-BB-BB-SC
+ 10   9  13  14 1 -164.9 75 1 ; SC-BB-BB-SC
+ 14  13  15  16 1 -142.7 75 1 ; SC-BB-BB-SC
+ 16  15  17  18 1 -176.0 75 1 ; SC-BB-BB-SC
+ 21  20  22  23 1 71.9 75 1 ; SC-BB-BB-SC
+ 23  22  24  25 1 81.2 75 1 ; SC-BB-BB-SC
+ 25  24  26  27 1 70.5 75 1 ; SC-BB-BB-SC
+ 30  29  31  32 1 20.8 75 1 ; SC-BB-BB-SC
+ 32  31  34  35 1 19.6 75 1 ; SC-BB-BB-SC
+ 35  34  37  38 1 23.1 75 1 ; SC-BB-BB-SC
+ 38  37  39  40 1 58.8 75 1 ; SC-BB-BB-SC
+ 40  39  41  42 1 35.4 75 1 ; SC-BB-BB-SC
+ 42  41  43  44 1 37.9 75 1 ; SC-BB-BB-SC
+ 48  47  49  50 1 -5.9 75 1 ; SC-BB-BB-SC
+ 50  49  51  52 1 30.2 75 1 ; SC-BB-BB-SC
+ 52  51  54  55 1 10.6 75 1 ; SC-BB-BB-SC
+ 55  54  56  57 1 13.1 75 1 ; SC-BB-BB-SC
+ 57  56  62  63 1 18.9 75 1 ; SC-BB-BB-SC
+ 63  62  64  65 1 9.7 75 1 ; SC-BB-BB-SC
+ 65  64  66  67 1 -175.0 75 1 ; SC-BB-BB-SC
+ 67  66  68  69 1 49.9 75 1 ; SC-BB-BB-SC
+ 69  68  70  71 1 127.0 75 1 ; SC-BB-BB-SC
+ 71  70  73  74 1 24.2 75 1 ; SC-BB-BB-SC
+ 74  73  75  76 1 38.9 75 1 ; SC-BB-BB-SC
+ 76  75  80  81 1 23.7 75 1 ; SC-BB-BB-SC
+ 81  80  82  83 1 13.0 75 1 ; SC-BB-BB-SC
+ 83  82  85  86 1 -12.3 75 1 ; SC-BB-BB-SC
+ 86  85  87  88 1 74.6 75 1 ; SC-BB-BB-SC
+ 88  87  89  90 1 -179.1 75 1 ; SC-BB-BB-SC
+ 90  89  91  92 1 56.9 75 1 ; SC-BB-BB-SC
+ 92  91  93  94 1 54.2 75 1 ; SC-BB-BB-SC
+ 94  93  95  96 1 16.1 75 1 ; SC-BB-BB-SC
+ 96  95  97  98 1 -135.8 75 1 ; SC-BB-BB-SC
+ 98  97  99 100 1 -137.1 75 1 ; SC-BB-BB-SC
+103 102 108 109 1 38.4 75 1 ; SC-BB-BB-SC
+109 108 110 111 1 93.3 75 1 ; SC-BB-BB-SC
+111 110 112 113 1 25.4 75 1 ; SC-BB-BB-SC
+113 112 114 115 1 -5.4 75 1 ; SC-BB-BB-SC
+115 114 116 117 1 23.6 75 1 ; SC-BB-BB-SC
+117 116 118 119 1 56.4 75 1 ; SC-BB-BB-SC
+119 118 120 121 1 86.6 75 1 ; SC-BB-BB-SC
+121 120 122 123 1 -122.6 75 1 ; SC-BB-BB-SC
+126 125 127 128 1 22.3 75 1 ; SC-BB-BB-SC
+128 127 131 132 1 27.3 75 1 ; SC-BB-BB-SC
+132 131 133 134 1 16.5 75 1 ; SC-BB-BB-SC
+134 133 138 139 1 49.8 75 1 ; SC-BB-BB-SC
+139 138 140 141 1 -65.1 75 1 ; SC-BB-BB-SC
+141 140 142 143 1 62.3 75 1 ; SC-BB-BB-SC
+143 142 144 145 1 73.4 75 1 ; SC-BB-BB-SC
+145 144 147 148 1 -6.0 75 1 ; SC-BB-BB-SC
+148 147 149 150 1 91.0 75 1 ; SC-BB-BB-SC
+150 149 151 152 1 113.4 75 1 ; SC-BB-BB-SC
+152 151 153 154 1 13.6 75 1 ; SC-BB-BB-SC
+154 153 155 156 1 27.5 75 1 ; SC-BB-BB-SC
+156 155 157 158 1 13.2 75 1 ; SC-BB-BB-SC
+158 157 159 160 1 46.9 75 1 ; SC-BB-BB-SC
+160 159 161 162 1 -31.6 75 1 ; SC-BB-BB-SC
+162 161 167 168 1 168.4 75 1 ; SC-BB-BB-SC
+173 172 175 176 1 -0.2 75 1 ; SC-BB-BB-SC
+176 175 177 178 1 22.3 75 1 ; SC-BB-BB-SC
+178 177 179 180 1 27.6 75 1 ; SC-BB-BB-SC
+180 179 181 182 1 21.5 75 1 ; SC-BB-BB-SC
+182 181 183 184 1 10.2 75 1 ; SC-BB-BB-SC
+184 183 186 187 1 28.2 75 1 ; SC-BB-BB-SC
+187 186 188 189 1 70.3 75 1 ; SC-BB-BB-SC
+ 17  19  20  21 1 113.6 75 1 ; BB-BB-BB-SC
+ 18  17  19  20 1 -97.1 75 1 ; SC-BB-BB-BB
+ 26  28  29  30 1 148.3 75 1 ; BB-BB-BB-SC
+ 27  26  28  29 1 26.9 75 1 ; SC-BB-BB-BB
+ 99 101 102 103 1 11.7 75 1 ; BB-BB-BB-SC
+100  99 101 102 1 18.5 75 1 ; SC-BB-BB-BB
+122 124 125 126 1 120.6 75 1 ; BB-BB-BB-SC
+123 122 124 125 1 -160.5 75 1 ; SC-BB-BB-BB
+167 171 172 173 1 128.3 75 1 ; BB-BB-BB-SC
+168 167 171 172 1 -127.0 75 1 ; SC-BB-BB-BB
+ 45  46  47  48 1 74.2 75 1 ; BB-BB-BB-SC
+ 44  43  45  46 1 14.2 75 1 ; SC-BB-BB-BB
+
+[ exclusions ]
+  9  10  11  12 
+ 10  11  12 
+ 11  12 
+ 56  57  58  59  60  61 
+ 57  58  59  60  61 
+ 58  59  60  61 
+ 59  60  61 
+ 60  61 
+ 75  76  77  78  79 
+ 76  77  78  79 
+ 77  78  79 
+ 78  79 
+102 103 104 105 106 107 
+103 104 105 106 107 
+104 105 106 107 
+105 106 107 
+106 107 
+127 128 129 130 
+128 129 130 
+129 130 
+133 134 135 136 137 
+134 135 136 137 
+135 136 137 
+136 137 
+161 162 163 164 165 166 
+162 163 164 165 166 
+163 164 165 166 
+164 165 166 
+165 166 
+167 168 169 170 
+168 169 170 
+169 170 
+
+[ dihedrals ]
+ 61  60  58  57 2 180.0 100.0
+ 79  77  78  76 2 180.0 50.0
+107 106 104 103 2 180.0 100.0
+137 135 136 134 2 180.0 50.0
+166 165 163 162 2 180.0 100.0
+
+[ virtual_sitesn ]
+ 59 2  61  60  58  57
+105 2 107 106 104 103
+164 2 166 165 163 162
+
