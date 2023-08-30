@@ -1,0 +1,62 @@
+For the OMC, both DotF and IcmE have disjointed chains.
+I am splitting these chains into two pieces for martinizing purposes.
+
+IcmE Upper: AG,BG,CG,DG,EG,FG,GG,HG,IR,JG,KG,LG,MG,NG,OM,PG
+IcmE Lower: Ag,Bg,Cg,Dg,Eg,Fg,WG,Gg,Hg,Ig,Jg,Kg,Lg,Mg,VG,WG,YG,ZG
+
+DotF Upper: Af,Bf,Cf,Df,Ef,Ff,Gf,Hf,If,Jf,Kf,Lf,Mf
+DotF Lower: AF,BO,CF,VF,DF,EF,FO,WF,GF,HF,XF,IQ,JO,KF,YF,LF,MF,ZF
+
+Regions to martinize:
+Lower region: dotf_lower, IcmE_lower, IcmK          - 54
+Upper Outer: dotd, dotf_upper, duf, Ompa, YiaD      - 79
+Upper Inner: dotc, IcmE_upper, nln                  - 42
+
+For the upper section, the distincion between inner and outer is a bit arbitrary, But I had to get the atom count under 99,999, so this arrangement seemed the most logical.
+
+Chain Counting:
+dotf_lower: 18
+dotf_upper: 13
+IcmE_lower: 18
+IcmE_upper: 16 (seems to be counted as 32 by gromacs)
+nln:        13
+duf:        13
+Ompa:       14
+YiaD:       13
+IcmK:       18
+DotD:       26
+DotC:       13
+
+ASCII characters that seem to work with martinize:
+.
+,
+<
+>
+?
+;
+:
+'
+"
+[
+]
+{
+}
+\
+|
+@
+$
+%
+^
+&
+*
+(
+)
+-
+_
+=
++
+
+ASCII characters that don't work:
+/
+!
+#
