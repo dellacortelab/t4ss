@@ -1,0 +1,19 @@
+
+#include "martini.itp"
+#include "IcmF_0.itp"
+#include "IcmF_1.itp"
+#include "IcmF_2.itp"
+#include "IcmF_3.itp"
+#include "IcmF_4.itp"
+#include "IcmF_5.itp"
+
+[ system ]
+Title of the system
+
+[ molecules ]
+IcmF_0    1
+IcmF_1    1
+IcmF_2    1
+IcmF_3    1
+IcmF_4    1
+IcmF_5    1

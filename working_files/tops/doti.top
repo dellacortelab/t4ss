@@ -1,0 +1,53 @@
+
+#include "martini.itp"
+#include "doti_0.itp"
+#include "doti_1.itp"
+#include "doti_2.itp"
+#include "doti_3.itp"
+#include "doti_4.itp"
+#include "doti_5.itp"
+#include "doti_6.itp"
+#include "doti_7.itp"
+#include "doti_8.itp"
+#include "doti_9.itp"
+#include "doti_10.itp"
+#include "doti_11.itp"
+#include "doti_12.itp"
+#include "doti_13.itp"
+#include "doti_14.itp"
+#include "doti_15.itp"
+#include "doti_16.itp"
+#include "doti_17.itp"
+#include "doti_18.itp"
+#include "doti_19.itp"
+#include "doti_20.itp"
+#include "doti_21.itp"
+
+[ system ]
+Title of the system
+
+[ molecules ]
+doti_0     1
+doti_1     1
+doti_2     1
+doti_3     1
+doti_4     1
+doti_5     1
+doti_6     1
+doti_7     1
+doti_8     1
+doti_9     1
+doti_10    1
+doti_11    1
+doti_12    1
+doti_13    1
+doti_14    1
+doti_15    1
+doti_16    1
+doti_17    1
+doti_18    1
+doti_19    1
+doti_20    1
+doti_1     1
+doti_21    1
+doti_3     1

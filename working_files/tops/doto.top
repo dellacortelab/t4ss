@@ -1,0 +1,33 @@
+
+#include "martini.itp"
+#include "doto_0.itp"
+#include "doto_1.itp"
+#include "doto_2.itp"
+#include "doto_3.itp"
+#include "doto_4.itp"
+#include "doto_5.itp"
+#include "doto_6.itp"
+#include "doto_7.itp"
+#include "doto_8.itp"
+#include "doto_9.itp"
+#include "doto_10.itp"
+#include "doto_11.itp"
+#include "doto_12.itp"
+
+[ system ]doto
+Title of the system
+
+[ molecules ]
+doto_0     1
+doto_1     1
+doto_2     1
+doto_3     1
+doto_4     1
+doto_5     1
+doto_6     1
+doto_7     1
+doto_8     1
+doto_9     1
+doto_10    1
+doto_11    1
+doto_12    1

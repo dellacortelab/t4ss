@@ -1,0 +1,19 @@
+
+#include "martini.itp"
+#include "dotbfixed_0.itp"
+#include "dotbfixed_1.itp"
+#include "dotbfixed_2.itp"
+#include "dotbfixed_3.itp"
+#include "dotbfixed_4.itp"
+#include "dotbfixed_5.itp"
+
+[ system ]
+Title of the system
+
+[ molecules ]
+dotbfixed_0    1
+dotbfixed_1    1
+dotbfixed_2    1
+dotbfixed_3    1
+dotbfixed_4    1
+dotbfixed_5    1

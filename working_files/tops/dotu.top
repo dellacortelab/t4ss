@@ -1,0 +1,19 @@
+
+#include "martini.itp"
+#include "dotu_0.itp"
+#include "dotu_1.itp"
+#include "dotu_2.itp"
+#include "dotu_3.itp"
+#include "dotu_4.itp"
+#include "dotu_5.itp"
+
+[ system ]
+Title of the system
+
+[ molecules ]
+dotu_0    1
+dotu_1    1
+dotu_2    1
+dotu_3    1
+dotu_4    1
+dotu_5    1

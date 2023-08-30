@@ -1,0 +1,26 @@
+
+#include "martini.itp"
+#include "dotj_0.itp"
+#include "dotj_1.itp"
+#include "dotj_2.itp"
+#include "dotj_3.itp"
+#include "dotj_4.itp"
+#include "dotj_5.itp"
+#include "dotj_6.itp"
+
+[ system ]
+Title of the system
+
+[ molecules ]
+dotj_0    1
+dotj_1    1
+dotj_0    1
+dotj_2    1
+dotj_0    1
+dotj_3    1
+dotj_0    1
+dotj_4    1
+dotj_0    1
+dotj_5    1
+dotj_0    1
+dotj_6    1
