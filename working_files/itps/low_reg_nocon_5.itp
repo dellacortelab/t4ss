@@ -1,0 +1,539 @@
+; This file was generated using the following command:
+; /home/sethang/.conda/envs/martinize_env/bin/martinize2 -f low_reg_nocon.pdb -o low_reg_nocon.top -x low_reg_nocon_cg.pdb -dssp /home/sethang/.conda/envs/second_env/bin/dssp -p backbone -ff martini3001 -elastic -ef 700.0 -el 0.5 -eu 0.9 -ea 0 -ep 0 -scfix -cys auto -maxwarn 30
+; martinize with vermouth 0.9.1
+; The following sequence of secondary structure 
+; was used for the full system:
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+[ moleculetype ]
+low_reg_nocon_5 1
+
+[ atoms ]
+ 1 Q5    1 GLN BB   1    1     
+ 2 P5    1 GLN SC1  2  0.0     
+ 3 P2    2 GLN BB   3  0.0     
+ 4 P5    2 GLN SC1  4  0.0     
+ 5 P2    3 GLU BB   5  0.0     
+ 6 Q5n   3 GLU SC1  6 -1.0     
+ 7 P2    4 ILE BB   7  0.0     
+ 8 SC2   4 ILE SC1  8  0.0     
+ 9 P2    5 GLN BB   9  0.0     
+10 P5    5 GLN SC1 10  0.0     
+11 P2    6 GLN BB  11  0.0     
+12 P5    6 GLN SC1 12  0.0     
+13 P2    7 ARG BB  13  0.0     
+14 SC3   7 ARG SC1 14  0.0     
+15 SQ3p  7 ARG SC2 15  1.0     
+16 P2    8 THR BB  16  0.0     
+17 SP1   8 THR SC1 17  0.0     
+18 P2    9 SER BB  18  0.0     
+19 TP1   9 SER SC1 19  0.0     
+20 P2   10 ASP BB  20  0.0     
+21 SQ5n 10 ASP SC1 21 -1.0     
+22 P2   11 MET BB  22  0.0     
+23 C6   11 MET SC1 23  0.0     
+24 P2   12 LEU BB  24  0.0     
+25 SC2  12 LEU SC1 25  0.0     
+26 P2   13 THR BB  26  0.0     
+27 SP1  13 THR SC1 27  0.0     
+28 SP2  14 ALA BB  28  0.0     
+29 TC3  14 ALA SC1 29  0.0     
+30 SP2  15 ALA BB  30  0.0     
+31 TC3  15 ALA SC1 31  0.0     
+32 P2   16 THR BB  32  0.0     
+33 SP1  16 THR SC1 33  0.0     
+34 P2   17 GLN BB  34  0.0     
+35 P5   17 GLN SC1 35  0.0     
+36 P2   18 LEU BB  36  0.0     
+37 SC2  18 LEU SC1 37  0.0     
+38 SP2  19 VAL BB  38  0.0     
+39 SC3  19 VAL SC1 39  0.0     
+40 P2   20 GLN BB  40  0.0     
+41 P5   20 GLN SC1 41  0.0     
+42 P2   21 ASP BB  42  0.0     
+43 SQ5n 21 ASP SC1 43 -1.0     
+44 P2   22 TRP BB  44  0.0     
+45 TC4  22 TRP SC1 45  0.0 36.0
+46 TN6d 22 TRP SC2 46  0.0 36.0
+47 TC5  22 TRP SC3 47  0.0  0.0
+48 TC5  22 TRP SC4 48  0.0 36.0
+49 TC5  22 TRP SC5 49  0.0 36.0
+50 P2   23 LYS BB  50  0.0     
+51 SC3  23 LYS SC1 51  0.0     
+52 SQ4p 23 LYS SC2 52  1.0     
+53 P2   24 GLN BB  53  0.0     
+54 P5   24 GLN SC1 54  0.0     
+55 SP2  25 VAL BB  55  0.0     
+56 SC3  25 VAL SC1 56  0.0     
+57 P2   26 GLU BB  57  0.0     
+58 Q5n  26 GLU SC1 58 -1.0     
+59 P2   27 THR BB  59  0.0     
+60 SP1  27 THR SC1 60  0.0     
+61 P2   28 GLN BB  61  0.0     
+62 P5   28 GLN SC1 62  0.0     
+63 SP2  29 VAL BB  63  0.0     
+64 SC3  29 VAL SC1 64  0.0     
+65 P2   30 TYR BB  65  0.0     
+66 TC4  30 TYR SC1 66  0.0     
+67 TC5  30 TYR SC2 67  0.0     
+68 TC5  30 TYR SC3 68  0.0     
+69 TN6  30 TYR SC4 69  0.0     
+70 P2   31 THR BB  70  0.0     
+71 SP1  31 THR SC1 71  0.0     
+72 P2   32 GLU BB  72  0.0     
+73 Q5n  32 GLU SC1 73 -1.0     
+74 SP1  33 GLY BB  74  0.0     
+75 Q5   34 THR BB  75   -1     
+76 SP1  34 THR SC1 76  0.0     
+
+[ position_restraints ]
+#ifdef POSRES
+ 1 1 1000 1000 1000
+ 3 1 1000 1000 1000
+ 5 1 1000 1000 1000
+ 7 1 1000 1000 1000
+ 9 1 1000 1000 1000
+11 1 1000 1000 1000
+13 1 1000 1000 1000
+16 1 1000 1000 1000
+18 1 1000 1000 1000
+20 1 1000 1000 1000
+22 1 1000 1000 1000
+24 1 1000 1000 1000
+26 1 1000 1000 1000
+28 1 1000 1000 1000
+30 1 1000 1000 1000
+32 1 1000 1000 1000
+34 1 1000 1000 1000
+36 1 1000 1000 1000
+38 1 1000 1000 1000
+40 1 1000 1000 1000
+42 1 1000 1000 1000
+44 1 1000 1000 1000
+50 1 1000 1000 1000
+53 1 1000 1000 1000
+55 1 1000 1000 1000
+57 1 1000 1000 1000
+59 1 1000 1000 1000
+61 1 1000 1000 1000
+63 1 1000 1000 1000
+65 1 1000 1000 1000
+70 1 1000 1000 1000
+72 1 1000 1000 1000
+74 1 1000 1000 1000
+75 1 1000 1000 1000
+#endif
+
+[ bonds ]
+; Backbone bonds
+ 1  3 1 0.350 4000
+ 3  5 1 0.350 4000
+53 55 1 0.350 4000
+55 57 1 0.350 4000
+57 59 1 0.350 4000
+59 61 1 0.350 4000
+61 63 1 0.350 4000
+63 65 1 0.350 4000
+65 70 1 0.350 4000
+70 72 1 0.350 4000
+72 74 1 0.350 4000
+74 75 1 0.350 4000
+
+; Rubber band
+ 1  7 1 0.63747 700.0
+ 1  9 1 0.89988 700.0
+ 3  9 1 0.68236 700.0
+ 3 11 1 0.82089 700.0
+ 5 11 1 0.54962 700.0
+ 5 13 1 0.63345 700.0
+ 5 16 1 0.84161 700.0
+ 7 13 1 0.45729 700.0
+ 7 16 1 0.58975 700.0
+ 7 18 1 0.83083 700.0
+ 9 16 1 0.44773 700.0
+ 9 18 1 0.59709 700.0
+ 9 20 1 0.82636 700.0
+11 18 1 0.51116 700.0
+11 20 1 0.64917 700.0
+11 22 1 0.81722 700.0
+13 20 1 0.56699 700.0
+13 22 1 0.62891 700.0
+13 24 1 0.85616 700.0
+16 22 1 0.4731 700.0
+16 24 1 0.6136 700.0
+16 26 1 0.84656 700.0
+18 24 1 0.49246 700.0
+18 26 1 0.64845 700.0
+18 28 1 0.8548 700.0
+20 26 1 0.49681 700.0
+20 28 1 0.63616 700.0
+20 30 1 0.8261 700.0
+22 28 1 0.50728 700.0
+22 30 1 0.60779 700.0
+22 32 1 0.83109 700.0
+24 30 1 0.48815 700.0
+24 32 1 0.61151 700.0
+24 34 1 0.82307 700.0
+26 32 1 0.51264 700.0
+26 34 1 0.64072 700.0
+26 36 1 0.85204 700.0
+28 34 1 0.50111 700.0
+28 36 1 0.62707 700.0
+28 38 1 0.872 700.0
+30 36 1 0.47634 700.0
+30 38 1 0.6399 700.0
+30 40 1 0.86086 700.0
+32 38 1 0.56777 700.0
+32 40 1 0.68547 700.0
+32 42 1 0.86982 700.0
+34 40 1 0.56462 700.0
+34 42 1 0.65585 700.0
+34 44 1 0.86898 700.0
+36 42 1 0.51711 700.0
+36 44 1 0.64215 700.0
+36 50 1 0.84214 700.0
+38 44 1 0.48218 700.0
+38 50 1 0.59812 700.0
+38 53 1 0.79774 700.0
+40 50 1 0.45181 700.0
+40 53 1 0.56837 700.0
+42 53 1 0.4922 700.0
+42 55 1 0.84069 700.0
+44 55 1 0.78111 700.0
+
+; Side chain bonds
+ 1  2 1 0.400 5000
+ 3  4 1 0.400 5000
+ 5  6 1 0.400 5000
+ 9 10 1 0.400 5000
+11 12 1 0.400 5000
+13 14 1 0.330 5000
+14 15 1 0.380 5000
+18 19 1 0.287 7500
+20 21 1 0.352 7500
+22 23 1 0.40 2500
+24 25 1 0.363 7500
+34 35 1 0.400 5000
+36 37 1 0.363 7500
+40 41 1 0.400 5000
+42 43 1 0.352 7500
+44 45 1 0.315 5000
+50 51 1 0.330 5000
+51 52 1 0.360 5000
+53 54 1 0.400 5000
+57 58 1 0.400 5000
+61 62 1 0.400 5000
+65 66 1 0.325 5000
+72 73 1 0.400 5000
+
+#ifdef FLEXIBLE
+; Side chain bonds
+ 7  8 1 0.341 1000000
+16 17 1 0.305 1000000
+26 27 1 0.305 1000000
+28 29 1 0.270 1000000
+30 31 1 0.270 1000000
+32 33 1 0.305 1000000
+38 39 1 0.292 1000000
+45 46 1 0.335 1000000
+46 49 1 0.412 1000000
+48 49 1 0.293 1000000
+45 48 1 0.404 1000000
+46 48 1 0.470 1000000
+55 56 1 0.292 1000000
+59 60 1 0.305 1000000
+63 64 1 0.292 1000000
+66 67 1 0.300 1000000
+66 68 1 0.300 1000000
+67 69 1 0.285 1000000
+68 69 1 0.285 1000000
+67 68 1 0.300 1000000
+70 71 1 0.305 1000000
+75 76 1 0.305 1000000
+#endif
+
+[ constraints ]
+; Backbone bonds
+ 5  7 1 0.33
+ 7  9 1 0.310
+ 9 11 1 0.310
+11 13 1 0.310
+13 16 1 0.310
+16 18 1 0.310
+18 20 1 0.310
+20 22 1 0.310
+22 24 1 0.310
+24 26 1 0.310
+26 28 1 0.310
+28 30 1 0.310
+30 32 1 0.310
+32 34 1 0.310
+34 36 1 0.310
+36 38 1 0.310
+38 40 1 0.310
+40 42 1 0.310
+42 44 1 0.310
+44 50 1 0.310
+50 53 1 0.33
+
+#ifndef FLEXIBLE
+; Side chain bonds
+ 7  8 1 0.341
+16 17 1 0.305
+26 27 1 0.305
+28 29 1 0.270
+30 31 1 0.270
+32 33 1 0.305
+38 39 1 0.292
+45 46 1 0.335
+46 49 1 0.412
+48 49 1 0.293
+45 48 1 0.404
+46 48 1 0.470
+55 56 1 0.292
+59 60 1 0.305
+63 64 1 0.292
+66 67 1 0.300
+66 68 1 0.300
+67 69 1 0.285
+68 69 1 0.285
+67 68 1 0.300
+70 71 1 0.305
+75 76 1 0.305
+#endif
+
+[ angles ]
+; BBB angles
+ 3  5  7 10 100 20
+ 5  7  9 10 100 20
+ 7  9 11 2 96 700
+ 9 11 13 2 96 700
+11 13 16 2 96 700
+13 16 18 2 96 700
+16 18 20 2 96 700
+18 20 22 2 96 700
+20 22 24 2 96 700
+22 24 26 2 96 700
+24 26 28 2 96 700
+26 28 30 2 96 700
+28 30 32 2 96 700
+30 32 34 2 96 700
+32 34 36 2 96 700
+34 36 38 2 96 700
+36 38 40 2 96 700
+38 40 42 2 96 700
+40 42 44 2 96 700
+42 44 50 2 96 700
+44 50 53 10 127 20
+50 53 55 10 127 20
+ 1  3  5 10 100 20
+53 55 57 10 127 20
+55 57 59 10 127 20
+57 59 61 10 127 20
+59 61 63 10 127 20
+61 63 65 10 127 20
+63 65 70 10 127 20
+65 70 72 10 127 20
+70 72 74 10 127 20
+72 74 75 10 127 20
+
+; BBS angles regular martini
+ 1  3  4 2 100 25
+ 3  5  6 2 100 25
+ 5  7  8 2 100 25
+ 7  9 10 2 100 25
+ 9 11 12 2 100 25
+11 13 14 2 100 25
+13 16 17 2 100 25
+16 18 19 2 100 25
+18 20 21 2 100 25
+20 22 23 2 100 25
+22 24 25 2 100 25
+24 26 27 2 100 25
+26 28 29 2 100 25
+28 30 31 2 100 25
+30 32 33 2 100 25
+32 34 35 2 100 25
+34 36 37 2 100 25
+36 38 39 2 100 25
+38 40 41 2 100 25
+40 42 43 2 100 25
+42 44 45 2 100 25
+44 50 51 2 100 25
+50 53 54 2 100 25
+53 55 56 2 100 25
+55 57 58 2 100 25
+57 59 60 2 100 25
+59 61 62 2 100 25
+61 63 64 2 100 25
+63 65 66 2 100 25
+65 70 71 2 100 25
+70 72 73 2 100 25
+74 75 76 2 100 25
+
+; First SBB regular martini
+ 2  1  3 2 100 25
+
+; SC-BB-BB and BB-BB-SC scFix
+ 2  1  3 10 100 15 ; SC-BB-BB
+ 4  3  5 10 100 15 ; SC-BB-BB
+ 6  5  7 10 100 15 ; SC-BB-BB
+ 8  7  9 10 100 15 ; SC-BB-BB
+10  9 11 10 100 15 ; SC-BB-BB
+12 11 13 10 100 15 ; SC-BB-BB
+14 13 16 10 100 15 ; SC-BB-BB
+17 16 18 10 100 15 ; SC-BB-BB
+19 18 20 10 100 15 ; SC-BB-BB
+21 20 22 10 100 15 ; SC-BB-BB
+23 22 24 10 100 15 ; SC-BB-BB
+25 24 26 10 100 15 ; SC-BB-BB
+27 26 28 10 100 15 ; SC-BB-BB
+29 28 30 10 100 15 ; SC-BB-BB
+31 30 32 10 100 15 ; SC-BB-BB
+33 32 34 10 100 15 ; SC-BB-BB
+35 34 36 10 100 15 ; SC-BB-BB
+37 36 38 10 100 15 ; SC-BB-BB
+39 38 40 10 100 15 ; SC-BB-BB
+41 40 42 10 100 15 ; SC-BB-BB
+43 42 44 10 100 15 ; SC-BB-BB
+45 44 50 10 100 15 ; SC-BB-BB
+51 50 53 10 100 15 ; SC-BB-BB
+54 53 55 10 100 15 ; SC-BB-BB
+56 55 57 10 100 15 ; SC-BB-BB
+58 57 59 10 100 15 ; SC-BB-BB
+60 59 61 10 100 15 ; SC-BB-BB
+62 61 63 10 100 15 ; SC-BB-BB
+64 63 65 10 100 15 ; SC-BB-BB
+66 65 70 10 100 15 ; SC-BB-BB
+71 70 72 10 100 15 ; SC-BB-BB
+73 72 74 10 100 15 ; SC-BB-BB
+ 1  3  4 10 100 15 ; BB-BB-SC
+ 3  5  6 10 100 15 ; BB-BB-SC
+ 5  7  8 10 100 15 ; BB-BB-SC
+ 7  9 10 10 100 15 ; BB-BB-SC
+ 9 11 12 10 100 15 ; BB-BB-SC
+11 13 14 10 100 15 ; BB-BB-SC
+13 16 17 10 100 15 ; BB-BB-SC
+16 18 19 10 100 15 ; BB-BB-SC
+18 20 21 10 100 15 ; BB-BB-SC
+20 22 23 10 100 15 ; BB-BB-SC
+22 24 25 10 100 15 ; BB-BB-SC
+24 26 27 10 100 15 ; BB-BB-SC
+26 28 29 10 100 15 ; BB-BB-SC
+28 30 31 10 100 15 ; BB-BB-SC
+30 32 33 10 100 15 ; BB-BB-SC
+32 34 35 10 100 15 ; BB-BB-SC
+34 36 37 10 100 15 ; BB-BB-SC
+36 38 39 10 100 15 ; BB-BB-SC
+38 40 41 10 100 15 ; BB-BB-SC
+40 42 43 10 100 15 ; BB-BB-SC
+42 44 45 10 100 15 ; BB-BB-SC
+44 50 51 10 100 15 ; BB-BB-SC
+50 53 54 10 100 15 ; BB-BB-SC
+53 55 56 10 100 15 ; BB-BB-SC
+55 57 58 10 100 15 ; BB-BB-SC
+57 59 60 10 100 15 ; BB-BB-SC
+59 61 62 10 100 15 ; BB-BB-SC
+61 63 64 10 100 15 ; BB-BB-SC
+63 65 66 10 100 15 ; BB-BB-SC
+65 70 71 10 100 15 ; BB-BB-SC
+70 72 73 10 100 15 ; BB-BB-SC
+74 75 76 10 100 15 ; BB-BB-SC
+
+; Side chain angles
+13 14 15 2 180.000 25.0
+44 45 46 2 120.000 60.0
+44 45 48 2 130.000 60.0
+50 51 52 2 180.000 25.0
+65 66 67 2 120.000 60.0
+65 66 68 2 120.000 60.0
+
+[ dihedrals ]
+ 7  9 11 13 1 -120 400 1
+ 9 11 13 16 1 -120 400 1
+11 13 16 18 1 -120 400 1
+13 16 18 20 1 -120 400 1
+16 18 20 22 1 -120 400 1
+18 20 22 24 1 -120 400 1
+20 22 24 26 1 -120 400 1
+22 24 26 28 1 -120 400 1
+24 26 28 30 1 -120 400 1
+26 28 30 32 1 -120 400 1
+28 30 32 34 1 -120 400 1
+30 32 34 36 1 -120 400 1
+32 34 36 38 1 -120 400 1
+34 36 38 40 1 -120 400 1
+36 38 40 42 1 -120 400 1
+38 40 42 44 1 -120 400 1
+40 42 44 50 1 -120 400 1
+
+; SC-BB-BB-SC scFix
+ 2  1  3  4 1 -101.1 75 1 ; SC-BB-BB-SC
+ 4  3  5  6 1 -157.8 75 1 ; SC-BB-BB-SC
+ 6  5  7  8 1 -139.6 75 1 ; SC-BB-BB-SC
+ 8  7  9 10 1 -114.6 75 1 ; SC-BB-BB-SC
+10  9 11 12 1 -132.5 75 1 ; SC-BB-BB-SC
+12 11 13 14 1 177.7 75 1 ; SC-BB-BB-SC
+14 13 16 17 1 -97.5 75 1 ; SC-BB-BB-SC
+17 16 18 19 1 -106.3 75 1 ; SC-BB-BB-SC
+19 18 20 21 1 -137.1 75 1 ; SC-BB-BB-SC
+21 20 22 23 1 171.3 75 1 ; SC-BB-BB-SC
+23 22 24 25 1 -113.8 75 1 ; SC-BB-BB-SC
+25 24 26 27 1 -96.7 75 1 ; SC-BB-BB-SC
+27 26 28 29 1 -164.0 75 1 ; SC-BB-BB-SC
+29 28 30 31 1 -135.3 75 1 ; SC-BB-BB-SC
+31 30 32 33 1 -143.3 75 1 ; SC-BB-BB-SC
+33 32 34 35 1 -159.2 75 1 ; SC-BB-BB-SC
+35 34 36 37 1 -113.3 75 1 ; SC-BB-BB-SC
+37 36 38 39 1 -93.6 75 1 ; SC-BB-BB-SC
+39 38 40 41 1 -103.1 75 1 ; SC-BB-BB-SC
+41 40 42 43 1 -160.7 75 1 ; SC-BB-BB-SC
+43 42 44 45 1 172.7 75 1 ; SC-BB-BB-SC
+45 44 50 51 1 -136.8 75 1 ; SC-BB-BB-SC
+51 50 53 54 1 -110.1 75 1 ; SC-BB-BB-SC
+54 53 55 56 1 -42.5 75 1 ; SC-BB-BB-SC
+56 55 57 58 1 76.0 75 1 ; SC-BB-BB-SC
+58 57 59 60 1 50.4 75 1 ; SC-BB-BB-SC
+60 59 61 62 1 99.9 75 1 ; SC-BB-BB-SC
+62 61 63 64 1 10.1 75 1 ; SC-BB-BB-SC
+64 63 65 66 1 -12.7 75 1 ; SC-BB-BB-SC
+66 65 70 71 1 1.2 75 1 ; SC-BB-BB-SC
+71 70 72 73 1 19.8 75 1 ; SC-BB-BB-SC
+72 74 75 76 1 81.7 75 1 ; BB-BB-BB-SC
+73 72 74 75 1 -39.7 75 1 ; SC-BB-BB-BB
+
+[ dihedrals ]
+49 48 46 45 2 180.0 100.0
+69 67 68 66 2 180.0 50.0
+
+[ virtual_sitesn ]
+47 2 49 48 46 45
+
+[ exclusions ]
+44 45 46 47 48 49 
+45 46 47 48 49 
+46 47 48 49 
+47 48 49 
+48 49 
+65 66 67 68 69 
+66 67 68 69 
+67 68 69 
+68 69 
+
