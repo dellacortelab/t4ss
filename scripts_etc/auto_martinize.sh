@@ -72,8 +72,6 @@ for chain in ../orig/*; do
     echo "Calling insane.py"
     python2 ~/fsl_groups/fslg_dellacortelab/compute/t4ss/gitstuff/t4ss/scripts_etc/insane.py -f ${name}_cg.pdb -o system.gro -p system.top -pbc square -d 1 -sol W -salt 0
 
-    echo "Checking if you're paying attention"
-
     echo "Copying molecules"
     echo ${name}
     # Get rid of martini.itp include and protein line
