@@ -1,0 +1,10 @@
+run_0: 111 ns, distance. Last 9 steps, some LINCS warnings.
+run_1: 292 ns, LINCS 23K, last 3 steps. Pressure scaling.
+run_2: stalled in equilibration
+run_3: 45 ns, distance. Last 6 steps, some LINCS warnings.
+run_4: 235 ns, distance. Last 8 steps, LINCS warnings.
+run_5: 75 ns, LINCS 15K. Last 3 steps. Note about pressure scaling
+run_6: 217 ns, LINCS 24K. Last 3 steps. Pressure scaling.
+run_7: 54 ns, distance. Last 3 steps, just a couple of LINCS warnings.
+run_8: 366 ns, LINCS 1K. 
+run_9: 0.26 ps, LINCS 1K in equilibration
