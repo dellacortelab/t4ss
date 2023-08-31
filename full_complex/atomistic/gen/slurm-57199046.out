@@ -1,0 +1,559 @@
+Start Minimization
+                      :-) GROMACS - gmx grompp, 2019.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2018, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2019.4
+Executable:   /apps/gromacs/2019.4-m9g/gcc-8_cuda-10.1_mkl-2019_openmpi-3.1/bin/gmx
+Data prefix:  /apps/gromacs/2019.4-m9g/gcc-8_cuda-10.1_mkl-2019_openmpi-3.1
+Working dir:  /nobackup/scratch/grp/fslg_dellacortelab/t4ss/gitstuff/t4ss/todo/atomistic/gen
+Command line:
+  gmx grompp -f minimization.mdp -c system.gro -p system.top -o minimization.tpr
+
+Setting the LD random seed to 195675239
+Generated 2145 of the 2145 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 0.5
+Generated 2145 of the 2145 1-4 parameter combinations
+Excluding 3 bonded neighbours molecule type 'Protein'
+Excluding 3 bonded neighbours molecule type 'Protein2'
+Excluding 3 bonded neighbours molecule type 'Protein3'
+Excluding 3 bonded neighbours molecule type 'Protein4'
+Excluding 3 bonded neighbours molecule type 'Protein5'
+Excluding 3 bonded neighbours molecule type 'Protein6'
+Excluding 3 bonded neighbours molecule type 'Protein7'
+Excluding 3 bonded neighbours molecule type 'Protein8'
+Excluding 3 bonded neighbours molecule type 'Protein9'
+Excluding 3 bonded neighbours molecule type 'Protein10'
+Excluding 3 bonded neighbours molecule type 'Protein11'
+Excluding 3 bonded neighbours molecule type 'Protein12'
+Excluding 3 bonded neighbours molecule type 'Protein13'
+Excluding 3 bonded neighbours molecule type 'Protein14'
+Excluding 3 bonded neighbours molecule type 'Protein15'
+Excluding 3 bonded neighbours molecule type 'Protein16'
+Excluding 3 bonded neighbours molecule type 'Protein17'
+Excluding 3 bonded neighbours molecule type 'Protein18'
+Excluding 3 bonded neighbours molecule type 'Protein19'
+Excluding 3 bonded neighbours molecule type 'Protein20'
+Excluding 3 bonded neighbours molecule type 'Protein21'
+Excluding 3 bonded neighbours molecule type 'Protein22'
+Excluding 3 bonded neighbours molecule type 'Protein23'
+Excluding 3 bonded neighbours molecule type 'Protein24'
+Excluding 3 bonded neighbours molecule type 'Protein25'
+Excluding 3 bonded neighbours molecule type 'Protein26'
+Excluding 3 bonded neighbours molecule type 'Protein27'
+Excluding 3 bonded neighbours molecule type 'Protein28'
+Excluding 3 bonded neighbours molecule type 'Protein29'
+Excluding 3 bonded neighbours molecule type 'Protein30'
+Excluding 3 bonded neighbours molecule type 'Protein31'
+Excluding 3 bonded neighbours molecule type 'Protein32'
+Excluding 3 bonded neighbours molecule type 'Protein33'
+Excluding 3 bonded neighbours molecule type 'Protein34'
+Excluding 3 bonded neighbours molecule type 'Protein35'
+Excluding 3 bonded neighbours molecule type 'Protein36'
+Excluding 3 bonded neighbours molecule type 'Protein37'
+Excluding 3 bonded neighbours molecule type 'Protein38'
+Excluding 3 bonded neighbours molecule type 'Protein39'
+Excluding 3 bonded neighbours molecule type 'Protein40'
+Excluding 3 bonded neighbours molecule type 'Protein41'
+Excluding 3 bonded neighbours molecule type 'Protein42'
+Excluding 3 bonded neighbours molecule type 'Protein43'
+Excluding 3 bonded neighbours molecule type 'Protein44'
+Excluding 3 bonded neighbours molecule type 'Protein45'
+Excluding 3 bonded neighbours molecule type 'Protein46'
+Excluding 3 bonded neighbours molecule type 'Protein47'
+Excluding 3 bonded neighbours molecule type 'Protein48'
+Excluding 3 bonded neighbours molecule type 'Protein49'
+Excluding 3 bonded neighbours molecule type 'Protein50'
+Excluding 3 bonded neighbours molecule type 'Protein51'
+Excluding 3 bonded neighbours molecule type 'Protein52'
+Excluding 3 bonded neighbours molecule type 'Protein53'
+Excluding 3 bonded neighbours molecule type 'Protein54'
+Excluding 3 bonded neighbours molecule type 'Protein55'
+Excluding 3 bonded neighbours molecule type 'Protein56'
+Excluding 3 bonded neighbours molecule type 'Protein57'
+Excluding 3 bonded neighbours molecule type 'Protein58'
+Excluding 3 bonded neighbours molecule type 'Protein59'
+Excluding 3 bonded neighbours molecule type 'Protein60'
+Excluding 3 bonded neighbours molecule type 'Protein61'
+Excluding 3 bonded neighbours molecule type 'Protein62'
+Excluding 3 bonded neighbours molecule type 'Protein63'
+Excluding 3 bonded neighbours molecule type 'Protein64'
+Excluding 3 bonded neighbours molecule type 'Protein65'
+Excluding 3 bonded neighbours molecule type 'Protein66'
+Excluding 3 bonded neighbours molecule type 'Protein67'
+Excluding 3 bonded neighbours molecule type 'Protein68'
+Excluding 3 bonded neighbours molecule type 'Protein69'
+Excluding 3 bonded neighbours molecule type 'Protein70'
+Excluding 3 bonded neighbours molecule type 'Protein71'
+Excluding 3 bonded neighbours molecule type 'Protein72'
+Excluding 3 bonded neighbours molecule type 'Protein73'
+Excluding 3 bonded neighbours molecule type 'Protein74'
+Excluding 3 bonded neighbours molecule type 'Protein75'
+Excluding 3 bonded neighbours molecule type 'Protein76'
+Excluding 3 bonded neighbours molecule type 'Protein77'
+Excluding 3 bonded neighbours molecule type 'Protein78'
+Excluding 3 bonded neighbours molecule type 'Protein79'
+Excluding 3 bonded neighbours molecule type 'Protein80'
+Excluding 3 bonded neighbours molecule type 'Protein81'
+Excluding 3 bonded neighbours molecule type 'Protein82'
+Excluding 3 bonded neighbours molecule type 'Protein83'
+Excluding 3 bonded neighbours molecule type 'Protein84'
+Excluding 3 bonded neighbours molecule type 'Protein85'
+Excluding 3 bonded neighbours molecule type 'Protein86'
+Excluding 3 bonded neighbours molecule type 'Protein87'
+Excluding 3 bonded neighbours molecule type 'Protein88'
+Excluding 3 bonded neighbours molecule type 'Protein89'
+Excluding 3 bonded neighbours molecule type 'Protein90'
+Excluding 3 bonded neighbours molecule type 'Protein91'
+Excluding 3 bonded neighbours molecule type 'Protein92'
+Excluding 3 bonded neighbours molecule type 'Protein93'
+Excluding 3 bonded neighbours molecule type 'Protein94'
+Excluding 3 bonded neighbours molecule type 'Protein95'
+Excluding 3 bonded neighbours molecule type 'Protein96'
+Excluding 3 bonded neighbours molecule type 'Protein97'
+Excluding 3 bonded neighbours molecule type 'Protein98'
+Excluding 3 bonded neighbours molecule type 'Protein99'
+Excluding 3 bonded neighbours molecule type 'Protein100'
+Excluding 3 bonded neighbours molecule type 'Protein101'
+Excluding 3 bonded neighbours molecule type 'Protein102'
+Excluding 3 bonded neighbours molecule type 'Protein103'
+Excluding 3 bonded neighbours molecule type 'Protein104'
+Excluding 3 bonded neighbours molecule type 'Protein105'
+Excluding 3 bonded neighbours molecule type 'Protein106'
+Excluding 3 bonded neighbours molecule type 'Protein107'
+Excluding 3 bonded neighbours molecule type 'Protein108'
+Excluding 3 bonded neighbours molecule type 'Protein109'
+Excluding 3 bonded neighbours molecule type 'Protein110'
+Excluding 3 bonded neighbours molecule type 'Protein111'
+Excluding 3 bonded neighbours molecule type 'Protein112'
+Excluding 3 bonded neighbours molecule type 'Protein113'
+Excluding 3 bonded neighbours molecule type 'Protein114'
+Excluding 3 bonded neighbours molecule type 'Protein115'
+Excluding 3 bonded neighbours molecule type 'Protein116'
+Excluding 3 bonded neighbours molecule type 'Protein117'
+Excluding 3 bonded neighbours molecule type 'Protein118'
+Excluding 3 bonded neighbours molecule type 'Protein119'
+Excluding 3 bonded neighbours molecule type 'Protein120'
+Excluding 3 bonded neighbours molecule type 'Protein121'
+Excluding 3 bonded neighbours molecule type 'Protein122'
+Excluding 3 bonded neighbours molecule type 'Protein123'
+Excluding 3 bonded neighbours molecule type 'Protein124'
+Excluding 3 bonded neighbours molecule type 'Protein125'
+Excluding 3 bonded neighbours molecule type 'Protein126'
+Excluding 3 bonded neighbours molecule type 'Protein127'
+Excluding 3 bonded neighbours molecule type 'Protein128'
+Excluding 3 bonded neighbours molecule type 'Protein129'
+Excluding 3 bonded neighbours molecule type 'Protein130'
+Excluding 3 bonded neighbours molecule type 'Protein131'
+Excluding 3 bonded neighbours molecule type 'Protein132'
+Excluding 3 bonded neighbours molecule type 'Protein133'
+Excluding 3 bonded neighbours molecule type 'Protein134'
+Excluding 3 bonded neighbours molecule type 'Protein135'
+Excluding 3 bonded neighbours molecule type 'Protein136'
+Excluding 3 bonded neighbours molecule type 'Protein137'
+Excluding 3 bonded neighbours molecule type 'Protein138'
+Excluding 3 bonded neighbours molecule type 'Protein139'
+Excluding 3 bonded neighbours molecule type 'Protein140'
+Excluding 3 bonded neighbours molecule type 'Protein141'
+Excluding 3 bonded neighbours molecule type 'Protein142'
+Excluding 3 bonded neighbours molecule type 'Protein143'
+Excluding 3 bonded neighbours molecule type 'Protein144'
+Excluding 3 bonded neighbours molecule type 'Protein145'
+Excluding 3 bonded neighbours molecule type 'Protein146'
+Excluding 3 bonded neighbours molecule type 'Protein147'
+Excluding 3 bonded neighbours molecule type 'Protein148'
+Excluding 3 bonded neighbours molecule type 'Protein149'
+Excluding 3 bonded neighbours molecule type 'Protein150'
+Excluding 3 bonded neighbours molecule type 'Protein151'
+Excluding 3 bonded neighbours molecule type 'Protein152'
+Excluding 3 bonded neighbours molecule type 'Protein153'
+Excluding 3 bonded neighbours molecule type 'Protein154'
+Excluding 3 bonded neighbours molecule type 'Protein155'
+Excluding 3 bonded neighbours molecule type 'Protein156'
+Excluding 3 bonded neighbours molecule type 'Protein157'
+Excluding 3 bonded neighbours molecule type 'Protein158'
+Excluding 3 bonded neighbours molecule type 'Protein159'
+Excluding 3 bonded neighbours molecule type 'Protein160'
+Excluding 3 bonded neighbours molecule type 'Protein161'
+Excluding 3 bonded neighbours molecule type 'Protein162'
+Excluding 3 bonded neighbours molecule type 'Protein163'
+Excluding 3 bonded neighbours molecule type 'Protein164'
+Excluding 3 bonded neighbours molecule type 'Protein165'
+Excluding 3 bonded neighbours molecule type 'Protein166'
+Excluding 3 bonded neighbours molecule type 'Protein167'
+Excluding 3 bonded neighbours molecule type 'Protein168'
+Excluding 3 bonded neighbours molecule type 'Protein169'
+Excluding 3 bonded neighbours molecule type 'Protein170'
+Excluding 3 bonded neighbours molecule type 'Protein171'
+Excluding 3 bonded neighbours molecule type 'Protein172'
+Excluding 3 bonded neighbours molecule type 'Protein173'
+Excluding 3 bonded neighbours molecule type 'Protein174'
+Excluding 3 bonded neighbours molecule type 'Protein175'
+Excluding 3 bonded neighbours molecule type 'Protein176'
+Excluding 3 bonded neighbours molecule type 'Protein177'
+Excluding 3 bonded neighbours molecule type 'Protein178'
+Excluding 3 bonded neighbours molecule type 'Protein179'
+Excluding 3 bonded neighbours molecule type 'Protein180'
+Excluding 3 bonded neighbours molecule type 'Protein181'
+Excluding 3 bonded neighbours molecule type 'Protein182'
+Excluding 3 bonded neighbours molecule type 'Protein183'
+Excluding 3 bonded neighbours molecule type 'Protein184'
+Excluding 3 bonded neighbours molecule type 'Protein185'
+Excluding 3 bonded neighbours molecule type 'Protein186'
+Excluding 3 bonded neighbours molecule type 'Protein187'
+Excluding 3 bonded neighbours molecule type 'Protein188'
+Excluding 3 bonded neighbours molecule type 'Protein189'
+Excluding 3 bonded neighbours molecule type 'Protein190'
+Excluding 3 bonded neighbours molecule type 'Protein191'
+Excluding 3 bonded neighbours molecule type 'Protein192'
+Excluding 3 bonded neighbours molecule type 'Protein193'
+Excluding 3 bonded neighbours molecule type 'Protein194'
+Excluding 3 bonded neighbours molecule type 'Protein195'
+Excluding 3 bonded neighbours molecule type 'Protein196'
+Excluding 3 bonded neighbours molecule type 'Protein197'
+Excluding 3 bonded neighbours molecule type 'Protein198'
+Excluding 3 bonded neighbours molecule type 'Protein199'
+Excluding 3 bonded neighbours molecule type 'Protein200'
+Excluding 3 bonded neighbours molecule type 'Protein201'
+Excluding 3 bonded neighbours molecule type 'Protein202'
+Excluding 3 bonded neighbours molecule type 'Protein203'
+Excluding 3 bonded neighbours molecule type 'Protein204'
+Excluding 3 bonded neighbours molecule type 'Protein205'
+Excluding 3 bonded neighbours molecule type 'Protein206'
+Excluding 3 bonded neighbours molecule type 'Protein207'
+Excluding 3 bonded neighbours molecule type 'Protein208'
+Excluding 3 bonded neighbours molecule type 'Protein209'
+Excluding 3 bonded neighbours molecule type 'Protein210'
+Excluding 3 bonded neighbours molecule type 'Protein211'
+Excluding 3 bonded neighbours molecule type 'Protein212'
+Excluding 3 bonded neighbours molecule type 'Protein213'
+Excluding 3 bonded neighbours molecule type 'Protein214'
+Excluding 3 bonded neighbours molecule type 'Protein215'
+Excluding 3 bonded neighbours molecule type 'Protein216'
+Excluding 3 bonded neighbours molecule type 'Protein217'
+Excluding 3 bonded neighbours molecule type 'Protein218'
+Excluding 3 bonded neighbours molecule type 'Protein219'
+Excluding 3 bonded neighbours molecule type 'Protein220'
+Excluding 3 bonded neighbours molecule type 'Protein221'
+Excluding 3 bonded neighbours molecule type 'Protein222'
+Excluding 3 bonded neighbours molecule type 'Protein223'
+Excluding 3 bonded neighbours molecule type 'Protein224'
+Excluding 3 bonded neighbours molecule type 'Protein225'
+Excluding 3 bonded neighbours molecule type 'Protein226'
+Excluding 3 bonded neighbours molecule type 'Protein227'
+Excluding 3 bonded neighbours molecule type 'Protein228'
+Excluding 3 bonded neighbours molecule type 'Protein229'
+Excluding 3 bonded neighbours molecule type 'Protein230'
+Excluding 3 bonded neighbours molecule type 'Protein231'
+Excluding 3 bonded neighbours molecule type 'Protein232'
+Excluding 3 bonded neighbours molecule type 'Protein233'
+
+NOTE 1 [file system.top, line 509]:
+  System has non-zero total charge: 271.000000
+  Total charge should normally be an integer. See
+  http://www.gromacs.org/Documentation/Floating_Point_Arithmetic
+  for discussion on how close it should be to an integer.
+  
+
+
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group rest is 2397435.00
+
+There was 1 note
+
+Back Off! I just backed up minimization.tpr to ./#minimization.tpr.1#
+
+GROMACS reminds you: "You Can Be Too Early, You Can Be Too Late and You Can Be On Time" (J. Cruijff)
+
+Analysing residue names:
+There are: 50904    Protein residues
+Analysing Protein...
+This run will generate roughly 61 Mb of data
+                      :-) GROMACS - gmx mdrun, 2019.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2018, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2019.4
+Executable:   /apps/gromacs/2019.4-m9g/gcc-8_cuda-10.1_mkl-2019_openmpi-3.1/bin/gmx
+Data prefix:  /apps/gromacs/2019.4-m9g/gcc-8_cuda-10.1_mkl-2019_openmpi-3.1
+Working dir:  /nobackup/scratch/grp/fslg_dellacortelab/t4ss/gitstuff/t4ss/todo/atomistic/gen
+Command line:
+  gmx mdrun -deffnm minimization -v -ntmpi 1
+
+
+Back Off! I just backed up minimization.log to ./#minimization.log.1#
+Reading file minimization.tpr, VERSION 2019.4 (single precision)
+Using 1 MPI thread
+Using 12 OpenMP threads 
+
+1 GPU selected for this run.
+Mapping of GPU IDs to the 1 GPU task in the 1 rank on this node:
+  PP:0
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+
+Back Off! I just backed up minimization.trr to ./#minimization.trr.1#
+
+Back Off! I just backed up minimization.edr to ./#minimization.edr.1#
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+01
+   Number of steps    =         1000
+/var/spool/slurmd/job57199046/slurm_script: line 21:  9143 Segmentation fault      (core dumped) gmx mdrun -deffnm minimization -v -ntmpi 1
+Start Equilibration
+                      :-) GROMACS - gmx grompp, 2019.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2018, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2019.4
+Executable:   /apps/gromacs/2019.4-m9g/gcc-8_cuda-10.1_mkl-2019_openmpi-3.1/bin/gmx
+Data prefix:  /apps/gromacs/2019.4-m9g/gcc-8_cuda-10.1_mkl-2019_openmpi-3.1
+Working dir:  /nobackup/scratch/grp/fslg_dellacortelab/t4ss/gitstuff/t4ss/todo/atomistic/gen
+Command line:
+  gmx grompp -f equilibration.mdp -c minimization.gro -p system.top -o equilibration.tpr -r system.gro -n index.ndx
+
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2019.4
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+Function:    void gmx::CommandLineParser::parse(int*, char**)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -c
+    File 'minimization.gro' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+                      :-) GROMACS - gmx mdrun, 2019.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2018, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2019.4
+Executable:   /apps/gromacs/2019.4-m9g/gcc-8_cuda-10.1_mkl-2019_openmpi-3.1/bin/gmx
+Data prefix:  /apps/gromacs/2019.4-m9g/gcc-8_cuda-10.1_mkl-2019_openmpi-3.1
+Working dir:  /nobackup/scratch/grp/fslg_dellacortelab/t4ss/gitstuff/t4ss/todo/atomistic/gen
+Command line:
+  gmx mdrun -deffnm equilibration -v -mn index.ndx -ntmpi 1
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2019.4
+Source file: src/gromacs/options/options.cpp (line 190)
+Function:    void gmx::internal::OptionSectionImpl::finish()
+
+Error in user input:
+Invalid input values
+  In option s
+    Required option was not provided, and the default file 'topol' does not
+    exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .tpr
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+Start Production
+                      :-) GROMACS - gmx grompp, 2019.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2018, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2019.4
+Executable:   /apps/gromacs/2019.4-m9g/gcc-8_cuda-10.1_mkl-2019_openmpi-3.1/bin/gmx
+Data prefix:  /apps/gromacs/2019.4-m9g/gcc-8_cuda-10.1_mkl-2019_openmpi-3.1
+Working dir:  /nobackup/scratch/grp/fslg_dellacortelab/t4ss/gitstuff/t4ss/todo/atomistic/gen
+Command line:
+  gmx grompp -f dynamic.mdp -c equilibration.gro -p system.top -o dynamic.tpr -r system.gro -n index.ndx
+
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2019.4
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+Function:    void gmx::CommandLineParser::parse(int*, char**)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -c
+    File 'equilibration.gro' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+                      :-) GROMACS - gmx mdrun, 2019.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2018, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2019.4
+Executable:   /apps/gromacs/2019.4-m9g/gcc-8_cuda-10.1_mkl-2019_openmpi-3.1/bin/gmx
+Data prefix:  /apps/gromacs/2019.4-m9g/gcc-8_cuda-10.1_mkl-2019_openmpi-3.1
+Working dir:  /nobackup/scratch/grp/fslg_dellacortelab/t4ss/gitstuff/t4ss/todo/atomistic/gen
+Command line:
+  gmx mdrun -deffnm dynamic -v -mn index.ndx -ntmpi 1
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2019.4
+Source file: src/gromacs/options/options.cpp (line 190)
+Function:    void gmx::internal::OptionSectionImpl::finish()
+
+Error in user input:
+Invalid input values
+  In option s
+    Required option was not provided, and the default file 'topol' does not
+    exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .tpr
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------

@@ -1,0 +1,3316 @@
+log started: Fri May 26 15:50:02 2023
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the ff14SB force field
+>> # ----- NOTE: this is designed for PDB format 3!
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "H"   "H" "sp3" }
+>> 	{ "HO"  "H" "sp3" }
+>> 	{ "HS"  "H" "sp3" }
+>> 	{ "H1"  "H" "sp3" }
+>> 	{ "H2"  "H" "sp3" }
+>> 	{ "H3"  "H" "sp3" }
+>> 	{ "H4"  "H" "sp3" }
+>> 	{ "H5"  "H" "sp3" }
+>> 	{ "HW"  "H" "sp3" }
+>> 	{ "HC"  "H" "sp3" }
+>> 	{ "HA"  "H" "sp3" }
+>> 	{ "HP"  "H" "sp3" }
+>> 	{ "HZ"  "H" "sp3" }
+>> 	{ "OH"  "O" "sp3" }
+>> 	{ "OS"  "O" "sp3" }
+>> 	{ "O"   "O" "sp2" }
+>> 	{ "O2"  "O" "sp2" }
+>> 	{ "OP"  "O" "sp2" }
+>> 	{ "OW"  "O" "sp3" }
+>> 	{ "CT"  "C" "sp3" }
+>> 	{ "CX"  "C" "sp3" }
+>> 	{ "C8"  "C" "sp3" }
+>> 	{ "2C"  "C" "sp3" }
+>> 	{ "3C"  "C" "sp3" }
+>> 	{ "CH"  "C" "sp3" }
+>> 	{ "CS"  "C" "sp2" }
+>> 	{ "C"   "C" "sp2" }
+>> 	{ "CO"   "C" "sp2" }
+>> 	{ "C*"  "C" "sp2" }
+>> 	{ "CA"  "C" "sp2" }
+>> 	{ "CB"  "C" "sp2" }
+>> 	{ "CC"  "C" "sp2" }
+>> 	{ "CN"  "C" "sp2" }
+>> 	{ "CM"  "C" "sp2" }
+>> 	{ "CK"  "C" "sp2" }
+>> 	{ "CQ"  "C" "sp2" }
+>> 	{ "CD"  "C" "sp2" }
+>> 	{ "C5"  "C" "sp2" }
+>> 	{ "C4"  "C" "sp2" }
+>> 	{ "CP"  "C" "sp2" }
+>> 	{ "CI"  "C" "sp3" }
+>> 	{ "CJ"  "C" "sp2" }
+>> 	{ "CW"  "C" "sp2" }
+>> 	{ "CV"  "C" "sp2" }
+>> 	{ "CR"  "C" "sp2" }
+>> 	{ "CA"  "C" "sp2" }
+>> 	{ "CY"  "C" "sp2" }
+>> 	{ "C0"  "Ca" "sp3" }
+>> 	{ "MG"  "Mg" "sp3" }
+>> 	{ "N"   "N" "sp2" }
+>> 	{ "NA"  "N" "sp2" }
+>> 	{ "N2"  "N" "sp2" }
+>> 	{ "N*"  "N" "sp2" }
+>> 	{ "NP"  "N" "sp2" }
+>> 	{ "NQ"  "N" "sp2" }
+>> 	{ "NB"  "N" "sp2" }
+>> 	{ "NC"  "N" "sp2" }
+>> 	{ "NT"  "N" "sp3" }
+>> 	{ "NY"  "N" "sp2" }
+>> 	{ "N3"  "N" "sp3" }
+>> 	{ "S"   "S" "sp3" }
+>> 	{ "SH"  "S" "sp3" }
+>> 	{ "P"   "P" "sp3" }
+>> 	{ "LP"  ""  "sp3" }
+>> 	{ "EP"  ""  "sp3" }
+>> 	{ "F"   "F" "sp3" }
+>> 	{ "Cl"  "Cl" "sp3" }
+>> 	{ "Br"  "Br" "sp3" }
+>> 	{ "I"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the main parameter set.
+>> #
+>> parm10 = loadamberparams parm10.dat
+Loading parameters: /home/starkb/miniconda3/envs/phosaa2/dat/leap/parm/parm10.dat
+Reading title:
+PARM99 + frcmod.ff99SB + frcmod.parmbsc0 + OL3 for RNA
+>> frcmod14SB = loadamberparams frcmod.ff14SB
+Loading parameters: /home/starkb/miniconda3/envs/phosaa2/dat/leap/parm/frcmod.ff14SB
+Reading force field modification type file (frcmod)
+Reading title:
+ff14SB protein backbone and sidechain parameters
+>> #
+>> #	Load main chain and terminating amino acid libraries
+>> #
+>> loadOff amino12.lib
+Loading library: /home/starkb/miniconda3/envs/phosaa2/dat/leap/lib/amino12.lib
+Loading: ALA
+Loading: ARG
+Loading: ASH
+Loading: ASN
+Loading: ASP
+Loading: CYM
+Loading: CYS
+Loading: CYX
+Loading: GLH
+Loading: GLN
+Loading: GLU
+Loading: GLY
+Loading: HID
+Loading: HIE
+Loading: HIP
+Loading: HYP
+Loading: ILE
+Loading: LEU
+Loading: LYN
+Loading: LYS
+Loading: MET
+Loading: PHE
+Loading: PRO
+Loading: SER
+Loading: THR
+Loading: TRP
+Loading: TYR
+Loading: VAL
+>> loadOff aminoct12.lib
+Loading library: /home/starkb/miniconda3/envs/phosaa2/dat/leap/lib/aminoct12.lib
+Loading: CALA
+Loading: CARG
+Loading: CASN
+Loading: CASP
+Loading: CCYS
+Loading: CCYX
+Loading: CGLN
+Loading: CGLU
+Loading: CGLY
+Loading: CHID
+Loading: CHIE
+Loading: CHIP
+Loading: CHYP
+Loading: CILE
+Loading: CLEU
+Loading: CLYS
+Loading: CMET
+Loading: CPHE
+Loading: CPRO
+Loading: CSER
+Loading: CTHR
+Loading: CTRP
+Loading: CTYR
+Loading: CVAL
+Loading: NHE
+Loading: NME
+>> loadOff aminont12.lib
+Loading library: /home/starkb/miniconda3/envs/phosaa2/dat/leap/lib/aminont12.lib
+Loading: ACE
+Loading: NALA
+Loading: NARG
+Loading: NASN
+Loading: NASP
+Loading: NCYS
+Loading: NCYX
+Loading: NGLN
+Loading: NGLU
+Loading: NGLY
+Loading: NHID
+Loading: NHIE
+Loading: NHIP
+Loading: NILE
+Loading: NLEU
+Loading: NLYS
+Loading: NMET
+Loading: NPHE
+Loading: NPRO
+Loading: NSER
+Loading: NTHR
+Loading: NTRP
+Loading: NTYR
+Loading: NVAL
+>> 
+>> #
+>> #	Define the PDB name map for the amino acids
+>> #
+>> addPdbResMap {
+>>   { 0 "HYP" "HYP" } { 1 "HYP" "CHYP" }
+>>   { 0 "ALA" "NALA" } { 1 "ALA" "CALA" }
+>>   { 0 "ARG" "NARG" } { 1 "ARG" "CARG" }
+>>   { 0 "ASN" "NASN" } { 1 "ASN" "CASN" }
+>>   { 0 "ASP" "NASP" } { 1 "ASP" "CASP" }
+>>   { 0 "CYS" "NCYS" } { 1 "CYS" "CCYS" }
+>>   { 0 "CYX" "NCYX" } { 1 "CYX" "CCYX" }
+>>   { 0 "GLN" "NGLN" } { 1 "GLN" "CGLN" }
+>>   { 0 "GLU" "NGLU" } { 1 "GLU" "CGLU" }
+>>   { 0 "GLY" "NGLY" } { 1 "GLY" "CGLY" }
+>>   { 0 "HID" "NHID" } { 1 "HID" "CHID" }
+>>   { 0 "HIE" "NHIE" } { 1 "HIE" "CHIE" }
+>>   { 0 "HIP" "NHIP" } { 1 "HIP" "CHIP" }
+>>   { 0 "ILE" "NILE" } { 1 "ILE" "CILE" }
+>>   { 0 "LEU" "NLEU" } { 1 "LEU" "CLEU" }
+>>   { 0 "LYS" "NLYS" } { 1 "LYS" "CLYS" }
+>>   { 0 "MET" "NMET" } { 1 "MET" "CMET" }
+>>   { 0 "PHE" "NPHE" } { 1 "PHE" "CPHE" }
+>>   { 0 "PRO" "NPRO" } { 1 "PRO" "CPRO" }
+>>   { 0 "SER" "NSER" } { 1 "SER" "CSER" }
+>>   { 0 "THR" "NTHR" } { 1 "THR" "CTHR" }
+>>   { 0 "TRP" "NTRP" } { 1 "TRP" "CTRP" }
+>>   { 0 "TYR" "NTYR" } { 1 "TYR" "CTYR" }
+>>   { 0 "VAL" "NVAL" } { 1 "VAL" "CVAL" }
+>>   { 0 "HIS" "NHIS" } { 1 "HIS" "CHIS" }
+>> }
+>> 
+>> #
+>> # assume that most often proteins use HIE
+>> #
+>> NHIS = NHIE
+>> HIS = HIE
+>> CHIS = CHIE
+> 
+> source leaprc.water.tip3p
+----- Source: /home/starkb/miniconda3/envs/phosaa2/dat/leap/cmd/leaprc.water.tip3p
+----- Source of /home/starkb/miniconda3/envs/phosaa2/dat/leap/cmd/leaprc.water.tip3p done
+>> #
+>> #       Load water and ions for TIP3P + Li/Merz monovalent ions 
+>> #       + Joung-Chetham monovalent ions
+>> #       + Li/Merz highly charged ions (+2 to +4, 12-6 normal usage set)
+>> #
+>> #       Note: the Li/Merz monovalent set is loaded only to get Tl+,
+>> #          Cu+, Ag+ NH4+, H3O+.  Since we load Joung-Cheatham second,
+>> #          the alkali halide parameters come from the Joung-Cheatham set
+>> #
+>> addAtomTypes {
+>> 	{ "HW"  "H" "sp3" }
+>> 	{ "OW"  "O" "sp3" }
+>> 	{ "F-"   "F" "sp3" }
+>> 	{ "Cl-"  "Cl" "sp3" }
+>> 	{ "Br-"  "Br" "sp3" }
+>> 	{ "I-"   "I"  "sp3" }
+>> 	{ "Li+"  "Li"  "sp3" }
+>> 	{ "Na+"  "Na"  "sp3" }
+>> 	{ "K+"  "K"  "sp3" }
+>> 	{ "Rb+"  "Rb"  "sp3" }
+>> 	{ "Cs+"  "Cs"  "sp3" }
+>> 	{ "Mg+"  "Mg"  "sp3" }
+>>     { "Tl+"  "Tl"  "sp3" }
+>>     { "Cu+"  "Cu"  "sp3" }
+>>     { "Ag+"  "Ag"  "sp3" }
+>>     { "NH4+"  "N"  "sp3" }
+>>     { "H3O+"  "O"  "sp3" }
+>>     { "Be2+" "Be"  "sp3" }
+>>     { "Cu2+" "Cu"  "sp3" }
+>>     { "Ni2+" "Ni"  "sp3" }
+>>     { "Pt2+" "Pt"  "sp3" }
+>>     { "Zn2+" "Zn"  "sp3" }
+>>     { "Co2+" "Co"  "sp3" }
+>>     { "Pd2+" "Pd"  "sp3" }
+>>     { "Ag2+" "Ag"  "sp3" }
+>>     { "Cr2+" "Cr"  "sp3" }
+>>     { "Fe2+" "Fe"  "sp3" }
+>>     { "Mg2+" "Mg"  "sp3" }
+>>     { "V2+"  "V"   "sp3" }
+>>     { "Mn2+" "Mn"  "sp3" }
+>>     { "Hg2+" "Hg"  "sp3" }
+>>     { "Cd2+" "Cd"  "sp3" }
+>>     { "Yb2+" "Yb"  "sp3" }
+>>     { "Ca2+" "Ca"  "sp3" }
+>>     { "Sn2+" "Sn"  "sp3" }
+>>     { "Pb2+" "Pb"  "sp3" }
+>>     { "Eu2+" "Eu"  "sp3" }
+>>     { "Sr2+" "Sr"  "sp3" }
+>>     { "Sm2+" "Sm"  "sp3" }
+>>     { "Ba2+" "Ba"  "sp3" }
+>>     { "Ra2+" "Ra"  "sp3" }
+>>     { "Al3+" "Al"  "sp3" }
+>>     { "Fe3+" "Fe"  "sp3" }
+>>     { "Cr3+" "Cr"  "sp3" }
+>>     { "In3+" "In"  "sp3" }
+>>     { "Tl3+" "Tl"  "sp3" }
+>>     { "Y3+"  "Y"   "sp3" }
+>>     { "La3+" "La"  "sp3" }
+>>     { "Ce3+" "Ce"  "sp3" }
+>>     { "Pr3+" "Pr"  "sp3" }
+>>     { "Nd3+" "Nd"  "sp3" }
+>>     { "Sm3+" "Sm"  "sp3" }
+>>     { "Eu3+" "Eu"  "sp3" }
+>>     { "Gd3+" "Gd"  "sp3" }
+>>     { "Tb3+" "Tb"  "sp3" }
+>>     { "Dy3+" "Dy"  "sp3" }
+>>     { "Er3+" "Er"  "sp3" }
+>>     { "Tm3+" "Tm"  "sp3" }
+>>     { "Lu3+" "Lu"  "sp3" }
+>>     { "Hf4+" "Hf"  "sp3" }
+>>     { "Zr4+" "Zr"  "sp3" }
+>>     { "Ce4+" "Ce"  "sp3" }
+>>     { "U4+"  "U"   "sp3" }
+>>     { "Pu4+" "Pu"  "sp3" }
+>>     { "Th4+" "Th"  "sp3" }
+>> }
+>> loadOff atomic_ions.lib
+Loading library: /home/starkb/miniconda3/envs/phosaa2/dat/leap/lib/atomic_ions.lib
+Loading: AG
+Loading: AL
+Loading: Ag
+Loading: BA
+Loading: BR
+Loading: Be
+Loading: CA
+Loading: CD
+Loading: CE
+Loading: CL
+Loading: CO
+Loading: CR
+Loading: CS
+Loading: CU
+Loading: CU1
+Loading: Ce
+Loading: Cl-
+Loading: Cr
+Loading: Dy
+Loading: EU
+Loading: EU3
+Loading: Er
+Loading: F
+Loading: FE
+Loading: FE2
+Loading: GD3
+Loading: H3O+
+Loading: HE+
+Loading: HG
+Loading: HZ+
+Loading: Hf
+Loading: IN
+Loading: IOD
+Loading: K
+Loading: K+
+Loading: LA
+Loading: LI
+Loading: LU
+Loading: MG
+Loading: MN
+Loading: NA
+Loading: NH4
+Loading: NI
+Loading: Na+
+Loading: Nd
+Loading: PB
+Loading: PD
+Loading: PR
+Loading: PT
+Loading: Pu
+Loading: RB
+Loading: Ra
+Loading: SM
+Loading: SR
+Loading: Sm
+Loading: Sn
+Loading: TB
+Loading: TL
+Loading: Th
+Loading: Tl
+Loading: Tm
+Loading: U4+
+Loading: V2+
+Loading: Y
+Loading: YB2
+Loading: ZN
+Loading: Zr
+>> loadOff solvents.lib
+Loading library: /home/starkb/miniconda3/envs/phosaa2/dat/leap/lib/solvents.lib
+Loading: CHCL3BOX
+Loading: DC4
+Loading: FB3
+Loading: FB3BOX
+Loading: FB4
+Loading: FB4BOX
+Loading: MEOHBOX
+Loading: NMABOX
+Loading: O3P
+Loading: OP3
+Loading: OPC
+Loading: OPC3BOX
+Loading: OPCBOX
+Loading: PL3
+Loading: POL3BOX
+Loading: QSPCFWBOX
+Loading: SPC
+Loading: SPCBOX
+Loading: SPCFWBOX
+Loading: SPF
+Loading: SPG
+Loading: T4E
+Loading: TIP3PBOX
+Loading: TIP3PFBOX
+Loading: TIP4PBOX
+Loading: TIP4PEWBOX
+Loading: TIP5PBOX
+Loading: TP3
+Loading: TP4
+Loading: TP5
+Loading: TPF
+>> HOH = TP3
+>> WAT = TP3
+>> loadAmberParams frcmod.tip3p
+Loading parameters: /home/starkb/miniconda3/envs/phosaa2/dat/leap/parm/frcmod.tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+This is the additional/replacement parameter set for TIP3P water
+>> loadAmberParams frcmod.ions1lm_126_tip3p
+Loading parameters: /home/starkb/miniconda3/envs/phosaa2/dat/leap/parm/frcmod.ions1lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of monovalent ions for TIP3P water model (12-6 normal usage set)
+>> loadAmberParams frcmod.ionsjc_tip3p
+Loading parameters: /home/starkb/miniconda3/envs/phosaa2/dat/leap/parm/frcmod.ionsjc_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Monovalent ion parameters for Ewald and TIP3P water from Joung & Cheatham JPCB (2008)
+>> loadAmberParams frcmod.ions234lm_126_tip3p
+Loading parameters: /home/starkb/miniconda3/envs/phosaa2/dat/leap/parm/frcmod.ions234lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of divalent to tetravalent ions for TIP3P water model (12-6 normal usage set)
+>> 
+> 
+> mol = loadpdb out.pdb
+Loading PDB file: ./out.pdb
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ALA and GLU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLU and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and ILE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ILE and ASP.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASP and LYS.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LYS and ALA.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ALA and PHE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PHE and LYS.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LYS and ASP.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASP and MET.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into MET and THR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into THR and ARG.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ARG and ASN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASN and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and TYR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into TYR and PRO.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PRO and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and ASN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASN and PRO.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PRO and GLU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLU and GLN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLN and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and LYS.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LYS and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and LYS.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LYS and GLN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLN and ILE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ILE and TYR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into TYR and GLU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLU and THR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into THR and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and GLU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLU and TYR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into TYR and ALA.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ALA and LYS.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LYS and ALA.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ALA and THR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into THR and PRO.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PRO and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and THR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into THR and PRO.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PRO and LYS.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LYS and PRO.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PRO and THR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into THR and ALA.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ALA and THR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into THR and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and GLN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLN and PHE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PHE and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and ASN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASN and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and PRO.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PRO and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and THR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into THR and PRO.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PRO and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and ILE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ILE and ARG.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ARG and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and GLN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLN and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and PHE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PHE and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and PHE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PHE and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and ASP.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASP and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and THR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into THR and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and ALA.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ALA and PRO.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PRO and TRP.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into TRP and PRO.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PRO and ILE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ILE and ALA.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ALA and TYR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into TYR and ASP.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASP and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and ASP.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASP and PRO.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PRO and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and PHE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PHE and ASN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASN and ILE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ILE and GLN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLN and TRP.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into TRP and ASP.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASP and LYS.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LYS and THR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into THR and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and ASN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASN and THR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into THR and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and MET.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into MET and ILE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ILE and GLN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLN and ALA.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ALA and THR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into THR and LYS.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LYS and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and TYR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into TYR and ASN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASN and TYR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into TYR and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and ASN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASN and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and ALA.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ALA and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and ARG.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ARG and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and ARG.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ARG and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and ASN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASN and THR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into THR and PRO.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PRO and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and MET.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into MET and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and THR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into THR and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and ILE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ILE and PRO.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PRO and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and GLN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLN and LYS.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LYS and ALA.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ALA and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and ASP.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASP and TYR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into TYR and ARG.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ARG and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and ASP.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASP and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and ARG.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ARG and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and GLN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLN and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and TYR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into TYR and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and PRO.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PRO and ASN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASN and ALA.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ALA and LYS.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LYS and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and MET.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into MET and PRO.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PRO and THR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into THR and GLU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLU and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and ILE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ILE and PRO.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PRO and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and ALA.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ALA and ASN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASN and ASP.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASP and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and HIS.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into HIS and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and GLU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLU and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and PRO.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PRO and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and ARG.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ARG and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and ASP.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASP and ALA.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ALA and ARG.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ARG and ALA.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ALA and TRP.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into TRP and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and ASN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASN and GLU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLU and LYS.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LYS and MET.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into MET and TYR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into TYR and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and ARG.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ARG and THR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into THR and ASN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASN and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and THR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into THR and ILE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ILE and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and PRO.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PRO and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and TRP.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into TRP and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and ALA.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ALA and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and MET.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into MET and THR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into THR and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and ALA.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ALA and ASP.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASP and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and THR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into THR and HIS.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into HIS and ALA.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ALA and TYR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into TYR and GLU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLU and MET.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into MET and GLN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLN and LYS.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LYS and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and PRO.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PRO and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and TRP.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into TRP and HIS.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into HIS and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and LYS.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LYS and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and MET.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into MET and GLN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLN and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and LYS.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LYS and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and GLU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLU and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ARG and ILE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ILE and TYR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into TYR and ILE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ILE and GLN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLN and ALA.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ALA and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and ILE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ILE and PRO.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PRO and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and ARG.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ARG and ALA.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ALA and TRP.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into TRP and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and ILE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ILE and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and ASN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASN and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and THR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into THR and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and THR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into THR and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and ARG.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ARG and GLU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLU and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and LYS.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LYS and ILE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ILE and PRO.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PRO and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and TYR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into TYR and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and MET.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into MET and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and LYS.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LYS and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and ILE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ILE and ASP.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASP and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and GLN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLN and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and ARG.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ARG and ILE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ILE and LEU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LEU and THR.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into THR and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and GLY.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLY and GLN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLN and VAL.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into VAL and ILE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ILE and LYS.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into LYS and PHE.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into PHE and SER.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into SER and GLN.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLN and GLU.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into GLU and ASP.
+
+Warning: Name change in pdb file residue 0 ;
+this residue is split into ASP and SER.
+
+Note: 298 residues had naming warnings.
+Thus, there are split residues;
+residue sequence numbers will not correspond to those in the pdb.
+-- residue 44052: duplicate [ C] atoms (total 2)
+-- residue 44052: duplicate [ CA] atoms (total 2)
+-- residue 44052: duplicate [ CB] atoms (total 2)
+-- residue 44052: duplicate [ CD1] atoms (total 2)
+-- residue 44052: duplicate [ CG1] atoms (total 2)
+-- residue 44052: duplicate [ CG2] atoms (total 2)
+-- residue 44052: duplicate [ N] atoms (total 2)
+-- residue 44052: duplicate [ O] atoms (total 2)
+-- residue 44053: duplicate [ C] atoms (total 2)
+-- residue 44053: duplicate [ CA] atoms (total 2)
+-- residue 44053: duplicate [ CB] atoms (total 2)
+-- residue 44053: duplicate [ CD1] atoms (total 2)
+-- residue 44053: duplicate [ CD2] atoms (total 2)
+-- residue 44053: duplicate [ CE1] atoms (total 2)
+-- residue 44053: duplicate [ CE2] atoms (total 2)
+-- residue 44053: duplicate [ CG] atoms (total 2)
+-- residue 44053: duplicate [ CZ] atoms (total 2)
+-- residue 44053: duplicate [ N] atoms (total 2)
+-- residue 44053: duplicate [ O] atoms (total 2)
+-- residue 44053: duplicate [ OH] atoms (total 2)
+-- residue 30782: duplicate [ C] atoms (total 2)
+-- residue 30782: duplicate [ CA] atoms (total 2)
+-- residue 30782: duplicate [ CB] atoms (total 2)
+-- residue 30782: duplicate [ CD] atoms (total 2)
+-- residue 30782: duplicate [ CG] atoms (total 2)
+-- residue 30782: duplicate [ N] atoms (total 2)
+-- residue 30782: duplicate [ O] atoms (total 2)
+-- residue 30782: duplicate [ OE1] atoms (total 2)
+-- residue 30782: duplicate [ OE2] atoms (total 2)
+-- residue 30785: duplicate [ C] atoms (total 2)
+-- residue 30785: duplicate [ CA] atoms (total 2)
+-- residue 30785: duplicate [ CB] atoms (total 2)
+-- residue 30785: duplicate [ CD] atoms (total 2)
+-- residue 30785: duplicate [ CG] atoms (total 2)
+-- residue 30785: duplicate [ N] atoms (total 2)
+-- residue 30785: duplicate [ O] atoms (total 2)
+-- residue 44099: duplicate [ C] atoms (total 2)
+-- residue 44099: duplicate [ CA] atoms (total 2)
+-- residue 44099: duplicate [ CB] atoms (total 2)
+-- residue 44099: duplicate [ N] atoms (total 2)
+-- residue 44099: duplicate [ O] atoms (total 2)
+-- residue 44099: duplicate [ OG] atoms (total 2)
+-- residue 30790: duplicate [ C] atoms (total 3)
+-- residue 30790: duplicate [ CA] atoms (total 3)
+-- residue 30790: duplicate [ CB] atoms (total 3)
+-- residue 30790: duplicate [ CD1] atoms (total 3)
+-- residue 30790: duplicate [ CD2] atoms (total 3)
+-- residue 30790: duplicate [ CG] atoms (total 3)
+-- residue 30790: duplicate [ N] atoms (total 3)
+-- residue 30790: duplicate [ O] atoms (total 3)
+-- residue 30797: duplicate [ C] atoms (total 3)
+-- residue 30797: duplicate [ CA] atoms (total 3)
+-- residue 30797: duplicate [ CB] atoms (total 3)
+-- residue 30797: duplicate [ CD] atoms (total 3)
+-- residue 30797: duplicate [ CG] atoms (total 3)
+-- residue 30797: duplicate [ N] atoms (total 3)
+-- residue 30797: duplicate [ O] atoms (total 3)
+-- residue 30800: duplicate [ C] atoms (total 2)
+-- residue 30800: duplicate [ CA] atoms (total 2)
+-- residue 30800: duplicate [ CB] atoms (total 2)
+-- residue 30800: duplicate [ CD] atoms (total 2)
+-- residue 30800: duplicate [ CG] atoms (total 2)
+-- residue 30800: duplicate [ CZ] atoms (total 2)
+-- residue 30800: duplicate [ N] atoms (total 2)
+-- residue 30800: duplicate [ NE] atoms (total 2)
+-- residue 30800: duplicate [ NH1] atoms (total 2)
+-- residue 30800: duplicate [ NH2] atoms (total 2)
+-- residue 30800: duplicate [ O] atoms (total 2)
+-- residue 30802: duplicate [ C] atoms (total 2)
+-- residue 30802: duplicate [ CA] atoms (total 2)
+-- residue 30802: duplicate [ CB] atoms (total 2)
+-- residue 30802: duplicate [ CG1] atoms (total 2)
+-- residue 30802: duplicate [ CG2] atoms (total 2)
+-- residue 30802: duplicate [ N] atoms (total 2)
+-- residue 30802: duplicate [ O] atoms (total 2)
+-- residue 30804: duplicate [ C] atoms (total 2)
+-- residue 30804: duplicate [ CA] atoms (total 2)
+-- residue 30804: duplicate [ N] atoms (total 2)
+-- residue 30804: duplicate [ O] atoms (total 2)
+-- residue 30849: duplicate [ C] atoms (total 2)
+-- residue 30849: duplicate [ CA] atoms (total 2)
+-- residue 30849: duplicate [ CB] atoms (total 2)
+-- residue 30849: duplicate [ CD1] atoms (total 2)
+-- residue 30849: duplicate [ CD2] atoms (total 2)
+-- residue 30849: duplicate [ CG] atoms (total 2)
+-- residue 30849: duplicate [ N] atoms (total 2)
+-- residue 30849: duplicate [ O] atoms (total 2)
+-- residue 30630: duplicate [ C] atoms (total 2)
+-- residue 30630: duplicate [ CA] atoms (total 2)
+-- residue 30630: duplicate [ CB] atoms (total 2)
+-- residue 30630: duplicate [ CD] atoms (total 2)
+-- residue 30630: duplicate [ CE] atoms (total 2)
+-- residue 30630: duplicate [ CG] atoms (total 2)
+-- residue 30630: duplicate [ N] atoms (total 2)
+-- residue 30630: duplicate [ NZ] atoms (total 2)
+-- residue 30630: duplicate [ O] atoms (total 2)
+-- residue 30647: duplicate [ C] atoms (total 2)
+-- residue 30647: duplicate [ CA] atoms (total 2)
+-- residue 30647: duplicate [ CB] atoms (total 2)
+-- residue 30647: duplicate [ CG1] atoms (total 2)
+-- residue 30647: duplicate [ CG2] atoms (total 2)
+-- residue 30647: duplicate [ N] atoms (total 2)
+-- residue 30647: duplicate [ O] atoms (total 2)
+-- residue 30661: duplicate [ C] atoms (total 2)
+-- residue 30661: duplicate [ CA] atoms (total 2)
+-- residue 30661: duplicate [ CB] atoms (total 2)
+-- residue 30661: duplicate [ N] atoms (total 2)
+-- residue 30661: duplicate [ O] atoms (total 2)
+-- residue 30666: duplicate [ C] atoms (total 2)
+-- residue 30666: duplicate [ CA] atoms (total 2)
+-- residue 30666: duplicate [ CB] atoms (total 2)
+-- residue 30666: duplicate [ CD] atoms (total 2)
+-- residue 30666: duplicate [ CG] atoms (total 2)
+-- residue 30666: duplicate [ N] atoms (total 2)
+-- residue 30666: duplicate [ O] atoms (total 2)
+-- residue 30683: duplicate [ C] atoms (total 2)
+-- residue 30683: duplicate [ CA] atoms (total 2)
+-- residue 30683: duplicate [ CB] atoms (total 2)
+-- residue 30683: duplicate [ CD] atoms (total 2)
+-- residue 30683: duplicate [ CG] atoms (total 2)
+-- residue 30683: duplicate [ N] atoms (total 2)
+-- residue 30683: duplicate [ O] atoms (total 2)
+-- residue 30693: duplicate [ C] atoms (total 2)
+-- residue 30693: duplicate [ CA] atoms (total 2)
+-- residue 30693: duplicate [ CB] atoms (total 2)
+-- residue 30693: duplicate [ N] atoms (total 2)
+-- residue 30693: duplicate [ O] atoms (total 2)
+-- residue 30693: duplicate [ OG] atoms (total 2)
+-- residue 30707: duplicate [ C] atoms (total 2)
+-- residue 30707: duplicate [ CA] atoms (total 2)
+-- residue 30707: duplicate [ CB] atoms (total 2)
+-- residue 30707: duplicate [ N] atoms (total 2)
+-- residue 30707: duplicate [ O] atoms (total 2)
+-- residue 30714: duplicate [ C] atoms (total 2)
+-- residue 30714: duplicate [ CA] atoms (total 2)
+-- residue 30714: duplicate [ CB] atoms (total 2)
+-- residue 30714: duplicate [ N] atoms (total 2)
+-- residue 30714: duplicate [ O] atoms (total 2)
+-- residue 30714: duplicate [ OG] atoms (total 2)
+
+Warning: Atom names in each residue should be unique.
+     (Same-name atoms are handled by using the first
+      occurrence and by ignoring the rest.
+      Many instances of duplicate atom names usually come
+      from alternate conformations in the PDB file.)
+
+Matching PDB residue names to LEaP variables.
+Mapped residue ASP, term: Terminal/beginning, seq. number: 0 to: NASP.
+Mapped residue ALA, term: Terminal/last, seq. number: 368 to: CALA.
+Mapped residue ASP, term: Terminal/beginning, seq. number: 369 to: NASP.
+Mapped residue GLU, term: Terminal/last, seq. number: 739 to: CGLU.
+Mapped residue ASN, term: Terminal/beginning, seq. number: 740 to: NASN.
+Mapped residue LYS, term: Terminal/last, seq. number: 1108 to: CLYS.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 1109 to: NILE.
+Mapped residue LYS, term: Terminal/last, seq. number: 1476 to: CLYS.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 1477 to: NILE.
+Mapped residue ALA, term: Terminal/last, seq. number: 1843 to: CALA.
+Mapped residue ASN, term: Terminal/beginning, seq. number: 1844 to: NASN.
+Mapped residue LYS, term: Terminal/last, seq. number: 2209 to: CLYS.
+Mapped residue PRO, term: Terminal/beginning, seq. number: 2210 to: NPRO.
+Mapped residue GLN, term: Terminal/last, seq. number: 2652 to: CGLN.
+Mapped residue PRO, term: Terminal/beginning, seq. number: 2653 to: NPRO.
+Mapped residue GLN, term: Terminal/last, seq. number: 3095 to: CGLN.
+Mapped residue PRO, term: Terminal/beginning, seq. number: 3096 to: NPRO.
+Mapped residue GLN, term: Terminal/last, seq. number: 3538 to: CGLN.
+Mapped residue PRO, term: Terminal/beginning, seq. number: 3539 to: NPRO.
+Mapped residue GLN, term: Terminal/last, seq. number: 3981 to: CGLN.
+Mapped residue PRO, term: Terminal/beginning, seq. number: 3982 to: NPRO.
+Mapped residue GLN, term: Terminal/last, seq. number: 4424 to: CGLN.
+Mapped residue MET, term: Terminal/beginning, seq. number: 4425 to: NMET.
+Mapped residue ALA, term: Terminal/last, seq. number: 5397 to: CALA.
+Mapped residue MET, term: Terminal/beginning, seq. number: 5398 to: NMET.
+Mapped residue ALA, term: Terminal/last, seq. number: 6370 to: CALA.
+Mapped residue MET, term: Terminal/beginning, seq. number: 6371 to: NMET.
+Mapped residue ALA, term: Terminal/last, seq. number: 7343 to: CALA.
+Mapped residue MET, term: Terminal/beginning, seq. number: 7344 to: NMET.
+Mapped residue ALA, term: Terminal/last, seq. number: 8316 to: CALA.
+Mapped residue MET, term: Terminal/beginning, seq. number: 8317 to: NMET.
+Mapped residue ALA, term: Terminal/last, seq. number: 9289 to: CALA.
+Mapped residue MET, term: Terminal/beginning, seq. number: 9290 to: NMET.
+Mapped residue ALA, term: Terminal/last, seq. number: 10262 to: CALA.
+Mapped residue MET, term: Terminal/beginning, seq. number: 10263 to: NMET.
+Mapped residue ASN, term: Terminal/last, seq. number: 10523 to: CASN.
+Mapped residue MET, term: Terminal/beginning, seq. number: 10524 to: NMET.
+Mapped residue ASN, term: Terminal/last, seq. number: 10784 to: CASN.
+Mapped residue MET, term: Terminal/beginning, seq. number: 10785 to: NMET.
+Mapped residue ASN, term: Terminal/last, seq. number: 11045 to: CASN.
+Mapped residue MET, term: Terminal/beginning, seq. number: 11046 to: NMET.
+Mapped residue ASN, term: Terminal/last, seq. number: 11306 to: CASN.
+Mapped residue MET, term: Terminal/beginning, seq. number: 11307 to: NMET.
+Mapped residue ASN, term: Terminal/last, seq. number: 11567 to: CASN.
+Mapped residue MET, term: Terminal/beginning, seq. number: 11568 to: NMET.
+Mapped residue ASN, term: Terminal/last, seq. number: 11828 to: CASN.
+Mapped residue MET, term: Terminal/beginning, seq. number: 11829 to: NMET.
+Mapped residue SER, term: Terminal/last, seq. number: 12012 to: CSER.
+Mapped residue MET, term: Terminal/beginning, seq. number: 12013 to: NMET.
+Mapped residue SER, term: Terminal/last, seq. number: 12198 to: CSER.
+Mapped residue MET, term: Terminal/beginning, seq. number: 12199 to: NMET.
+Mapped residue SER, term: Terminal/last, seq. number: 12382 to: CSER.
+Mapped residue MET, term: Terminal/beginning, seq. number: 12383 to: NMET.
+Mapped residue SER, term: Terminal/last, seq. number: 12568 to: CSER.
+Mapped residue MET, term: Terminal/beginning, seq. number: 12569 to: NMET.
+Mapped residue SER, term: Terminal/last, seq. number: 12752 to: CSER.
+Mapped residue MET, term: Terminal/beginning, seq. number: 12753 to: NMET.
+Mapped residue SER, term: Terminal/last, seq. number: 12938 to: CSER.
+Mapped residue MET, term: Terminal/beginning, seq. number: 12939 to: NMET.
+Mapped residue SER, term: Terminal/last, seq. number: 13122 to: CSER.
+Mapped residue MET, term: Terminal/beginning, seq. number: 13123 to: NMET.
+Mapped residue SER, term: Terminal/last, seq. number: 13308 to: CSER.
+Mapped residue MET, term: Terminal/beginning, seq. number: 13309 to: NMET.
+Mapped residue SER, term: Terminal/last, seq. number: 13492 to: CSER.
+Mapped residue MET, term: Terminal/beginning, seq. number: 13493 to: NMET.
+Mapped residue SER, term: Terminal/last, seq. number: 13678 to: CSER.
+Mapped residue MET, term: Terminal/beginning, seq. number: 13679 to: NMET.
+Mapped residue SER, term: Terminal/last, seq. number: 13862 to: CSER.
+Mapped residue MET, term: Terminal/beginning, seq. number: 13863 to: NMET.
+Mapped residue SER, term: Terminal/last, seq. number: 14048 to: CSER.
+Mapped residue MET, term: Terminal/beginning, seq. number: 14049 to: NMET.
+Mapped residue PRO, term: Terminal/last, seq. number: 14097 to: CPRO.
+Mapped residue MET, term: Terminal/beginning, seq. number: 14098 to: NMET.
+Mapped residue PRO, term: Terminal/last, seq. number: 14146 to: CPRO.
+Mapped residue MET, term: Terminal/beginning, seq. number: 14147 to: NMET.
+Mapped residue PRO, term: Terminal/last, seq. number: 14195 to: CPRO.
+Mapped residue MET, term: Terminal/beginning, seq. number: 14196 to: NMET.
+Mapped residue PRO, term: Terminal/last, seq. number: 14244 to: CPRO.
+Mapped residue MET, term: Terminal/beginning, seq. number: 14245 to: NMET.
+Mapped residue PRO, term: Terminal/last, seq. number: 14293 to: CPRO.
+Mapped residue MET, term: Terminal/beginning, seq. number: 14294 to: NMET.
+Mapped residue PRO, term: Terminal/last, seq. number: 14342 to: CPRO.
+Mapped residue MET, term: Terminal/beginning, seq. number: 14343 to: NMET.
+Mapped residue GLY, term: Terminal/last, seq. number: 15312 to: CGLY.
+Mapped residue MET, term: Terminal/beginning, seq. number: 15313 to: NMET.
+Mapped residue GLY, term: Terminal/last, seq. number: 16282 to: CGLY.
+Mapped residue MET, term: Terminal/beginning, seq. number: 16283 to: NMET.
+Mapped residue GLY, term: Terminal/last, seq. number: 17252 to: CGLY.
+Mapped residue MET, term: Terminal/beginning, seq. number: 17253 to: NMET.
+Mapped residue GLY, term: Terminal/last, seq. number: 18222 to: CGLY.
+Mapped residue MET, term: Terminal/beginning, seq. number: 18223 to: NMET.
+Mapped residue GLY, term: Terminal/last, seq. number: 19192 to: CGLY.
+Mapped residue MET, term: Terminal/beginning, seq. number: 19193 to: NMET.
+Mapped residue GLY, term: Terminal/last, seq. number: 20162 to: CGLY.
+Mapped residue MET, term: Terminal/beginning, seq. number: 20163 to: NMET.
+Mapped residue GLY, term: Terminal/last, seq. number: 21132 to: CGLY.
+Mapped residue MET, term: Terminal/beginning, seq. number: 21133 to: NMET.
+Mapped residue GLY, term: Terminal/last, seq. number: 22102 to: CGLY.
+Mapped residue MET, term: Terminal/beginning, seq. number: 22103 to: NMET.
+Mapped residue GLY, term: Terminal/last, seq. number: 23072 to: CGLY.
+Mapped residue MET, term: Terminal/beginning, seq. number: 23073 to: NMET.
+Mapped residue GLY, term: Terminal/last, seq. number: 24042 to: CGLY.
+Mapped residue MET, term: Terminal/beginning, seq. number: 24043 to: NMET.
+Mapped residue GLY, term: Terminal/last, seq. number: 25012 to: CGLY.
+Mapped residue MET, term: Terminal/beginning, seq. number: 25013 to: NMET.
+Mapped residue GLY, term: Terminal/last, seq. number: 25982 to: CGLY.
+Mapped residue MET, term: Terminal/beginning, seq. number: 25983 to: NMET.
+Mapped residue ARG, term: Terminal/last, seq. number: 26068 to: CARG.
+Mapped residue MET, term: Terminal/beginning, seq. number: 26069 to: NMET.
+Mapped residue ARG, term: Terminal/last, seq. number: 26154 to: CARG.
+Mapped residue MET, term: Terminal/beginning, seq. number: 26155 to: NMET.
+Mapped residue ARG, term: Terminal/last, seq. number: 26240 to: CARG.
+Mapped residue MET, term: Terminal/beginning, seq. number: 26241 to: NMET.
+Mapped residue ARG, term: Terminal/last, seq. number: 26326 to: CARG.
+Mapped residue MET, term: Terminal/beginning, seq. number: 26327 to: NMET.
+Mapped residue ARG, term: Terminal/last, seq. number: 26412 to: CARG.
+Mapped residue MET, term: Terminal/beginning, seq. number: 26413 to: NMET.
+Mapped residue ARG, term: Terminal/last, seq. number: 26498 to: CARG.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 26499 to: NILE.
+Mapped residue THR, term: Terminal/last, seq. number: 26663 to: CTHR.
+Mapped residue MET, term: Terminal/beginning, seq. number: 26664 to: NMET.
+Mapped residue TYR, term: Terminal/last, seq. number: 26803 to: CTYR.
+Mapped residue ARG, term: Terminal/beginning, seq. number: 26804 to: NARG.
+Mapped residue SER, term: Terminal/last, seq. number: 26866 to: CSER.
+Mapped residue GLN, term: Terminal/beginning, seq. number: 26867 to: NGLN.
+Mapped residue THR, term: Terminal/last, seq. number: 26900 to: CTHR.
+Mapped residue ALA, term: Terminal/beginning, seq. number: 26901 to: NALA.
+Mapped residue LEU, term: Terminal/last, seq. number: 27158 to: CLEU.
+Mapped residue VAL, term: Terminal/beginning, seq. number: 27159 to: NVAL.
+Mapped residue VAL, term: Terminal/last, seq. number: 27309 to: CVAL.
+Mapped residue LEU, term: Terminal/beginning, seq. number: 27310 to: NLEU.
+Mapped residue PRO, term: Terminal/last, seq. number: 27517 to: CPRO.
+Mapped residue ASP, term: Terminal/beginning, seq. number: 27518 to: NASP.
+Mapped residue LYS, term: Terminal/last, seq. number: 27595 to: CLYS.
+Mapped residue LYS, term: Terminal/beginning, seq. number: 27596 to: NLYS.
+Mapped residue LYS, term: Terminal/last, seq. number: 27732 to: CLYS.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 27733 to: NILE.
+Mapped residue GLN, term: Terminal/last, seq. number: 27791 to: CGLN.
+Mapped residue MET, term: Terminal/beginning, seq. number: 27792 to: NMET.
+Mapped residue TYR, term: Terminal/last, seq. number: 27931 to: CTYR.
+Mapped residue ARG, term: Terminal/beginning, seq. number: 27932 to: NARG.
+Mapped residue SER, term: Terminal/last, seq. number: 27994 to: CSER.
+Mapped residue GLN, term: Terminal/beginning, seq. number: 27995 to: NGLN.
+Mapped residue THR, term: Terminal/last, seq. number: 28028 to: CTHR.
+Mapped residue LYS, term: Terminal/beginning, seq. number: 28029 to: NLYS.
+Mapped residue LYS, term: Terminal/last, seq. number: 28165 to: CLYS.
+Mapped residue ALA, term: Terminal/beginning, seq. number: 28166 to: NALA.
+Mapped residue LEU, term: Terminal/last, seq. number: 28423 to: CLEU.
+Mapped residue VAL, term: Terminal/beginning, seq. number: 28424 to: NVAL.
+Mapped residue VAL, term: Terminal/last, seq. number: 28574 to: CVAL.
+Mapped residue LEU, term: Terminal/beginning, seq. number: 28575 to: NLEU.
+Mapped residue PRO, term: Terminal/last, seq. number: 28782 to: CPRO.
+Mapped residue ASP, term: Terminal/beginning, seq. number: 28783 to: NASP.
+Mapped residue LYS, term: Terminal/last, seq. number: 28860 to: CLYS.
+Mapped residue LYS, term: Terminal/beginning, seq. number: 28861 to: NLYS.
+Mapped residue LYS, term: Terminal/last, seq. number: 28997 to: CLYS.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 28998 to: NILE.
+Mapped residue GLN, term: Terminal/last, seq. number: 29056 to: CGLN.
+Mapped residue GLN, term: Terminal/beginning, seq. number: 29057 to: NGLN.
+Mapped residue THR, term: Terminal/last, seq. number: 29090 to: CTHR.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 29091 to: NILE.
+Mapped residue THR, term: Terminal/last, seq. number: 29255 to: CTHR.
+Mapped residue MET, term: Terminal/beginning, seq. number: 29256 to: NMET.
+Mapped residue TYR, term: Terminal/last, seq. number: 29395 to: CTYR.
+Mapped residue ARG, term: Terminal/beginning, seq. number: 29396 to: NARG.
+Mapped residue SER, term: Terminal/last, seq. number: 29458 to: CSER.
+Mapped residue GLN, term: Terminal/beginning, seq. number: 29459 to: NGLN.
+Mapped residue THR, term: Terminal/last, seq. number: 29492 to: CTHR.
+Mapped residue ALA, term: Terminal/beginning, seq. number: 29493 to: NALA.
+Mapped residue LEU, term: Terminal/last, seq. number: 29750 to: CLEU.
+Mapped residue VAL, term: Terminal/beginning, seq. number: 29751 to: NVAL.
+Mapped residue VAL, term: Terminal/last, seq. number: 29901 to: CVAL.
+Mapped residue LEU, term: Terminal/beginning, seq. number: 29902 to: NLEU.
+Mapped residue PRO, term: Terminal/last, seq. number: 30109 to: CPRO.
+Mapped residue ASP, term: Terminal/beginning, seq. number: 30110 to: NASP.
+Mapped residue LYS, term: Terminal/last, seq. number: 30187 to: CLYS.
+Mapped residue LYS, term: Terminal/beginning, seq. number: 30188 to: NLYS.
+Mapped residue LYS, term: Terminal/last, seq. number: 30324 to: CLYS.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 30325 to: NILE.
+Mapped residue GLN, term: Terminal/last, seq. number: 30383 to: CGLN.
+Mapped residue MET, term: Terminal/beginning, seq. number: 30384 to: NMET.
+Mapped residue TYR, term: Terminal/last, seq. number: 30523 to: CTYR.
+Mapped residue ARG, term: Terminal/beginning, seq. number: 30524 to: NARG.
+Mapped residue SER, term: Terminal/last, seq. number: 30586 to: CSER.
+Mapped residue GLN, term: Terminal/beginning, seq. number: 30587 to: NGLN.
+Mapped residue THR, term: Terminal/last, seq. number: 30620 to: CTHR.
+Mapped residue ALA, term: Terminal/beginning, seq. number: 30621 to: NALA.
+Mapped residue LEU, term: Terminal/last, seq. number: 30860 to: CLEU.
+Mapped residue VAL, term: Terminal/beginning, seq. number: 30861 to: NVAL.
+Mapped residue VAL, term: Terminal/last, seq. number: 31011 to: CVAL.
+Mapped residue LEU, term: Terminal/beginning, seq. number: 31012 to: NLEU.
+Mapped residue PRO, term: Terminal/last, seq. number: 31219 to: CPRO.
+Mapped residue ASP, term: Terminal/beginning, seq. number: 31220 to: NASP.
+Mapped residue LYS, term: Terminal/last, seq. number: 31297 to: CLYS.
+Mapped residue LYS, term: Terminal/beginning, seq. number: 31298 to: NLYS.
+Mapped residue LYS, term: Terminal/last, seq. number: 31434 to: CLYS.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 31435 to: NILE.
+Mapped residue GLN, term: Terminal/last, seq. number: 31493 to: CGLN.
+Mapped residue ALA, term: Terminal/beginning, seq. number: 31494 to: NALA.
+Mapped residue LEU, term: Terminal/last, seq. number: 31751 to: CLEU.
+Mapped residue MET, term: Terminal/beginning, seq. number: 31752 to: NMET.
+Mapped residue TYR, term: Terminal/last, seq. number: 31891 to: CTYR.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 31892 to: NILE.
+Mapped residue THR, term: Terminal/last, seq. number: 32056 to: CTHR.
+Mapped residue LYS, term: Terminal/beginning, seq. number: 32057 to: NLYS.
+Mapped residue LYS, term: Terminal/last, seq. number: 32265 to: CLYS.
+Mapped residue ARG, term: Terminal/beginning, seq. number: 32266 to: NARG.
+Mapped residue SER, term: Terminal/last, seq. number: 32328 to: CSER.
+Mapped residue GLN, term: Terminal/beginning, seq. number: 32329 to: NGLN.
+Mapped residue THR, term: Terminal/last, seq. number: 32362 to: CTHR.
+Mapped residue ALA, term: Terminal/beginning, seq. number: 32363 to: NALA.
+Mapped residue LEU, term: Terminal/last, seq. number: 32620 to: CLEU.
+Mapped residue VAL, term: Terminal/beginning, seq. number: 32621 to: NVAL.
+Mapped residue VAL, term: Terminal/last, seq. number: 32771 to: CVAL.
+Mapped residue LEU, term: Terminal/beginning, seq. number: 32772 to: NLEU.
+Mapped residue PRO, term: Terminal/last, seq. number: 32979 to: CPRO.
+Mapped residue ASP, term: Terminal/beginning, seq. number: 32980 to: NASP.
+Mapped residue LYS, term: Terminal/last, seq. number: 33057 to: CLYS.
+Mapped residue GLN, term: Terminal/beginning, seq. number: 33058 to: NGLN.
+Mapped residue THR, term: Terminal/last, seq. number: 33091 to: CTHR.
+Mapped residue LYS, term: Terminal/beginning, seq. number: 33092 to: NLYS.
+Mapped residue LYS, term: Terminal/last, seq. number: 33228 to: CLYS.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 33229 to: NILE.
+Mapped residue GLN, term: Terminal/last, seq. number: 33287 to: CGLN.
+Mapped residue MET, term: Terminal/beginning, seq. number: 33288 to: NMET.
+Mapped residue TYR, term: Terminal/last, seq. number: 33427 to: CTYR.
+Mapped residue ARG, term: Terminal/beginning, seq. number: 33428 to: NARG.
+Mapped residue SER, term: Terminal/last, seq. number: 33490 to: CSER.
+Mapped residue GLN, term: Terminal/beginning, seq. number: 33491 to: NGLN.
+Mapped residue THR, term: Terminal/last, seq. number: 33524 to: CTHR.
+Mapped residue ALA, term: Terminal/beginning, seq. number: 33525 to: NALA.
+Mapped residue LEU, term: Terminal/last, seq. number: 33782 to: CLEU.
+Mapped residue VAL, term: Terminal/beginning, seq. number: 33783 to: NVAL.
+Mapped residue VAL, term: Terminal/last, seq. number: 33933 to: CVAL.
+Mapped residue LEU, term: Terminal/beginning, seq. number: 33934 to: NLEU.
+Mapped residue PRO, term: Terminal/last, seq. number: 34141 to: CPRO.
+Mapped residue ASP, term: Terminal/beginning, seq. number: 34142 to: NASP.
+Mapped residue LYS, term: Terminal/last, seq. number: 34219 to: CLYS.
+Mapped residue MET, term: Terminal/beginning, seq. number: 34220 to: NMET.
+Mapped residue TYR, term: Terminal/last, seq. number: 34359 to: CTYR.
+Mapped residue LYS, term: Terminal/beginning, seq. number: 34360 to: NLYS.
+Mapped residue LYS, term: Terminal/last, seq. number: 34496 to: CLYS.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 34497 to: NILE.
+Mapped residue GLN, term: Terminal/last, seq. number: 34555 to: CGLN.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 34556 to: NILE.
+Mapped residue THR, term: Terminal/last, seq. number: 34720 to: CTHR.
+Mapped residue VAL, term: Terminal/beginning, seq. number: 34721 to: NVAL.
+Mapped residue VAL, term: Terminal/last, seq. number: 34871 to: CVAL.
+Mapped residue MET, term: Terminal/beginning, seq. number: 34872 to: NMET.
+Mapped residue TYR, term: Terminal/last, seq. number: 35011 to: CTYR.
+Mapped residue ARG, term: Terminal/beginning, seq. number: 35012 to: NARG.
+Mapped residue SER, term: Terminal/last, seq. number: 35074 to: CSER.
+Mapped residue GLN, term: Terminal/beginning, seq. number: 35075 to: NGLN.
+Mapped residue THR, term: Terminal/last, seq. number: 35108 to: CTHR.
+Mapped residue GLN, term: Terminal/beginning, seq. number: 35109 to: NGLN.
+Mapped residue THR, term: Terminal/last, seq. number: 35142 to: CTHR.
+Mapped residue ALA, term: Terminal/beginning, seq. number: 35143 to: NALA.
+Mapped residue LEU, term: Terminal/last, seq. number: 35400 to: CLEU.
+Mapped residue VAL, term: Terminal/beginning, seq. number: 35401 to: NVAL.
+Mapped residue VAL, term: Terminal/last, seq. number: 35551 to: CVAL.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 35552 to: NILE.
+Mapped residue GLN, term: Terminal/last, seq. number: 35610 to: CGLN.
+Mapped residue LEU, term: Terminal/beginning, seq. number: 35611 to: NLEU.
+Mapped residue PRO, term: Terminal/last, seq. number: 35818 to: CPRO.
+Mapped residue ASP, term: Terminal/beginning, seq. number: 35819 to: NASP.
+Mapped residue LYS, term: Terminal/last, seq. number: 35896 to: CLYS.
+Mapped residue LYS, term: Terminal/beginning, seq. number: 35897 to: NLYS.
+Mapped residue LYS, term: Terminal/last, seq. number: 36033 to: CLYS.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 36034 to: NILE.
+Mapped residue GLN, term: Terminal/last, seq. number: 36092 to: CGLN.
+Mapped residue ARG, term: Terminal/beginning, seq. number: 36093 to: NARG.
+Mapped residue SER, term: Terminal/last, seq. number: 36155 to: CSER.
+Mapped residue GLN, term: Terminal/beginning, seq. number: 36156 to: NGLN.
+Mapped residue THR, term: Terminal/last, seq. number: 36189 to: CTHR.
+Mapped residue ALA, term: Terminal/beginning, seq. number: 36190 to: NALA.
+Mapped residue GLY, term: Terminal/last, seq. number: 36432 to: CGLY.
+Mapped residue ARG, term: Terminal/beginning, seq. number: 36433 to: NARG.
+Mapped residue SER, term: Terminal/last, seq. number: 36495 to: CSER.
+Mapped residue GLN, term: Terminal/beginning, seq. number: 36496 to: NGLN.
+Mapped residue THR, term: Terminal/last, seq. number: 36529 to: CTHR.
+Mapped residue ALA, term: Terminal/beginning, seq. number: 36530 to: NALA.
+Mapped residue GLY, term: Terminal/last, seq. number: 36772 to: CGLY.
+Mapped residue ARG, term: Terminal/beginning, seq. number: 36773 to: NARG.
+Mapped residue SER, term: Terminal/last, seq. number: 36835 to: CSER.
+Mapped residue GLN, term: Terminal/beginning, seq. number: 36836 to: NGLN.
+Mapped residue THR, term: Terminal/last, seq. number: 36869 to: CTHR.
+Mapped residue ARG, term: Terminal/beginning, seq. number: 36870 to: NARG.
+Mapped residue SER, term: Terminal/last, seq. number: 36932 to: CSER.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 36933 to: NILE.
+Mapped residue THR, term: Terminal/last, seq. number: 37097 to: CTHR.
+Mapped residue ALA, term: Terminal/beginning, seq. number: 37098 to: NALA.
+Mapped residue GLY, term: Terminal/last, seq. number: 37340 to: CGLY.
+Mapped residue ARG, term: Terminal/beginning, seq. number: 37341 to: NARG.
+Mapped residue SER, term: Terminal/last, seq. number: 37403 to: CSER.
+Mapped residue GLN, term: Terminal/beginning, seq. number: 37404 to: NGLN.
+Mapped residue THR, term: Terminal/last, seq. number: 37437 to: CTHR.
+Mapped residue ALA, term: Terminal/beginning, seq. number: 37438 to: NALA.
+Mapped residue GLY, term: Terminal/last, seq. number: 37680 to: CGLY.
+Mapped residue ARG, term: Terminal/beginning, seq. number: 37681 to: NARG.
+Mapped residue SER, term: Terminal/last, seq. number: 37743 to: CSER.
+Mapped residue MET, term: Terminal/beginning, seq. number: 37744 to: NMET.
+Mapped residue TYR, term: Terminal/last, seq. number: 37883 to: CTYR.
+Mapped residue GLN, term: Terminal/beginning, seq. number: 37884 to: NGLN.
+Mapped residue THR, term: Terminal/last, seq. number: 37917 to: CTHR.
+Mapped residue ALA, term: Terminal/beginning, seq. number: 37918 to: NALA.
+Mapped residue GLY, term: Terminal/last, seq. number: 38160 to: CGLY.
+Mapped residue LEU, term: Terminal/beginning, seq. number: 38161 to: NLEU.
+Mapped residue PRO, term: Terminal/last, seq. number: 38368 to: CPRO.
+Mapped residue ASP, term: Terminal/beginning, seq. number: 38369 to: NASP.
+Mapped residue LYS, term: Terminal/last, seq. number: 38446 to: CLYS.
+Mapped residue LYS, term: Terminal/beginning, seq. number: 38447 to: NLYS.
+Mapped residue LYS, term: Terminal/last, seq. number: 38583 to: CLYS.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 38584 to: NILE.
+Mapped residue GLN, term: Terminal/last, seq. number: 38642 to: CGLN.
+Mapped residue MET, term: Terminal/beginning, seq. number: 38643 to: NMET.
+Mapped residue TYR, term: Terminal/last, seq. number: 38782 to: CTYR.
+Mapped residue ARG, term: Terminal/beginning, seq. number: 38783 to: NARG.
+Mapped residue SER, term: Terminal/last, seq. number: 38845 to: CSER.
+Mapped residue ALA, term: Terminal/beginning, seq. number: 38846 to: NALA.
+Mapped residue LEU, term: Terminal/last, seq. number: 39103 to: CLEU.
+Mapped residue VAL, term: Terminal/beginning, seq. number: 39104 to: NVAL.
+Mapped residue VAL, term: Terminal/last, seq. number: 39254 to: CVAL.
+Mapped residue LEU, term: Terminal/beginning, seq. number: 39255 to: NLEU.
+Mapped residue PRO, term: Terminal/last, seq. number: 39462 to: CPRO.
+Mapped residue ASP, term: Terminal/beginning, seq. number: 39463 to: NASP.
+Mapped residue LYS, term: Terminal/last, seq. number: 39540 to: CLYS.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 39541 to: NILE.
+Mapped residue THR, term: Terminal/last, seq. number: 39705 to: CTHR.
+Mapped residue LYS, term: Terminal/beginning, seq. number: 39706 to: NLYS.
+Mapped residue LYS, term: Terminal/last, seq. number: 39842 to: CLYS.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 39843 to: NILE.
+Mapped residue GLN, term: Terminal/last, seq. number: 39901 to: CGLN.
+Mapped residue GLN, term: Terminal/beginning, seq. number: 39902 to: NGLN.
+Mapped residue THR, term: Terminal/last, seq. number: 39935 to: CTHR.
+Mapped residue LYS, term: Terminal/beginning, seq. number: 39936 to: NLYS.
+Mapped residue LYS, term: Terminal/last, seq. number: 40144 to: CLYS.
+Mapped residue LYS, term: Terminal/beginning, seq. number: 40145 to: NLYS.
+Mapped residue LYS, term: Terminal/last, seq. number: 40353 to: CLYS.
+Mapped residue GLY, term: Terminal/beginning, seq. number: 40354 to: NGLY.
+Mapped residue LYS, term: Terminal/last, seq. number: 40596 to: CLYS.
+Mapped residue LYS, term: Terminal/beginning, seq. number: 40597 to: NLYS.
+Mapped residue LYS, term: Terminal/last, seq. number: 40805 to: CLYS.
+Mapped residue MET, term: Terminal/beginning, seq. number: 40806 to: NMET.
+Mapped residue TYR, term: Terminal/last, seq. number: 40945 to: CTYR.
+Mapped residue GLY, term: Terminal/beginning, seq. number: 40946 to: NGLY.
+Mapped residue LYS, term: Terminal/last, seq. number: 41188 to: CLYS.
+Mapped residue GLY, term: Terminal/beginning, seq. number: 41189 to: NGLY.
+Mapped residue LYS, term: Terminal/last, seq. number: 41431 to: CLYS.
+Mapped residue LYS, term: Terminal/beginning, seq. number: 41432 to: NLYS.
+Mapped residue LYS, term: Terminal/last, seq. number: 41640 to: CLYS.
+Mapped residue LYS, term: Terminal/beginning, seq. number: 41641 to: NLYS.
+Mapped residue LYS, term: Terminal/last, seq. number: 41849 to: CLYS.
+Mapped residue GLY, term: Terminal/beginning, seq. number: 41850 to: NGLY.
+Mapped residue LYS, term: Terminal/last, seq. number: 42092 to: CLYS.
+Mapped residue ALA, term: Terminal/beginning, seq. number: 42093 to: NALA.
+Mapped residue LEU, term: Terminal/last, seq. number: 42350 to: CLEU.
+Mapped residue VAL, term: Terminal/beginning, seq. number: 42351 to: NVAL.
+Mapped residue VAL, term: Terminal/last, seq. number: 42501 to: CVAL.
+Mapped residue LEU, term: Terminal/beginning, seq. number: 42502 to: NLEU.
+Mapped residue PRO, term: Terminal/last, seq. number: 42709 to: CPRO.
+Mapped residue ASP, term: Terminal/beginning, seq. number: 42710 to: NASP.
+Mapped residue LYS, term: Terminal/last, seq. number: 42787 to: CLYS.
+Mapped residue LYS, term: Terminal/beginning, seq. number: 42788 to: NLYS.
+Mapped residue LYS, term: Terminal/last, seq. number: 42924 to: CLYS.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 42925 to: NILE.
+Mapped residue GLN, term: Terminal/last, seq. number: 42983 to: CGLN.
+Mapped residue MET, term: Terminal/beginning, seq. number: 42984 to: NMET.
+Mapped residue TYR, term: Terminal/last, seq. number: 43123 to: CTYR.
+Mapped residue ARG, term: Terminal/beginning, seq. number: 43124 to: NARG.
+Mapped residue SER, term: Terminal/last, seq. number: 43186 to: CSER.
+Mapped residue ALA, term: Terminal/beginning, seq. number: 43187 to: NALA.
+Mapped residue LEU, term: Terminal/last, seq. number: 43444 to: CLEU.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 43445 to: NILE.
+Mapped residue THR, term: Terminal/last, seq. number: 43609 to: CTHR.
+Mapped residue VAL, term: Terminal/beginning, seq. number: 43610 to: NVAL.
+Mapped residue VAL, term: Terminal/last, seq. number: 43760 to: CVAL.
+Mapped residue LEU, term: Terminal/beginning, seq. number: 43761 to: NLEU.
+Mapped residue PRO, term: Terminal/last, seq. number: 43968 to: CPRO.
+Mapped residue ASP, term: Terminal/beginning, seq. number: 43969 to: NASP.
+Mapped residue LYS, term: Terminal/last, seq. number: 44046 to: CLYS.
+Mapped residue ARG, term: Terminal/beginning, seq. number: 44047 to: NARG.
+Mapped residue SER, term: Terminal/last, seq. number: 44106 to: CSER.
+Mapped residue GLN, term: Terminal/beginning, seq. number: 44107 to: NGLN.
+Mapped residue THR, term: Terminal/last, seq. number: 44140 to: CTHR.
+Mapped residue ALA, term: Terminal/beginning, seq. number: 44141 to: NALA.
+Mapped residue LEU, term: Terminal/last, seq. number: 44398 to: CLEU.
+Mapped residue VAL, term: Terminal/beginning, seq. number: 44399 to: NVAL.
+Mapped residue VAL, term: Terminal/last, seq. number: 44549 to: CVAL.
+Mapped residue LEU, term: Terminal/beginning, seq. number: 44550 to: NLEU.
+Mapped residue PRO, term: Terminal/last, seq. number: 44757 to: CPRO.
+Mapped residue ASP, term: Terminal/beginning, seq. number: 44758 to: NASP.
+Mapped residue LYS, term: Terminal/last, seq. number: 44835 to: CLYS.
+Mapped residue LYS, term: Terminal/beginning, seq. number: 44836 to: NLYS.
+Mapped residue LYS, term: Terminal/last, seq. number: 44972 to: CLYS.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 44973 to: NILE.
+Mapped residue GLN, term: Terminal/last, seq. number: 45031 to: CGLN.
+Mapped residue MET, term: Terminal/beginning, seq. number: 45032 to: NMET.
+Mapped residue TYR, term: Terminal/last, seq. number: 45171 to: CTYR.
+Mapped residue ARG, term: Terminal/beginning, seq. number: 45172 to: NARG.
+Mapped residue SER, term: Terminal/last, seq. number: 45234 to: CSER.
+Mapped residue GLN, term: Terminal/beginning, seq. number: 45235 to: NGLN.
+Mapped residue THR, term: Terminal/last, seq. number: 45268 to: CTHR.
+Mapped residue ALA, term: Terminal/beginning, seq. number: 45269 to: NALA.
+Mapped residue LEU, term: Terminal/last, seq. number: 45526 to: CLEU.
+Mapped residue VAL, term: Terminal/beginning, seq. number: 45527 to: NVAL.
+Mapped residue VAL, term: Terminal/last, seq. number: 45677 to: CVAL.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 45678 to: NILE.
+Mapped residue THR, term: Terminal/last, seq. number: 45842 to: CTHR.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 45843 to: NILE.
+Mapped residue THR, term: Terminal/last, seq. number: 46007 to: CTHR.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 46008 to: NILE.
+Mapped residue THR, term: Terminal/last, seq. number: 46172 to: CTHR.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 46173 to: NILE.
+Mapped residue THR, term: Terminal/last, seq. number: 46337 to: CTHR.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 46338 to: NILE.
+Mapped residue THR, term: Terminal/last, seq. number: 46502 to: CTHR.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 46503 to: NILE.
+Mapped residue THR, term: Terminal/last, seq. number: 46667 to: CTHR.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 46668 to: NILE.
+Mapped residue THR, term: Terminal/last, seq. number: 46832 to: CTHR.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 46833 to: NILE.
+Mapped residue THR, term: Terminal/last, seq. number: 46997 to: CTHR.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 46998 to: NILE.
+Mapped residue THR, term: Terminal/last, seq. number: 47162 to: CTHR.
+Mapped residue LYS, term: Terminal/beginning, seq. number: 47163 to: NLYS.
+Mapped residue LYS, term: Terminal/last, seq. number: 47371 to: CLYS.
+Mapped residue LEU, term: Terminal/beginning, seq. number: 47372 to: NLEU.
+Mapped residue PRO, term: Terminal/last, seq. number: 47579 to: CPRO.
+Mapped residue ASP, term: Terminal/beginning, seq. number: 47580 to: NASP.
+Mapped residue LYS, term: Terminal/last, seq. number: 47657 to: CLYS.
+Mapped residue LYS, term: Terminal/beginning, seq. number: 47658 to: NLYS.
+Mapped residue LYS, term: Terminal/last, seq. number: 47794 to: CLYS.
+Mapped residue ILE, term: Terminal/beginning, seq. number: 47795 to: NILE.
+Mapped residue GLN, term: Terminal/last, seq. number: 47853 to: CGLN.
+Mapped residue LYS, term: Terminal/beginning, seq. number: 47854 to: NLYS.
+Mapped residue LYS, term: Terminal/last, seq. number: 48062 to: CLYS.
+Mapped residue GLY, term: Terminal/beginning, seq. number: 48063 to: NGLY.
+Mapped residue LYS, term: Terminal/last, seq. number: 48305 to: CLYS.
+Mapped residue ARG, term: Terminal/beginning, seq. number: 48306 to: NARG.
+Mapped residue SER, term: Terminal/last, seq. number: 48368 to: CSER.
+Mapped residue CYS, term: Terminal/beginning, seq. number: 48369 to: NCYS.
+Mapped residue SER, term: Terminal/last, seq. number: 48563 to: CSER.
+Mapped residue CYS, term: Terminal/beginning, seq. number: 48564 to: NCYS.
+Mapped residue SER, term: Terminal/last, seq. number: 48758 to: CSER.
+Mapped residue CYS, term: Terminal/beginning, seq. number: 48759 to: NCYS.
+Mapped residue SER, term: Terminal/last, seq. number: 48953 to: CSER.
+Mapped residue CYS, term: Terminal/beginning, seq. number: 48954 to: NCYS.
+Mapped residue SER, term: Terminal/last, seq. number: 49148 to: CSER.
+Mapped residue CYS, term: Terminal/beginning, seq. number: 49149 to: NCYS.
+Mapped residue SER, term: Terminal/last, seq. number: 49343 to: CSER.
+Mapped residue CYS, term: Terminal/beginning, seq. number: 49344 to: NCYS.
+Mapped residue SER, term: Terminal/last, seq. number: 49538 to: CSER.
+Mapped residue CYS, term: Terminal/beginning, seq. number: 49539 to: NCYS.
+Mapped residue SER, term: Terminal/last, seq. number: 49733 to: CSER.
+Mapped residue CYS, term: Terminal/beginning, seq. number: 49734 to: NCYS.
+Mapped residue SER, term: Terminal/last, seq. number: 49928 to: CSER.
+Mapped residue CYS, term: Terminal/beginning, seq. number: 49929 to: NCYS.
+Mapped residue SER, term: Terminal/last, seq. number: 50123 to: CSER.
+Mapped residue CYS, term: Terminal/beginning, seq. number: 50124 to: NCYS.
+Mapped residue SER, term: Terminal/last, seq. number: 50318 to: CSER.
+Mapped residue CYS, term: Terminal/beginning, seq. number: 50319 to: NCYS.
+Mapped residue SER, term: Terminal/last, seq. number: 50513 to: CSER.
+Mapped residue CYS, term: Terminal/beginning, seq. number: 50514 to: NCYS.
+Mapped residue SER, term: Terminal/last, seq. number: 50708 to: CSER.
+Mapped residue CYS, term: Terminal/beginning, seq. number: 50709 to: NCYS.
+Mapped residue SER, term: Terminal/last, seq. number: 50903 to: CSER.
+  Added missing heavy atom: .R<NASP 4>.A<CG 10>
+  Added missing heavy atom: .R<NASP 4>.A<OD1 11>
+  Added missing heavy atom: .R<NASP 4>.A<OD2 12>
+  Added missing heavy atom: .R<CALA 372>.A<OXT 11>
+  Added missing heavy atom: .R<NASP 373>.A<CG 10>
+  Added missing heavy atom: .R<NASP 373>.A<OD1 11>
+  Added missing heavy atom: .R<NASP 373>.A<OD2 12>
+  Added missing heavy atom: .R<ASN 374>.A<CG 8>
+  Added missing heavy atom: .R<ASN 374>.A<OD1 9>
+  Added missing heavy atom: .R<ASN 374>.A<ND2 10>
+  Added missing heavy atom: .R<ARG 463>.A<CG 8>
+  Added missing heavy atom: .R<ARG 463>.A<CD 11>
+  Added missing heavy atom: .R<ARG 463>.A<NE 14>
+  Added missing heavy atom: .R<ARG 463>.A<CZ 16>
+  Added missing heavy atom: .R<ARG 463>.A<NH1 17>
+  Added missing heavy atom: .R<ARG 463>.A<NH2 20>
+  Added missing heavy atom: .R<ILE 737>.A<CD1 14>
+  Added missing heavy atom: .R<ILE 737>.A<CG2 7>
+  Added missing heavy atom: .R<LYS 742>.A<CG 8>
+  Added missing heavy atom: .R<LYS 742>.A<CD 11>
+  Added missing heavy atom: .R<LYS 742>.A<CE 14>
+  Added missing heavy atom: .R<LYS 742>.A<NZ 17>
+  Added missing heavy atom: .R<CGLU 743>.A<OXT 16>
+  Added missing heavy atom: .R<CGLU 743>.A<CG 8>
+  Added missing heavy atom: .R<CGLU 743>.A<CD 11>
+  Added missing heavy atom: .R<CGLU 743>.A<OE1 12>
+  Added missing heavy atom: .R<CGLU 743>.A<OE2 13>
+  Added missing heavy atom: .R<ILE 745>.A<CG2 7>
+  Added missing heavy atom: .R<ILE 745>.A<CG1 11>
+  Added missing heavy atom: .R<ILE 745>.A<CD1 14>
+  Added missing heavy atom: .R<ARG 833>.A<CG 8>
+  Added missing heavy atom: .R<ARG 833>.A<CD 11>
+  Added missing heavy atom: .R<ARG 833>.A<NE 14>
+  Added missing heavy atom: .R<ARG 833>.A<CZ 16>
+  Added missing heavy atom: .R<ARG 833>.A<NH1 17>
+  Added missing heavy atom: .R<ARG 833>.A<NH2 20>
+  Added missing heavy atom: .R<ARG 836>.A<CG 8>
+  Added missing heavy atom: .R<ARG 836>.A<CD 11>
+  Added missing heavy atom: .R<ARG 836>.A<NE 14>
+  Added missing heavy atom: .R<ARG 836>.A<CZ 16>
+  Added missing heavy atom: .R<ARG 836>.A<NH1 17>
+  Added missing heavy atom: .R<ARG 836>.A<NH2 20>
+  Added missing heavy atom: .R<ARG 839>.A<CG 8>
+  Added missing heavy atom: .R<ARG 839>.A<CD 11>
+  Added missing heavy atom: .R<ARG 839>.A<NE 14>
+  Added missing heavy atom: .R<ARG 839>.A<CZ 16>
+  Added missing heavy atom: .R<ARG 839>.A<NH1 17>
+  Added missing heavy atom: .R<ARG 839>.A<NH2 20>
+  Added missing heavy atom: .R<CLYS 1112>.A<OXT 23>
+  Added missing heavy atom: .R<CLYS 1112>.A<CG 8>
+  Added missing heavy atom: .R<CLYS 1112>.A<CD 11>
+  Added missing heavy atom: .R<CLYS 1112>.A<CE 14>
+  Added missing heavy atom: .R<CLYS 1112>.A<NZ 17>
+  Added missing heavy atom: .R<NILE 1113>.A<CG2 9>
+  Added missing heavy atom: .R<NILE 1113>.A<CG1 13>
+  Added missing heavy atom: .R<NILE 1113>.A<CD1 16>
+  Added missing heavy atom: .R<ASN 1114>.A<CG 8>
+  Added missing heavy atom: .R<ASN 1114>.A<OD1 9>
+  Added missing heavy atom: .R<ASN 1114>.A<ND2 10>
+  Added missing heavy atom: .R<ARG 1201>.A<CG 8>
+  Added missing heavy atom: .R<ARG 1201>.A<CD 11>
+  Added missing heavy atom: .R<ARG 1201>.A<NE 14>
+  Added missing heavy atom: .R<ARG 1201>.A<CZ 16>
+  Added missing heavy atom: .R<ARG 1201>.A<NH1 17>
+  Added missing heavy atom: .R<ARG 1201>.A<NH2 20>
+  Added missing heavy atom: .R<ARG 1204>.A<CG 8>
+  Added missing heavy atom: .R<ARG 1204>.A<CD 11>
+  Added missing heavy atom: .R<ARG 1204>.A<NE 14>
+  Added missing heavy atom: .R<ARG 1204>.A<CZ 16>
+  Added missing heavy atom: .R<ARG 1204>.A<NH1 17>
+  Added missing heavy atom: .R<ARG 1204>.A<NH2 20>
+  Added missing heavy atom: .R<TYR 1208>.A<CG 8>
+  Added missing heavy atom: .R<TYR 1208>.A<CD1 9>
+  Added missing heavy atom: .R<TYR 1208>.A<CD2 18>
+  Added missing heavy atom: .R<TYR 1208>.A<CE1 11>
+  Added missing heavy atom: .R<TYR 1208>.A<CE2 16>
+  Added missing heavy atom: .R<TYR 1208>.A<CZ 13>
+  Added missing heavy atom: .R<TYR 1208>.A<OH 14>
+  Added missing heavy atom: .R<CLYS 1480>.A<OXT 23>
+  Added missing heavy atom: .R<CLYS 1480>.A<CG 8>
+  Added missing heavy atom: .R<CLYS 1480>.A<CD 11>
+  Added missing heavy atom: .R<CLYS 1480>.A<CE 14>
+  Added missing heavy atom: .R<CLYS 1480>.A<NZ 17>
+  Added missing heavy atom: .R<NILE 1481>.A<CG2 9>
+  Added missing heavy atom: .R<NILE 1481>.A<CG1 13>
+  Added missing heavy atom: .R<NILE 1481>.A<CD1 16>
+  Added missing heavy atom: .R<ASN 1482>.A<CG 8>
+  Added missing heavy atom: .R<ASN 1482>.A<OD1 9>
+  Added missing heavy atom: .R<ASN 1482>.A<ND2 10>
+  Added missing heavy atom: .R<ARG 1569>.A<CG 8>
+  Added missing heavy atom: .R<ARG 1569>.A<CD 11>
+  Added missing heavy atom: .R<ARG 1569>.A<NE 14>
+  Added missing heavy atom: .R<ARG 1569>.A<CZ 16>
+  Added missing heavy atom: .R<ARG 1569>.A<NH1 17>
+  Added missing heavy atom: .R<ARG 1569>.A<NH2 20>
+  Added missing heavy atom: .R<ASN 1571>.A<CG 8>
+  Added missing heavy atom: .R<ASN 1571>.A<OD1 9>
+  Added missing heavy atom: .R<ASN 1571>.A<ND2 10>
+  Added missing heavy atom: .R<ARG 1572>.A<CG 8>
+  Added missing heavy atom: .R<ARG 1572>.A<CD 11>
+  Added missing heavy atom: .R<ARG 1572>.A<NE 14>
+  Added missing heavy atom: .R<ARG 1572>.A<CZ 16>
+  Added missing heavy atom: .R<ARG 1572>.A<NH1 17>
+  Added missing heavy atom: .R<ARG 1572>.A<NH2 20>
+  Added missing heavy atom: .R<ARG 1575>.A<CG 8>
+  Added missing heavy atom: .R<ARG 1575>.A<CD 11>
+  Added missing heavy atom: .R<ARG 1575>.A<NE 14>
+  Added missing heavy atom: .R<ARG 1575>.A<CZ 16>
+  Added missing heavy atom: .R<ARG 1575>.A<NH1 17>
+  Added missing heavy atom: .R<ARG 1575>.A<NH2 20>
+  Added missing heavy atom: .R<CALA 1847>.A<OXT 11>
+  Added missing heavy atom: .R<NASN 1848>.A<CG 10>
+  Added missing heavy atom: .R<NASN 1848>.A<OD1 11>
+  Added missing heavy atom: .R<NASN 1848>.A<ND2 12>
+  Added missing heavy atom: .R<ARG 1937>.A<CG 8>
+  Added missing heavy atom: .R<ARG 1937>.A<CD 11>
+  Added missing heavy atom: .R<ARG 1937>.A<NE 14>
+  Added missing heavy atom: .R<ARG 1937>.A<CZ 16>
+  Added missing heavy atom: .R<ARG 1937>.A<NH1 17>
+  Added missing heavy atom: .R<ARG 1937>.A<NH2 20>
+  Added missing heavy atom: .R<PRO 1938>.A<CG 5>
+  Added missing heavy atom: .R<PRO 1938>.A<CD 2>
+  Added missing heavy atom: .R<ASN 1939>.A<CG 8>
+  Added missing heavy atom: .R<ASN 1939>.A<OD1 9>
+  Added missing heavy atom: .R<ASN 1939>.A<ND2 10>
+  Added missing heavy atom: .R<ARG 1940>.A<CG 8>
+  Added missing heavy atom: .R<ARG 1940>.A<CD 11>
+  Added missing heavy atom: .R<ARG 1940>.A<NE 14>
+  Added missing heavy atom: .R<ARG 1940>.A<CZ 16>
+  Added missing heavy atom: .R<ARG 1940>.A<NH1 17>
+  Added missing heavy atom: .R<ARG 1940>.A<NH2 20>
+  Added missing heavy atom: .R<ARG 1944>.A<CG 8>
+  Added missing heavy atom: .R<ARG 1944>.A<CD 11>
+  Added missing heavy atom: .R<ARG 1944>.A<NE 14>
+  Added missing heavy atom: .R<ARG 1944>.A<CZ 16>
+  Added missing heavy atom: .R<ARG 1944>.A<NH1 17>
+  Added missing heavy atom: .R<ARG 1944>.A<NH2 20>
+  Added missing heavy atom: .R<CLYS 2213>.A<OXT 23>
+  Added missing heavy atom: .R<CLYS 2213>.A<CG 8>
+  Added missing heavy atom: .R<CLYS 2213>.A<CD 11>
+  Added missing heavy atom: .R<CLYS 2213>.A<CE 14>
+  Added missing heavy atom: .R<CLYS 2213>.A<NZ 17>
+  Added missing heavy atom: .R<CGLN 2656>.A<OXT 18>
+  Added missing heavy atom: .R<CGLN 3099>.A<OXT 18>
+  Added missing heavy atom: .R<CGLN 3542>.A<OXT 18>
+  Added missing heavy atom: .R<CGLN 3985>.A<OXT 18>
+  Added missing heavy atom: .R<CGLN 4428>.A<OXT 18>
+  Added missing heavy atom: .R<CASN 10527>.A<OXT 15>
+  Added missing heavy atom: .R<CASN 10788>.A<OXT 15>
+  Added missing heavy atom: .R<CASN 11049>.A<OXT 15>
+  Added missing heavy atom: .R<CASN 11310>.A<OXT 15>
+  Added missing heavy atom: .R<CASN 11571>.A<OXT 15>
+  Added missing heavy atom: .R<CASN 11832>.A<OXT 15>
+  Added missing heavy atom: .R<CSER 12016>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 12202>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 12386>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 12572>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 12756>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 12942>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 13126>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 13312>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 13496>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 13682>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 13866>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 14052>.A<OXT 12>
+  Added missing heavy atom: .R<CPRO 14101>.A<OXT 15>
+  Added missing heavy atom: .R<CPRO 14150>.A<OXT 15>
+  Added missing heavy atom: .R<CPRO 14199>.A<OXT 15>
+  Added missing heavy atom: .R<CPRO 14248>.A<OXT 15>
+  Added missing heavy atom: .R<CPRO 14297>.A<OXT 15>
+  Added missing heavy atom: .R<CPRO 14346>.A<OXT 15>
+  Added missing heavy atom: .R<CGLY 15316>.A<OXT 8>
+  Added missing heavy atom: .R<CGLY 17256>.A<OXT 8>
+  Added missing heavy atom: .R<CGLY 19196>.A<OXT 8>
+  Added missing heavy atom: .R<CGLY 21136>.A<OXT 8>
+  Added missing heavy atom: .R<CGLY 23076>.A<OXT 8>
+  Added missing heavy atom: .R<CGLY 25016>.A<OXT 8>
+  Added missing heavy atom: .R<CARG 26072>.A<OXT 25>
+  Added missing heavy atom: .R<CARG 26158>.A<OXT 25>
+  Added missing heavy atom: .R<CARG 26244>.A<OXT 25>
+  Added missing heavy atom: .R<CARG 26330>.A<OXT 25>
+  Added missing heavy atom: .R<CARG 26416>.A<OXT 25>
+  Added missing heavy atom: .R<CARG 26502>.A<OXT 25>
+  Added missing heavy atom: .R<CTHR 26667>.A<OXT 15>
+  Added missing heavy atom: .R<CTYR 26807>.A<OXT 22>
+  Added missing heavy atom: .R<CSER 26870>.A<OXT 12>
+  Added missing heavy atom: .R<CTHR 26904>.A<OXT 15>
+  Added missing heavy atom: .R<CLEU 27162>.A<OXT 20>
+  Added missing heavy atom: .R<CVAL 27313>.A<OXT 17>
+  Added missing heavy atom: .R<CPRO 27521>.A<OXT 15>
+  Added missing heavy atom: .R<CLYS 27599>.A<OXT 23>
+  Added missing heavy atom: .R<CLYS 27736>.A<OXT 23>
+  Added missing heavy atom: .R<CGLN 27795>.A<OXT 18>
+  Added missing heavy atom: .R<CTYR 27935>.A<OXT 22>
+  Added missing heavy atom: .R<CSER 27998>.A<OXT 12>
+  Added missing heavy atom: .R<CTHR 28032>.A<OXT 15>
+  Added missing heavy atom: .R<CLYS 28169>.A<OXT 23>
+  Added missing heavy atom: .R<CLEU 28427>.A<OXT 20>
+  Added missing heavy atom: .R<CVAL 28578>.A<OXT 17>
+  Added missing heavy atom: .R<CPRO 28786>.A<OXT 15>
+  Added missing heavy atom: .R<CLYS 28864>.A<OXT 23>
+  Added missing heavy atom: .R<CLYS 29001>.A<OXT 23>
+  Added missing heavy atom: .R<CGLN 29060>.A<OXT 18>
+  Added missing heavy atom: .R<CTHR 29094>.A<OXT 15>
+  Added missing heavy atom: .R<CTHR 29259>.A<OXT 15>
+  Added missing heavy atom: .R<CTYR 29399>.A<OXT 22>
+  Added missing heavy atom: .R<CSER 29462>.A<OXT 12>
+  Added missing heavy atom: .R<CTHR 29496>.A<OXT 15>
+  Added missing heavy atom: .R<CLEU 29754>.A<OXT 20>
+  Added missing heavy atom: .R<CVAL 29905>.A<OXT 17>
+  Added missing heavy atom: .R<CPRO 30113>.A<OXT 15>
+  Added missing heavy atom: .R<CLYS 30191>.A<OXT 23>
+  Added missing heavy atom: .R<CLYS 30328>.A<OXT 23>
+  Added missing heavy atom: .R<CGLN 30387>.A<OXT 18>
+  Added missing heavy atom: .R<CTYR 30527>.A<OXT 22>
+  Added missing heavy atom: .R<CSER 30590>.A<OXT 12>
+  Added missing heavy atom: .R<CTHR 30624>.A<OXT 15>
+  Added missing heavy atom: .R<CLEU 30864>.A<OXT 20>
+  Added missing heavy atom: .R<CVAL 31015>.A<OXT 17>
+  Added missing heavy atom: .R<CPRO 31223>.A<OXT 15>
+  Added missing heavy atom: .R<CLYS 31301>.A<OXT 23>
+  Added missing heavy atom: .R<CLYS 31438>.A<OXT 23>
+  Added missing heavy atom: .R<CGLN 31497>.A<OXT 18>
+  Added missing heavy atom: .R<CLEU 31755>.A<OXT 20>
+  Added missing heavy atom: .R<CTYR 31895>.A<OXT 22>
+  Added missing heavy atom: .R<CTHR 32060>.A<OXT 15>
+  Added missing heavy atom: .R<CLYS 32269>.A<OXT 23>
+  Added missing heavy atom: .R<CSER 32332>.A<OXT 12>
+  Added missing heavy atom: .R<CTHR 32366>.A<OXT 15>
+  Added missing heavy atom: .R<CLEU 32624>.A<OXT 20>
+  Added missing heavy atom: .R<CVAL 32775>.A<OXT 17>
+  Added missing heavy atom: .R<CPRO 32983>.A<OXT 15>
+  Added missing heavy atom: .R<CLYS 33061>.A<OXT 23>
+  Added missing heavy atom: .R<CTHR 33095>.A<OXT 15>
+  Added missing heavy atom: .R<CLYS 33232>.A<OXT 23>
+  Added missing heavy atom: .R<CGLN 33291>.A<OXT 18>
+  Added missing heavy atom: .R<CTYR 33431>.A<OXT 22>
+  Added missing heavy atom: .R<CSER 33494>.A<OXT 12>
+  Added missing heavy atom: .R<CTHR 33528>.A<OXT 15>
+  Added missing heavy atom: .R<CLEU 33786>.A<OXT 20>
+  Added missing heavy atom: .R<CVAL 33937>.A<OXT 17>
+  Added missing heavy atom: .R<CPRO 34145>.A<OXT 15>
+  Added missing heavy atom: .R<CLYS 34223>.A<OXT 23>
+  Added missing heavy atom: .R<CTYR 34363>.A<OXT 22>
+  Added missing heavy atom: .R<CLYS 34500>.A<OXT 23>
+  Added missing heavy atom: .R<CGLN 34559>.A<OXT 18>
+  Added missing heavy atom: .R<CTHR 34724>.A<OXT 15>
+  Added missing heavy atom: .R<CVAL 34875>.A<OXT 17>
+  Added missing heavy atom: .R<CTYR 35015>.A<OXT 22>
+  Added missing heavy atom: .R<CSER 35078>.A<OXT 12>
+  Added missing heavy atom: .R<CTHR 35112>.A<OXT 15>
+  Added missing heavy atom: .R<CTHR 35146>.A<OXT 15>
+  Added missing heavy atom: .R<CLEU 35404>.A<OXT 20>
+  Added missing heavy atom: .R<CVAL 35555>.A<OXT 17>
+  Added missing heavy atom: .R<CGLN 35614>.A<OXT 18>
+  Added missing heavy atom: .R<CPRO 35822>.A<OXT 15>
+  Added missing heavy atom: .R<CLYS 35900>.A<OXT 23>
+  Added missing heavy atom: .R<CLYS 36037>.A<OXT 23>
+  Added missing heavy atom: .R<CGLN 36096>.A<OXT 18>
+  Added missing heavy atom: .R<CSER 36159>.A<OXT 12>
+  Added missing heavy atom: .R<CTHR 36193>.A<OXT 15>
+  Added missing heavy atom: .R<CGLY 36436>.A<OXT 8>
+  Added missing heavy atom: .R<CSER 36499>.A<OXT 12>
+  Added missing heavy atom: .R<CTHR 36533>.A<OXT 15>
+  Added missing heavy atom: .R<CGLY 36776>.A<OXT 8>
+  Added missing heavy atom: .R<CSER 36839>.A<OXT 12>
+  Added missing heavy atom: .R<CTHR 36873>.A<OXT 15>
+  Added missing heavy atom: .R<CSER 36936>.A<OXT 12>
+  Added missing heavy atom: .R<CTHR 37101>.A<OXT 15>
+  Added missing heavy atom: .R<CGLY 37344>.A<OXT 8>
+  Added missing heavy atom: .R<CSER 37407>.A<OXT 12>
+  Added missing heavy atom: .R<CTHR 37441>.A<OXT 15>
+  Added missing heavy atom: .R<CGLY 37684>.A<OXT 8>
+  Added missing heavy atom: .R<CSER 37747>.A<OXT 12>
+  Added missing heavy atom: .R<CTYR 37887>.A<OXT 22>
+  Added missing heavy atom: .R<CTHR 37921>.A<OXT 15>
+  Added missing heavy atom: .R<CGLY 38164>.A<OXT 8>
+  Added missing heavy atom: .R<CPRO 38372>.A<OXT 15>
+  Added missing heavy atom: .R<CLYS 38450>.A<OXT 23>
+  Added missing heavy atom: .R<CLYS 38587>.A<OXT 23>
+  Added missing heavy atom: .R<CGLN 38646>.A<OXT 18>
+  Added missing heavy atom: .R<CTYR 38786>.A<OXT 22>
+  Added missing heavy atom: .R<CSER 38849>.A<OXT 12>
+  Added missing heavy atom: .R<CLEU 39107>.A<OXT 20>
+  Added missing heavy atom: .R<CVAL 39258>.A<OXT 17>
+  Added missing heavy atom: .R<CPRO 39466>.A<OXT 15>
+  Added missing heavy atom: .R<CLYS 39544>.A<OXT 23>
+  Added missing heavy atom: .R<CTHR 39709>.A<OXT 15>
+  Added missing heavy atom: .R<CLYS 39846>.A<OXT 23>
+  Added missing heavy atom: .R<CGLN 39905>.A<OXT 18>
+  Added missing heavy atom: .R<CTHR 39939>.A<OXT 15>
+  Added missing heavy atom: .R<CLYS 40148>.A<OXT 23>
+  Added missing heavy atom: .R<CLYS 40357>.A<OXT 23>
+  Added missing heavy atom: .R<CLYS 40600>.A<OXT 23>
+  Added missing heavy atom: .R<CLYS 40809>.A<OXT 23>
+  Added missing heavy atom: .R<CTYR 40949>.A<OXT 22>
+  Added missing heavy atom: .R<CLYS 41192>.A<OXT 23>
+  Added missing heavy atom: .R<CLYS 41435>.A<OXT 23>
+  Added missing heavy atom: .R<CLYS 41644>.A<OXT 23>
+  Added missing heavy atom: .R<CLYS 41853>.A<OXT 23>
+  Added missing heavy atom: .R<CLYS 42096>.A<OXT 23>
+  Added missing heavy atom: .R<CLEU 42354>.A<OXT 20>
+  Added missing heavy atom: .R<CVAL 42505>.A<OXT 17>
+  Added missing heavy atom: .R<CPRO 42713>.A<OXT 15>
+  Added missing heavy atom: .R<CLYS 42791>.A<OXT 23>
+  Added missing heavy atom: .R<CLYS 42928>.A<OXT 23>
+  Added missing heavy atom: .R<CGLN 42987>.A<OXT 18>
+  Added missing heavy atom: .R<CTYR 43127>.A<OXT 22>
+  Added missing heavy atom: .R<CSER 43190>.A<OXT 12>
+  Added missing heavy atom: .R<CLEU 43448>.A<OXT 20>
+  Added missing heavy atom: .R<CTHR 43613>.A<OXT 15>
+  Added missing heavy atom: .R<CVAL 43764>.A<OXT 17>
+  Added missing heavy atom: .R<CPRO 43972>.A<OXT 15>
+  Added missing heavy atom: .R<CLYS 44050>.A<OXT 23>
+  Added missing heavy atom: .R<CSER 44110>.A<OXT 12>
+  Added missing heavy atom: .R<CTHR 44144>.A<OXT 15>
+  Added missing heavy atom: .R<CLEU 44402>.A<OXT 20>
+  Added missing heavy atom: .R<CVAL 44553>.A<OXT 17>
+  Added missing heavy atom: .R<CPRO 44761>.A<OXT 15>
+  Added missing heavy atom: .R<CLYS 44839>.A<OXT 23>
+  Added missing heavy atom: .R<CLYS 44976>.A<OXT 23>
+  Added missing heavy atom: .R<CGLN 45035>.A<OXT 18>
+  Added missing heavy atom: .R<CTYR 45175>.A<OXT 22>
+  Added missing heavy atom: .R<CSER 45238>.A<OXT 12>
+  Added missing heavy atom: .R<CTHR 45272>.A<OXT 15>
+  Added missing heavy atom: .R<CLEU 45530>.A<OXT 20>
+  Added missing heavy atom: .R<CVAL 45681>.A<OXT 17>
+  Added missing heavy atom: .R<CTHR 45846>.A<OXT 15>
+  Added missing heavy atom: .R<CTHR 46011>.A<OXT 15>
+  Added missing heavy atom: .R<CTHR 46176>.A<OXT 15>
+  Added missing heavy atom: .R<CTHR 46341>.A<OXT 15>
+  Added missing heavy atom: .R<CTHR 46506>.A<OXT 15>
+  Added missing heavy atom: .R<CTHR 46671>.A<OXT 15>
+  Added missing heavy atom: .R<CTHR 46836>.A<OXT 15>
+  Added missing heavy atom: .R<CTHR 47001>.A<OXT 15>
+  Added missing heavy atom: .R<CTHR 47166>.A<OXT 15>
+  Added missing heavy atom: .R<CLYS 47375>.A<OXT 23>
+  Added missing heavy atom: .R<CPRO 47583>.A<OXT 15>
+  Added missing heavy atom: .R<CLYS 47661>.A<OXT 23>
+  Added missing heavy atom: .R<CLYS 47798>.A<OXT 23>
+  Added missing heavy atom: .R<CGLN 47857>.A<OXT 18>
+  Added missing heavy atom: .R<CLYS 48066>.A<OXT 23>
+  Added missing heavy atom: .R<CLYS 48309>.A<OXT 23>
+  Added missing heavy atom: .R<CSER 48372>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 48567>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 48762>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 48957>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 49152>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 49347>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 49542>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 49737>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 49932>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 50127>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 50322>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 50517>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 50712>.A<OXT 12>
+  Added missing heavy atom: .R<CSER 50907>.A<OXT 12>
+  total atoms in file: 397740
+  Leap added 401700 missing atoms according to residue templates:
+       357 Heavy
+       401343 H / lone pairs
+> help
+Help is available on the following subjects:
+
+_cmd_options_       _types_             add                 addAtomTypes
+addH                addIons             addIons2            addIonsRand
+addPath             addPdbAtomMap       addPdbResMap        alias
+alignAxes           bond                bondByDistance      center
+charge              check               clearPdbAtomMap     clearPdbResMap
+clearVariables      combine             copy                createAtom
+createParmset       createResidue       createUnit          crossLink
+debugOff            debugOn             debugStatus         deleteBond
+deleteOffLibEntry   deleteRestraint     desc                deSelect
+displayPdbAtomMap   displayPdbResMap    edit                flip
+groupSelectedAtoms  help                impose              list
+listOff             loadAmberParams     loadAmberPrep       loadMol2
+loadMol3            loadOff             loadPdb             loadPdbUsingSeq
+logFile             matchVariables      measureGeom         quit
+relax               remove              restrainAngle       restrainBond
+restrainTorsion     saveAmberParm       saveAmberParmNetcdf saveAmberParmPert
+saveAmberParmPol    saveAmberParmPolPertsaveAmberPrep       saveMol2
+saveMol3            saveOff             saveOffParm         savePdb
+scaleCharges        select              sequence            set
+set_default         setBox              showdefault         solvateBox
+solvateCap          solvateDontClip     solvateOct          solvateShell
+source              transform           translate           verbosity
+zMatrix             
+
+For a list of the current aliases, type "alias".
+> mol remove H
+
+Error: Error from the parser: 
+       syntax error.
+       Check for typos, misspellings, etc.
+       Try help on the command name and desc on the command arguments.
+
+> mol remove help
+
+Error: Error from the parser: 
+       syntax error.
+       Check for typos, misspellings, etc.
+       Try help on the command name and desc on the command arguments.
+
+> mol help remove
+
+Error: Error from the parser: 
+       syntax error.
+       Check for typos, misspellings, etc.
+       Try help on the command name and desc on the command arguments.
+
+> help remove
+
+
+    remove container item
+
+      UNIT/RESIDUE/ATOM          _container_
+      UNIT/RESIDUE/ATOM          _item_
+
+Remove the object _item_ from the object _container_.
+If _item_ is not contained by _container_ then an error message will be
+displayed.  This command is used to remove ATOMs from RESIDUEs, and
+RESIDUEs from UNITs.  If the object represented by _item_ is not
+referenced by some variable name then it will be destroyed.
+
+
+
+> remove mol H
+
+Error: remove: Argument #2 is type String must be of type: [molecule residue atom]
+usage:  remove <unit/residue/atom> <unit/residue/atom>
+> help savePdb
+
+
+    savePdb unit filename
+
+      UNIT                         _unit_
+      STRING                       _filename_
+
+Write UNIT to the file _filename_ as a PDB format file.
+
+
+
+> savePdb mol tleap.pdb
+Writing pdb file: tleap.pdb
+
+Warning:  Converting N-terminal residue name to PDB format: NASP -> ASP
+
+Warning:  Converting C-terminal residue name to PDB format: CALA -> ALA
+
+Warning:  Converting N-terminal residue name to PDB format: NASP -> ASP
+
+Warning:  Converting C-terminal residue name to PDB format: CGLU -> GLU
+
+Warning:  Converting N-terminal residue name to PDB format: NASN -> ASN
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CALA -> ALA
+
+Warning:  Converting N-terminal residue name to PDB format: NASN -> ASN
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NPRO -> PRO
+
+Warning:  Converting C-terminal residue name to PDB format: CGLN -> GLN
+
+Warning:  Converting N-terminal residue name to PDB format: NPRO -> PRO
+
+Warning:  Converting C-terminal residue name to PDB format: CGLN -> GLN
+
+Warning:  Converting N-terminal residue name to PDB format: NPRO -> PRO
+
+Warning:  Converting C-terminal residue name to PDB format: CGLN -> GLN
+
+Warning:  Converting N-terminal residue name to PDB format: NPRO -> PRO
+
+Warning:  Converting C-terminal residue name to PDB format: CGLN -> GLN
+
+Warning:  Converting N-terminal residue name to PDB format: NPRO -> PRO
+
+Warning:  Converting C-terminal residue name to PDB format: CGLN -> GLN
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CALA -> ALA
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CALA -> ALA
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CALA -> ALA
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CALA -> ALA
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CALA -> ALA
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CALA -> ALA
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CASN -> ASN
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CASN -> ASN
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CASN -> ASN
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CASN -> ASN
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CASN -> ASN
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CASN -> ASN
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CPRO -> PRO
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CPRO -> PRO
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CPRO -> PRO
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CPRO -> PRO
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CPRO -> PRO
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CPRO -> PRO
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CGLY -> GLY
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CGLY -> GLY
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CGLY -> GLY
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CGLY -> GLY
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CGLY -> GLY
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CGLY -> GLY
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CGLY -> GLY
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CGLY -> GLY
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CGLY -> GLY
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CGLY -> GLY
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CGLY -> GLY
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CGLY -> GLY
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CARG -> ARG
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CARG -> ARG
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CARG -> ARG
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CARG -> ARG
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CARG -> ARG
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CARG -> ARG
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CTYR -> TYR
+
+Warning:  Converting N-terminal residue name to PDB format: NARG -> ARG
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NGLN -> GLN
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NALA -> ALA
+
+Warning:  Converting C-terminal residue name to PDB format: CLEU -> LEU
+
+Warning:  Converting N-terminal residue name to PDB format: NVAL -> VAL
+
+Warning:  Converting C-terminal residue name to PDB format: CVAL -> VAL
+
+Warning:  Converting N-terminal residue name to PDB format: NLEU -> LEU
+
+Warning:  Converting C-terminal residue name to PDB format: CPRO -> PRO
+
+Warning:  Converting N-terminal residue name to PDB format: NASP -> ASP
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NLYS -> LYS
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CGLN -> GLN
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CTYR -> TYR
+
+Warning:  Converting N-terminal residue name to PDB format: NARG -> ARG
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NGLN -> GLN
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NLYS -> LYS
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NALA -> ALA
+
+Warning:  Converting C-terminal residue name to PDB format: CLEU -> LEU
+
+Warning:  Converting N-terminal residue name to PDB format: NVAL -> VAL
+
+Warning:  Converting C-terminal residue name to PDB format: CVAL -> VAL
+
+Warning:  Converting N-terminal residue name to PDB format: NLEU -> LEU
+
+Warning:  Converting C-terminal residue name to PDB format: CPRO -> PRO
+
+Warning:  Converting N-terminal residue name to PDB format: NASP -> ASP
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NLYS -> LYS
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CGLN -> GLN
+
+Warning:  Converting N-terminal residue name to PDB format: NGLN -> GLN
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CTYR -> TYR
+
+Warning:  Converting N-terminal residue name to PDB format: NARG -> ARG
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NGLN -> GLN
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NALA -> ALA
+
+Warning:  Converting C-terminal residue name to PDB format: CLEU -> LEU
+
+Warning:  Converting N-terminal residue name to PDB format: NVAL -> VAL
+
+Warning:  Converting C-terminal residue name to PDB format: CVAL -> VAL
+
+Warning:  Converting N-terminal residue name to PDB format: NLEU -> LEU
+
+Warning:  Converting C-terminal residue name to PDB format: CPRO -> PRO
+
+Warning:  Converting N-terminal residue name to PDB format: NASP -> ASP
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NLYS -> LYS
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CGLN -> GLN
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CTYR -> TYR
+
+Warning:  Converting N-terminal residue name to PDB format: NARG -> ARG
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NGLN -> GLN
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NALA -> ALA
+
+Warning:  Converting C-terminal residue name to PDB format: CLEU -> LEU
+
+Warning:  Converting N-terminal residue name to PDB format: NVAL -> VAL
+
+Warning:  Converting C-terminal residue name to PDB format: CVAL -> VAL
+
+Warning:  Converting N-terminal residue name to PDB format: NLEU -> LEU
+
+Warning:  Converting C-terminal residue name to PDB format: CPRO -> PRO
+
+Warning:  Converting N-terminal residue name to PDB format: NASP -> ASP
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NLYS -> LYS
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CGLN -> GLN
+
+Warning:  Converting N-terminal residue name to PDB format: NALA -> ALA
+
+Warning:  Converting C-terminal residue name to PDB format: CLEU -> LEU
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CTYR -> TYR
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NLYS -> LYS
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NARG -> ARG
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NGLN -> GLN
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NALA -> ALA
+
+Warning:  Converting C-terminal residue name to PDB format: CLEU -> LEU
+
+Warning:  Converting N-terminal residue name to PDB format: NVAL -> VAL
+
+Warning:  Converting C-terminal residue name to PDB format: CVAL -> VAL
+
+Warning:  Converting N-terminal residue name to PDB format: NLEU -> LEU
+
+Warning:  Converting C-terminal residue name to PDB format: CPRO -> PRO
+
+Warning:  Converting N-terminal residue name to PDB format: NASP -> ASP
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NGLN -> GLN
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NLYS -> LYS
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CGLN -> GLN
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CTYR -> TYR
+
+Warning:  Converting N-terminal residue name to PDB format: NARG -> ARG
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NGLN -> GLN
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NALA -> ALA
+
+Warning:  Converting C-terminal residue name to PDB format: CLEU -> LEU
+
+Warning:  Converting N-terminal residue name to PDB format: NVAL -> VAL
+
+Warning:  Converting C-terminal residue name to PDB format: CVAL -> VAL
+
+Warning:  Converting N-terminal residue name to PDB format: NLEU -> LEU
+
+Warning:  Converting C-terminal residue name to PDB format: CPRO -> PRO
+
+Warning:  Converting N-terminal residue name to PDB format: NASP -> ASP
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CTYR -> TYR
+
+Warning:  Converting N-terminal residue name to PDB format: NLYS -> LYS
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CGLN -> GLN
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NVAL -> VAL
+
+Warning:  Converting C-terminal residue name to PDB format: CVAL -> VAL
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CTYR -> TYR
+
+Warning:  Converting N-terminal residue name to PDB format: NARG -> ARG
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NGLN -> GLN
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NGLN -> GLN
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NALA -> ALA
+
+Warning:  Converting C-terminal residue name to PDB format: CLEU -> LEU
+
+Warning:  Converting N-terminal residue name to PDB format: NVAL -> VAL
+
+Warning:  Converting C-terminal residue name to PDB format: CVAL -> VAL
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CGLN -> GLN
+
+Warning:  Converting N-terminal residue name to PDB format: NLEU -> LEU
+
+Warning:  Converting C-terminal residue name to PDB format: CPRO -> PRO
+
+Warning:  Converting N-terminal residue name to PDB format: NASP -> ASP
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NLYS -> LYS
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CGLN -> GLN
+
+Warning:  Converting N-terminal residue name to PDB format: NARG -> ARG
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NGLN -> GLN
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NALA -> ALA
+
+Warning:  Converting C-terminal residue name to PDB format: CGLY -> GLY
+
+Warning:  Converting N-terminal residue name to PDB format: NARG -> ARG
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NGLN -> GLN
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NALA -> ALA
+
+Warning:  Converting C-terminal residue name to PDB format: CGLY -> GLY
+
+Warning:  Converting N-terminal residue name to PDB format: NARG -> ARG
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NGLN -> GLN
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NARG -> ARG
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NALA -> ALA
+
+Warning:  Converting C-terminal residue name to PDB format: CGLY -> GLY
+
+Warning:  Converting N-terminal residue name to PDB format: NARG -> ARG
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NGLN -> GLN
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NALA -> ALA
+
+Warning:  Converting C-terminal residue name to PDB format: CGLY -> GLY
+
+Warning:  Converting N-terminal residue name to PDB format: NARG -> ARG
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CTYR -> TYR
+
+Warning:  Converting N-terminal residue name to PDB format: NGLN -> GLN
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NALA -> ALA
+
+Warning:  Converting C-terminal residue name to PDB format: CGLY -> GLY
+
+Warning:  Converting N-terminal residue name to PDB format: NLEU -> LEU
+
+Warning:  Converting C-terminal residue name to PDB format: CPRO -> PRO
+
+Warning:  Converting N-terminal residue name to PDB format: NASP -> ASP
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NLYS -> LYS
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CGLN -> GLN
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CTYR -> TYR
+
+Warning:  Converting N-terminal residue name to PDB format: NARG -> ARG
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NALA -> ALA
+
+Warning:  Converting C-terminal residue name to PDB format: CLEU -> LEU
+
+Warning:  Converting N-terminal residue name to PDB format: NVAL -> VAL
+
+Warning:  Converting C-terminal residue name to PDB format: CVAL -> VAL
+
+Warning:  Converting N-terminal residue name to PDB format: NLEU -> LEU
+
+Warning:  Converting C-terminal residue name to PDB format: CPRO -> PRO
+
+Warning:  Converting N-terminal residue name to PDB format: NASP -> ASP
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NLYS -> LYS
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CGLN -> GLN
+
+Warning:  Converting N-terminal residue name to PDB format: NGLN -> GLN
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NLYS -> LYS
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NLYS -> LYS
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NGLY -> GLY
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NLYS -> LYS
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CTYR -> TYR
+
+Warning:  Converting N-terminal residue name to PDB format: NGLY -> GLY
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NGLY -> GLY
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NLYS -> LYS
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NLYS -> LYS
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NGLY -> GLY
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NALA -> ALA
+
+Warning:  Converting C-terminal residue name to PDB format: CLEU -> LEU
+
+Warning:  Converting N-terminal residue name to PDB format: NVAL -> VAL
+
+Warning:  Converting C-terminal residue name to PDB format: CVAL -> VAL
+
+Warning:  Converting N-terminal residue name to PDB format: NLEU -> LEU
+
+Warning:  Converting C-terminal residue name to PDB format: CPRO -> PRO
+
+Warning:  Converting N-terminal residue name to PDB format: NASP -> ASP
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NLYS -> LYS
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CGLN -> GLN
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CTYR -> TYR
+
+Warning:  Converting N-terminal residue name to PDB format: NARG -> ARG
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NALA -> ALA
+
+Warning:  Converting C-terminal residue name to PDB format: CLEU -> LEU
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NVAL -> VAL
+
+Warning:  Converting C-terminal residue name to PDB format: CVAL -> VAL
+
+Warning:  Converting N-terminal residue name to PDB format: NLEU -> LEU
+
+Warning:  Converting C-terminal residue name to PDB format: CPRO -> PRO
+
+Warning:  Converting N-terminal residue name to PDB format: NASP -> ASP
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NARG -> ARG
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NGLN -> GLN
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NALA -> ALA
+
+Warning:  Converting C-terminal residue name to PDB format: CLEU -> LEU
+
+Warning:  Converting N-terminal residue name to PDB format: NVAL -> VAL
+
+Warning:  Converting C-terminal residue name to PDB format: CVAL -> VAL
+
+Warning:  Converting N-terminal residue name to PDB format: NLEU -> LEU
+
+Warning:  Converting C-terminal residue name to PDB format: CPRO -> PRO
+
+Warning:  Converting N-terminal residue name to PDB format: NASP -> ASP
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NLYS -> LYS
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CGLN -> GLN
+
+Warning:  Converting N-terminal residue name to PDB format: NMET -> MET
+
+Warning:  Converting C-terminal residue name to PDB format: CTYR -> TYR
+
+Warning:  Converting N-terminal residue name to PDB format: NARG -> ARG
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NGLN -> GLN
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NALA -> ALA
+
+Warning:  Converting C-terminal residue name to PDB format: CLEU -> LEU
+
+Warning:  Converting N-terminal residue name to PDB format: NVAL -> VAL
+
+Warning:  Converting C-terminal residue name to PDB format: CVAL -> VAL
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CTHR -> THR
+
+Warning:  Converting N-terminal residue name to PDB format: NLYS -> LYS
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NLEU -> LEU
+
+Warning:  Converting C-terminal residue name to PDB format: CPRO -> PRO
+
+Warning:  Converting N-terminal residue name to PDB format: NASP -> ASP
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NLYS -> LYS
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NILE -> ILE
+
+Warning:  Converting C-terminal residue name to PDB format: CGLN -> GLN
+
+Warning:  Converting N-terminal residue name to PDB format: NLYS -> LYS
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NGLY -> GLY
+
+Warning:  Converting C-terminal residue name to PDB format: CLYS -> LYS
+
+Warning:  Converting N-terminal residue name to PDB format: NARG -> ARG
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NCYS -> CYS
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NCYS -> CYS
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NCYS -> CYS
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NCYS -> CYS
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NCYS -> CYS
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NCYS -> CYS
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NCYS -> CYS
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NCYS -> CYS
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NCYS -> CYS
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NCYS -> CYS
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NCYS -> CYS
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NCYS -> CYS
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+
+Warning:  Converting N-terminal residue name to PDB format: NCYS -> CYS
+
+Warning:  Converting C-terminal residue name to PDB format: CSER -> SER
+> quit
+	Quit
+
+Exiting LEaP: Errors = 4; Warnings = 765; Notes = 1.
