@@ -2,3 +2,5 @@ asciitest/*
 energy/*
 processing_test/*
 openmm_test/*
+atomistic/gen/*minimization*
+atomistic/*.pdb
