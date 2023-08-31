@@ -1,0 +1,25 @@
+DotO chainID: OA-OL
+DotB chainID: BA-BF
+DotI chainID: IA-IL
+DotJ chainID: JA-JF
+IcmX chainID: XA-XA
+IcmF chainID: FA-FF
+DotU chainID: UA-UF
+OMC:
+Neurogenic locus notch   AN,BN,CN,DN,EN,FN,GN,HN,IN,JN,KN,LN,MN
+
+DUF2807 domain-containing protein AM,BM,CM,DM,EM,FM,GM,HM,IM,JM,KM,LM,MM
+Ompa: AL,BL,CL,DL,EL,FL,GL,IV,JL,KL,LL,ML,NL,HL
+
+Inner membrane lipoprotein YiaD: AK,BK,CK,DK,EK,FK,GK,HK,IT,JK,KK,LK,MK
+IcmK: AH,BH,CH,DH,EH,FH,GH,HH,IS,JH,KH,LH,MH,VH,WH,XH,YH,ZH
+
+IcmE(DotG): AG,Ag,BG,Bg,CG,Cg,DG,Dg,EG,Eg,FG,Fg,GG,Gg,HG,Hg,IR,Ig,JG,Jg,KG,Kg,LG,Lg,MG,Mg,NG,OM,PG,VG,WG,XG,YG,ZG
+
+DotF AF,Af,BO,Bf,CF,Cf,DF,Df,EF,Ef,FO,Ff,GF,Gf,HF,Hf,IQ,If,JO,Jf,KF,Kf,LF,Lf,MF,Mf,VF,WF,XF,YF,ZF
+
+DotD
+AD,Ad,BJ,Bd,CD,Cd,DD,Dd,ED,Ed,FJ,Fd,GD,Gd,HD,Hd,IP,Id,JJ,Jd,KD,Kd,LD,Ld,MD,Md
+
+DotC
+AC,BI,CC,DC,EC,FI,GC,HC,IO,JI,KC,LC,MC
