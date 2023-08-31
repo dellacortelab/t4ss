@@ -1,0 +1,10 @@
+test/*
+test_gromacs_2023/*
+no_cg_attempts/*
+withmembrane/*
+no_membrane_gmx/*
+proruns/*
+standard_box/*
+cgs/*
+membrane_*
+tops/*

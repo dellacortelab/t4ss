@@ -1,0 +1,30 @@
+dotbfixed_cg.pdb: 6 molecules
+1-4976
+dotd_1letter_cg.pdb: 26 molecules
+4977-13309
+dotf_up_1letter_cg.pdb: 13 molecules
+13310-15012
+doti_cg.pdb: 24 molecules
+15013-20064
+dotj_cg.pdb: 12 molecules
+20064-20790
+doto_cg.pdb: 13 molecules
+20791-47718
+dotu_cg.pdb: 6 molecules
+47719-51450
+duf_1letter_cg.pdb: 13 molecules
+51450-57833
+IcmF_cg.pdb: 6 molecules
+57834-71537
+icmx_cg.pdb: 1 molecule
+71538-76512
+low_reg_nocon_cg.pdb: 58 (actually 59?) molecules
+76513-90834
+ompa_1letter_cg.pdb: 13 molecules
+90835-96723
+upper_inner_cg.pdb: 58 molecules
+96723-111614
+yiad_1letter_cg.pdb: 13 molecules
+111615-116190
+dott_1letter_cg.pdb: 12 molecules
+116191-117552

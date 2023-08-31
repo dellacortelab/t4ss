@@ -1,0 +1,14 @@
+cgs/dotbfixed_cg.pdb
+cgs/dotd_1letter_cg.pdb
+cgs/dotf_up_1letter_cg.pdb
+cgs/doti_cg.pdb
+cgs/dotj_cg.pdb
+cgs/doto_cg.pdb
+cgs/dotu_cg.pdb
+cgs/duf_1letter_cg.pdb
+cgs/IcmF_cg.pdb
+cgs/icmx_cg.pdb
+cgs/low_reg_nocon_cg.pdb
+cgs/ompa_1letter_cg.pdb
+cgs/upper_inner_cg.pdb
+cgs/yiad_1letter_cg.pdb
