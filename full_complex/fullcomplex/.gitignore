@@ -6,5 +6,5 @@ no_membrane_gmx/*
 proruns/*
 standard_box/*
 cgs/*
-membrane_*
+membrane_gmx/*
 tops/*
