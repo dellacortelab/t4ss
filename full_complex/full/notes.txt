@@ -1,0 +1,8 @@
+Command used to solvate (We used a 60x60x60 box):
+
+    python2 insane.py -f full_cg.pdb -o system.gro -p system.top -x 60 -y 60 -z 60 -sol W -salt 0
+
+For the .top, the included example.top has all the molecule types in proper order.
+The includes are listed for a path accessible by ../itps/*.itp from the run directory.
+
+I've also included the .mdp files and the submission script we used, but you can use whatever works with the lipids.
