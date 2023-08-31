@@ -2,7 +2,11 @@ test/*
 test_gromacs_2023/*
 no_cg_attempts/*
 withmembrane/*
-no_membrane_gmx/*
+no_membrane_gmx/[0-9]*
+no_membrane_gmx/crashed/*
+no_membrane_gmx/itps/*
+no_membrane_gmx/just_equ/*
+no_membrane_gmx/system.gro
 proruns/*
 standard_box/*
 cgs/*
