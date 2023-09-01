@@ -1,10 +1,11 @@
 # Contents here on Github
 - Here in the readme, a summary of our work
 - Contained in the directory tree:
-    - Building the model
-        - Gromacs
-        - OpenMM
-    - Getting free energy
+    - Working files
+        - Pipeline scripts (.sh and .py)
+        - Structure files, atomistic and coarse grain (.pdb and .gro)
+        - Topology files (.top and included .itp)
+        - Notes for clarification (.txt)
 
 # T4SS Summary
 
