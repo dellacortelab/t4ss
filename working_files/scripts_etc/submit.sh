@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Gromacs submission script
+
 #SBATCH --time=2:00:00   # walltime
 #SBATCH --ntasks=6  # number of processor cores (i.e. tasks)
 #SBATCH --nodes=1   # number of nodes

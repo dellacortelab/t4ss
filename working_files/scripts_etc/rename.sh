@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Developed by Brenden Stark. Where the previously automated pipeline produced .itp files with generic names in them, 
+# I believe this script replaces the generic names in the file with the file name itself 
+
 for itp in ./*.itp; do
     # Rename molecule name
     name=${itp%.*}

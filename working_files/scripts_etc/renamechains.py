@@ -1,6 +1,8 @@
 import sys
 import string
 
+# Developed by Brenden Stark. As with the drop_id_letter.sh script, this was created to address some incompatibility between structure file format and our pipeline.
+
 """
 Replaces 2-letter chain ids with one-character sequential chain ids, outputting to a new file called out.pdb.
 Also creates a file called chains.txt listing which ids were replaced with which identifier.

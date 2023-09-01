@@ -1,5 +1,6 @@
 #!/bin/bash 
 
+# Gromacs PCA submisison script
 
 #SBATCH --time=12:00:00   # walltime
 #SBATCH --ntasks=1   # number of processor cores (i.e. tasks)

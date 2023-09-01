@@ -1,5 +1,9 @@
 #!/bin/bash 
 
+###
+# PCA preprocessing and PCA kickoff
+###
+
 
 #SBATCH --time=12:00:00   # walltime
 #SBATCH --ntasks=16   # number of processor cores (i.e. tasks)

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# MODIFIED TO EXCLUDE MARTINIZE
+# A copy of auto_martinize, MODIFIED TO EXCLUDE MARTINIZE
 ###
 # This version, 5/26/23, automates a few more steps in the pipeline. It takes care of:
 # - rename.sh
