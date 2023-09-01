@@ -1,19 +1,27 @@
-# T4SS wrap-up
+# Contents here on Github
+- Here in the readme, a summary of our work
+- Contained in the directory tree:
+    - Building the model
+        - Gromacs
+        - OpenMM
+    - Getting free energy
 
-## Background:
- ~30 years ago, some Legionella (bacterial genus) genes were found, when deleted, to make them Defective in Organelle Trafficking and/or IntraCellular Multiplication (Dot/Icm)
- This set of genes became categorized as one of two subtypes of the Type IV Secretion System, but since we only work with one of them, we've just been saying T4SS.
- Grant Jensen (at CalTech) and collaborators applied techniques of electron microscopy to get a general spatial rendering of Legionella Pneumophila T4SS in action
+# T4SS Summary
+
+## Background
+ ~30 years ago, some Legionella (bacterial genus) genes were found, when deleted, to make them Defective in Organelle Trafficking and/or IntraCellular Multiplication (Dot/Icm).
+ This set of genes became categorized as one of two subtypes of the Type IV Secretion System, but since we only work with this subtype, we've just been saying T4SS.
+ Grant Jensen (at CalTech) and collaborators applied techniques of electron microscopy to get a general spatial rendering of Legionella Pneumophila T4SS in action.
  The T4SS complex is hard to characterize, so molecular dynamics modeling is one approach that helps to check the conclusions reached and possibilities raised in the work already done by Jensen and collaborators.
 
-## Between February and August of 2023, several people have been involved on the MD side: Brenden Stark, Cayson Hamilton, Gus Hart, Ethan Smith, Dennis Della Corte, Bryce Hedelius. Stefano Maggi (post-doc here at BYU with Grant Jensen) has been a major liason between the Jensen model and our work with MD.
+ Between February and August of 2023, several people have been involved on the MD side: Brenden Stark, Cayson Hamilton, Gus Hart, Ethan Smith, Dennis Della Corte, and Bryce Hedelius. Stefano Maggi (post-doc here at BYU with Grant Jensen) has been a major liason between the Jensen model and our work with MD.
 - Dennis: largely a supervisory and consulting role
 - Brenden: a ton of troubleshooting to develop a consistent method that yielded models that wouldn't explode in Gromacs, steered MD with the plug
 - Cayson and Gus: adding lipids to the computer model
 - Ethan: applying Brenden's method to the rest of the T4SS subregions, writing some scripts to automate the method, troubleshooting alchemical free energy with the plug, transferring the system to OpenMM
 - Bryce: bringing mathematical and coding skills to the OpenMM alchemical free energy problem that Ethan didn't have
 
-## Issues dealt with:
+## Issues dealt with
 - T4SS is too big for an atomistic simulation.
 	- Martini 3 coarse-grain force field
 - T4SS doesn't have an existing martini model
@@ -36,7 +44,7 @@
 - T4SS spans two membranes. The computer model doesn't have lipid membranes
 	- Insane.py can add those too. It will need to be run twice to add two membranes. Only add solvent and ions on the second run.
 
-## Issues still pending:
+## Issues still pending
 - Martini is pretty much made for Gromacs (They came out of the same university in the Netherlands), but our martinized T4SS runs into some issues in Gromacs. The pieces don't all stick together in longer simulations
 - T4SS gets stuff from one cell into another cell, but the path through the current T4SS model is blocked by a sort of plug (IcmX).
 	- Jensen et al believe the plug must come out before the T4SS can do its job
@@ -61,7 +69,7 @@
 
 
 
-# Brenden's notes on the pipeline to getting a working Gromacs simulation:
+# Brenden's notes on the pipeline to getting a working Gromacs simulation
 
 ## T4SS simulations
 Instructions for taking original PDB structure all the way to full coarse-grain simulations.
