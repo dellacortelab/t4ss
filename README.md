@@ -1,9 +1,13 @@
-# T4SS simulations
-Instructions for taking original PDB structure all the way to full course-grain simulations.
+
+
+# Brenden's notes on the pipeline to getting a working Gromacs simulation:
+
+## T4SS simulations
+Instructions for taking original PDB structure all the way to full coarse-grain simulations.
 I've included an example icmf directory as an example file structure.
 
 
-# Splitting
+### Splitting
 First, the full PDB file must be split into pieces with at most 99,999 atoms, or else martinize will fail with atom indices.
 (There may be another roadblock with Atom numbers, Bryce is/was investigating).
 I have used both manual selection in ChimeraX for large sections, and simple bash commands for chain-by-chain splitting.
@@ -19,7 +23,7 @@ THIS WILL BREAK MARTINIZE!!!
 Martinize will fail if model 1 is empty and not the first model. To fix this, simply rename the correct model to model 1 in the pdb, and delete any extra model's and endmdl's.
 
 
-# Fixing structure
+### Fixing structure
 For some chains, you will be ready to martinize after splitting. Others are missing atoms, and will need some cleaning to work with martinize.
 Two methods are available: Manual rotamer replacement in chimera, or automatic side-chain fixing with scwrl.
 If you try to martinize and it fails due to missing atoms, you will need to fix the structure.
@@ -36,7 +40,7 @@ It recognizes that the HIS *should* be a HSD, but then it doesn't know what to d
 This is an interesting bug we should look into.
 
 
-# Martinize
+### Martinize
 Next, each piece must be martinized, and the resulting cg models and itps must be correctly named.
 martinize.sh will do this for you. It is a messy script right now, but it should work.
 
@@ -75,7 +79,7 @@ This can be a problem for longer chains, as the sequence can be longer than 4096
 This will break some parsers (eg. insane.py), so simply delete the line from the .itp.
 
 
-# Putting together Full Structure
+### Putting together Full Structure
 Open Babel or cat can be used to concat all the cg models together. Move all models into new directory, then run:
 
     obabel *_cg.pdb -O {full_name}.pdb
@@ -95,7 +99,7 @@ This model order will be used in determining the order of the itps and molecule 
 
 
 
-# Insane
+### Insane
 To solvate the system and generate .gro and .top files, run insane. The command is quite simple.
 
     python2 insane.py -f {full_name}.pdb -o system.gro -p system.top -pbc square -d 1 -sol W -salt 0
@@ -112,7 +116,7 @@ My workaround is either to use gmx editconf, or define my own box vectors and ma
 This needs more experimentation to determine what is happening.
 
 
-# Prep .top file
+### Prep .top file
 Then, you need to fix the includes and molecule names in the .top file.
 
 #include "martini_v3.0.0.itp"
@@ -132,7 +136,7 @@ The .top file will also include duplicate .itp includes, which will cause gromac
 Remove the duplicate includes, but not the duplicate molecule types.
 
 
-# Run Simulations
+### Run Simulations
 Copy martini `.itp` files, `.mdp` files, and submit.sh into desired directory, and you should be good to run.
 You will also need to create an index.ndx file. No new fields are required, just create the index with gmx make_ndx.
 
@@ -143,7 +147,7 @@ in both [moleculetype] and [atoms].
 We can probably combine them into a single Ions group, but haven't tested that
 
 
-# Combining models
+### Combining models
 To create larger systems from smaller, already tested systems, simply combine the CG models using cat or obabel.
 Make sure to keep track of which order you combine the models in, so that you can input the molecules in the .top file in the correct order.
 (obabel will automatically label which parts came from which file, so that can be helpful for ordering things).
@@ -162,7 +166,7 @@ My best guess would be copying the wrong cg and/or itp files.
 If this happens, my best suggestion is just restarting by copying the correct files again and running from insane.
 
 
-# Steps
+### Steps
 1. Create model file, with < 99,999 Atoms
     1a. (if necessary) Fix structure/side chains/missing atoms
 2. Martinize structure(s) (using martinize.sh)
