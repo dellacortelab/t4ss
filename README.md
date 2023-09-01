@@ -1,3 +1,64 @@
+# T4SS wrap-up
+
+## Background:
+ ~30 years ago, some Legionella (bacterial genus) genes were found, when deleted, to make them Defective in Organelle Trafficking and/or IntraCellular Multiplication (Dot/Icm)
+ This set of genes became categorized as one of two subtypes of the Type IV Secretion System, but since we only work with one of them, we've just been saying T4SS.
+ Grant Jensen (at CalTech) and collaborators applied techniques of electron microscopy to get a general spatial rendering of Legionella Pneumophila T4SS in action
+ The T4SS complex is hard to characterize, so molecular dynamics modeling is one approach that helps to check the conclusions reached and possibilities raised in the work already done by Jensen and collaborators.
+
+## Between February and August of 2023, several people have been involved on the MD side: Brenden Stark, Cayson Hamilton, Gus Hart, Ethan Smith, Dennis Della Corte, Bryce Hedelius. Stefano Maggi (post-doc here at BYU with Grant Jensen) has been a major liason between the Jensen model and our work with MD.
+- Dennis: largely a supervisory and consulting role
+- Brenden: a ton of troubleshooting to develop a consistent method that yielded models that wouldn't explode in Gromacs, steered MD with the plug
+- Cayson and Gus: adding lipids to the computer model
+- Ethan: applying Brenden's method to the rest of the T4SS subregions, writing some scripts to automate the method, troubleshooting alchemical free energy with the plug, transferring the system to OpenMM
+- Bryce: bringing mathematical and coding skills to the OpenMM alchemical free energy problem that Ethan didn't have
+
+## Issues dealt with:
+- T4SS is too big for an atomistic simulation.
+	- Martini 3 coarse-grain force field
+- T4SS doesn't have an existing martini model
+	- martinize2 renders atomistic into coarse-grain
+- T4SS is too big for martinize2
+	- T4Ss was subdivided into regions that fell within the size limits
+- Some subdividing methods have naming side effects that interrupt martinize2's functionality
+	- Renaming is pretty easy
+- Sometimes atoms are missing
+	- Manually fill in rotamers with ChimeraX
+- The model doesn't have solvent
+	- insane.py, provided by martini, puts those in and gives you the files gromacs needs
+- Insane.py gives files gromacs needs, but the files aren't quite ready for gromacs
+	- Editing molecule names isn't too hard.
+	- Adding the necessary "#include" lines isn't too hard either. Just keep them in the right order.
+- While we can see the cg models not exploding, they're still just pieces
+	- Concatenating the *_cg.pdb files is pretty easy. Just keep track of the order, MODEL number lines, and newlines added in the concatenation process
+- Sometimes things explode
+	- Make sure your periodic box is big enough and you've tried multiple times. Failing on one random seed doesn't mean it will fail on every random seed.
+- T4SS spans two membranes. The computer model doesn't have lipid membranes
+	- Insane.py can add those too. It will need to be run twice to add two membranes. Only add solvent and ions on the second run.
+
+## Issues still pending:
+- Martini is pretty much made for Gromacs (They came out of the same university in the Netherlands), but our martinized T4SS runs into some issues in Gromacs. The pieces don't all stick together in longer simulations
+- T4SS gets stuff from one cell into another cell, but the path through the current T4SS model is blocked by a sort of plug (IcmX).
+	- Jensen et al believe the plug must come out before the T4SS can do its job
+	- MD is often used to calculate the free energy of interaction between two entities. This can inform questions of association/dissociation
+- Free energy
+	- Steered MD, creating an artificial force to pull the plug out: computationally expensive?
+	- Alchemical
+- Alchemical free energy
+	- Gromacs is not equipped to handle the restricted angle bending potentials assigned by martinize2
+	- Changing the given potential (code 10) to a harmonic angle potential (2) makes the system explode pretty quickly. Dr. Marrink says 1 could also work.
+	- OpenMM?
+- Putting everything in OpenMM requires some method adaptation
+	- Upside: OpenMM seemed to remove the issue of the complex dissociating from itself, and the martini_openmm adapter script gets around the restrict bending problem
+	- Downside: it's hard to determine if our free energy values are accurate
+	- On the side: we need to optimize the lambda schedule. The overlap matrix seems pretty useful, but it doesn't seem to be a reliable predictor of the convergence of the energy values.
+- Test cases
+	- We need to know what we're representing.
+	- Step one for our alchemical T4SS simulation: get solvation energy for IcmX.
+	- What systems have known solvation energy?
+	- Benzene. But the number usually cited for that is relative, between gas and liquid. Simulating in gas is a challenge. I did find solvation energies calculated from the partition between water and octanol, and simulating in octanol might be easier. I made a martini3 octanol box, but the simulation won't run for a reason I haven't yet understood.
+	- Alanine peptides have been simulated with multiple computational methods in mutual agreement. We simulated a decaalanine and found discrepancy, but the literature values depended on some parameters we didn't use the first time through.
+
 
 
 # Brenden's notes on the pipeline to getting a working Gromacs simulation:
@@ -6,6 +67,19 @@
 Instructions for taking original PDB structure all the way to full coarse-grain simulations.
 I've included an example icmf directory as an example file structure.
 
+### Steps
+1. Create model file, with < 99,999 Atoms
+    1a. (if necessary) Fix structure/side chains/missing atoms
+2. Martinize structure(s) (using martinize.sh)
+    2a. (If using multiple structures) Combine structures, keeping track of molecule order
+    2b. Use rename.sh to rename molecule names within .itp files
+3. Solvate using insane.py on cg file
+4. Fill out .top file with .itp includes and molecule names
+5. Create index.ndx file with gmx make_ndx
+6. Copy all necessary files (including .mdp files) to simulation directory, if desired
+    6a. Double check all paths are correct, especially paths to .itps in .top file
+7. Start simulation using submit.sh (modify dssp path within submit.sh first)
+8. Pray everything works :)
 
 ### Splitting
 First, the full PDB file must be split into pieces with at most 99,999 atoms, or else martinize will fail with atom indices.
@@ -164,18 +238,3 @@ Sometimes when combining CG models, the system.gro and system.top will have diff
 This isn't very consistent, and I'm not sure where it's coming from.
 My best guess would be copying the wrong cg and/or itp files.
 If this happens, my best suggestion is just restarting by copying the correct files again and running from insane.
-
-
-### Steps
-1. Create model file, with < 99,999 Atoms
-    1a. (if necessary) Fix structure/side chains/missing atoms
-2. Martinize structure(s) (using martinize.sh)
-    2a. (If using multiple structures) Combine structures, keeping track of molecule order
-    2b. Use rename.sh to rename molecule names within .itp files
-3. Solvate using insane.py on cg file
-4. Fill out .top file with .itp includes and molecule names
-5. Create index.ndx file with gmx make_ndx
-6. Copy all necessary files (including .mdp files) to simulation directory, if desired
-    6a. Double check all paths are correct, especially paths to .itps in .top file
-7. Start simulation using submit.sh (modify dssp path within submit.sh first)
-8. Pray everything works :)
