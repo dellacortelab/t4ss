@@ -2,10 +2,12 @@
 - Here in the readme, a summary of our work
 - Contained in the directory tree:
     - Working files
-        - Pipeline scripts (.sh and .py)
+        - Reference scripts and gromacs md parameters (.sh and .py, .mdp)
         - Structure files, atomistic and coarse grain (.pdb and .gro)
         - Topology files (.top and included .itp)
         - Notes for clarification (.txt)
+    - Process tracing
+        - Here you'll find directories that are mostly named in informative ways. There are notes and specific submission scripts for the process from start (martinizing) to finish (MD and some PCA). Most of the run data, due to its size, is stored in the Della Corte file sharing group on Marylou.
 
 # T4SS Summary
 
