@@ -1,0 +1,11 @@
+Warning on use of the timeseries module: If the inherent timescales of the system are long compared to those being analyzed, this statistical inefficiency may be an underestimate.  The estimate presumes the use of many statistically independent samples.  Tests should be performed to assess whether this condition is satisfied.   Be cautious in the interpretation of the data.
+Failed to reach a solution to within tolerance with hybr: trying next method
+WARNING: Did not converge to within specified tolerance.
+max_delta = 7.479541e-05, tol = 1.000000e-12, maximum_iterations = 10000, iterations completed = 9999
+Failed to reach a solution to within tolerance with adaptive: trying next method
+No solution found to within tolerance.
+The solution with the smallest gradient 4.003781e+01 norm is adaptive
+Please exercise caution with this solution and consider alternative methods or a different tolerance.
+u_kln shape:  (31, 31, 100)
+The timeseries part
+The mbar part

@@ -1,0 +1,3 @@
+openmm.OpenMMException: Called setParameter() with invalid parameter name: clambda
+    - In the test directory, I determined that the method only worked after the context was reinitialized.
+    - The solution, I think, is to set default values instead of using setParameter before the production run.
