@@ -13,7 +13,7 @@
 
 ## Background
  ~30 years ago, some Legionella (bacterial genus) genes were found, when deleted, to make them Defective in Organelle Trafficking and/or IntraCellular Multiplication (Dot/Icm).
- This set of genes became categorized as one of two subtypes of the Type IV Secretion System, but since we only work with this subtype, we've just been saying T4SS.
+ This set of genes became categorized as one of two subtypes of the Type IV Secretion System, but since we only work with the Dot/Icm subtype, we've just been using the more ambiguous term "T4SS".
  Grant Jensen (at CalTech) and collaborators applied techniques of electron microscopy to get a general spatial rendering of Legionella Pneumophila T4SS in action.
  The T4SS complex is hard to characterize, so molecular dynamics modeling is one approach that helps to check the conclusions reached and possibilities raised in the work already done by Jensen and collaborators.
 
