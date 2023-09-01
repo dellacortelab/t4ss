@@ -1,6 +1,6 @@
 # Contents here on Github
-- Here in the readme, a summary of our work
-- Contained in the directory tree:
+- Here in the readme: a summary of our work
+- In the directory tree:
     - Working files
         - Reference scripts and gromacs md parameters (.sh and .py, .mdp)
         - Structure files, atomistic and coarse grain (.pdb and .gro)
