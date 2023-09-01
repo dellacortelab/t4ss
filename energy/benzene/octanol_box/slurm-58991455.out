@@ -1,0 +1,79 @@
+Start Minimization
+                :-) GROMACS - gmx grompp, 2023.1-conda_forge (-:
+
+Executable:   /home/sethang/.conda/envs/tmpi_23/bin.AVX2_256/gmx
+Data prefix:  /home/sethang/.conda/envs/tmpi_23
+Working dir:  /nobackup/scratch/grp/fslg_dellacortelab/t4ss/free_energy/ethan
+Command line:
+  gmx grompp -f minimization.mdp -c moonshine.gro -p moonshine.top -o minimization.tpr
+
+Ignoring obsolete mdp entry 'ns_type'
+Number of degrees of freedom in T-Coupling group rest is 3885.00
+The integrator does not provide a ensemble temperature, there is no system ensemble temperature
+
+Back Off! I just backed up minimization.tpr to ./#minimization.tpr.1#
+
+GROMACS reminds you: "When I asked a younger colleague at the university how he had been able to change his research field several times within a decade or so, he answered: "It's just a question of new software"" (Paul Verhaeghe)
+
+Setting the LD random seed to -608506597
+
+Generated 844 of the 356590 non-bonded parameter combinations
+
+Excluding 1 bonded neighbours molecule type 'OCO'
+Analysing residue names:
+There are:   432      Other residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+This run will generate roughly 0 Mb of data
+                :-) GROMACS - gmx mdrun, 2023.1-conda_forge (-:
+
+Executable:   /home/sethang/.conda/envs/tmpi_23/bin.AVX2_256/gmx
+Data prefix:  /home/sethang/.conda/envs/tmpi_23
+Working dir:  /nobackup/scratch/grp/fslg_dellacortelab/t4ss/free_energy/ethan
+Command line:
+  gmx mdrun -deffnm minimization -v -ntmpi 1
+
+
+Back Off! I just backed up minimization.log to ./#minimization.log.1#
+Reading file minimization.tpr, VERSION 2023.1-conda_forge (single precision)
+1 GPU selected for this run.
+Mapping of GPU IDs to the 1 GPU task in the 1 rank on this node:
+  PP:0
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+Using 1 MPI thread
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 1 OpenMP thread 
+
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+01
+   Number of steps    =         1000
+Step=    0, Dmax= 1.0e-02 nm, Epot=  5.62928e+04 Fmax= 1.99813e+03, atom= 264
+Step=    1, Dmax= 1.0e-02 nm, Epot=  4.39813e+04 Fmax= 1.07652e+03, atom= 1296
+Step=    2, Dmax= 1.2e-02 nm, Epot=  3.52425e+04 Fmax= 6.24586e+02, atom= 216
+Step=    3, Dmax= 1.4e-02 nm, Epot=  2.74424e+04 Fmax= 4.28439e+02, atom= 318
+Step=    4, Dmax= 1.7e-02 nm, Epot=  1.99117e+04 Fmax= 3.42329e+02, atom= 183
+Step=    5, Dmax= 2.1e-02 nm, Epot=  1.27006e+04 Fmax= 2.91543e+02, atom= 30
+Step=    6, Dmax= 2.5e-02 nm, Epot=  5.81506e+03 Fmax= 2.39766e+02, atom= 45
+Step=    7, Dmax= 3.0e-02 nm, Epot= -1.88428e+02 Fmax= 1.74937e+02, atom= 966
+Step=    8, Dmax= 3.6e-02 nm, Epot= -4.51346e+03 Fmax= 9.72912e+01, atom= 954
+Step=    9, Dmax= 4.3e-02 nm, Epot= -6.35880e+03 Fmax= 2.99764e+01, atom= 954
+Step=   10, Dmax= 5.2e-02 nm, Epot=  1.75907e+03 Fmax= 2.22436e+03, atom= 969Step=   11, Dmax= 2.6e-02 nm, Epot= -4.58824e+03 Fmax= 7.10350e+02, atom= 969Step=   12, Dmax= 1.3e-02 nm, Epot= -6.07052e+03 Fmax= 3.05461e+02, atom= 969Step=   13, Dmax= 6.4e-03 nm, Epot= -6.37151e+03 Fmax= 1.37865e+02, atom= 969
+Step=   14, Dmax= 7.7e-03 nm, Epot= -6.33991e+03 Fmax= 2.20624e+02, atom= 969Step=   15, Dmax= 3.9e-03 nm, Epot= -6.40662e+03 Fmax= 4.76767e+01, atom= 774
+Step=   16, Dmax= 4.6e-03 nm, Epot= -6.37976e+03 Fmax= 1.61105e+02, atom= 774Step=   17, Dmax= 2.3e-03 nm, Epot= -6.41270e+03 Fmax= 5.82195e+01, atom= 774
+Step=   18, Dmax= 2.8e-03 nm, Epot= -6.41209e+03 Fmax= 7.40695e+01, atom= 774Step=   19, Dmax= 1.4e-03 nm, Epot= -6.42009e+03 Fmax= 1.24890e+01, atom= 882
+Step=   20, Dmax= 1.7e-03 nm, Epot= -6.42129e+03 Fmax= 4.56215e+01, atom= 882
+Step=   21, Dmax= 2.0e-03 nm, Epot= -6.42056e+03 Fmax= 5.15083e+01, atom= 882Step=   22, Dmax= 1.0e-03 nm, Epot= -6.42616e+03 Fmax= 4.51761e+00, atom= 1072
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 10 in 23 steps
+Potential Energy  = -6.4261592e+03
+Maximum force     =  4.5176072e+00 on atom 1072
+Norm of force     =  3.9031609e+00
+
+GROMACS reminds you: "When I asked a younger colleague at the university how he had been able to change his research field several times within a decade or so, he answered: "It's just a question of new software"" (Paul Verhaeghe)
+

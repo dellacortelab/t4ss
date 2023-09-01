@@ -1,0 +1,52 @@
+Start Minimization
+                :-) GROMACS - gmx grompp, 2023.1-conda_forge (-:
+
+Executable:   /home/sethang/.conda/envs/tmpi_23/bin.AVX2_256/gmx
+Data prefix:  /home/sethang/.conda/envs/tmpi_23
+Working dir:  /nobackup/scratch/grp/fslg_dellacortelab/t4ss/free_energy/ethan
+Command line:
+  gmx grompp -f minimization.mdp -c moonshine.gro -p moonshine.top -o minimization.tpr
+
+Ignoring obsolete mdp entry 'ns_type'
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2023.1-conda_forge
+Source file: src/gromacs/fileio/groio.cpp (line 147)
+
+Fatal error:
+Invalid line in moonshine.gro for atom 1:
+    1OCO	C1	1	0.0000	0.0000	0.0000
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+Setting the LD random seed to 1002427327
+
+Generated 844 of the 356590 non-bonded parameter combinations
+
+Excluding 1 bonded neighbours molecule type 'OCO'
+                :-) GROMACS - gmx mdrun, 2023.1-conda_forge (-:
+
+Executable:   /home/sethang/.conda/envs/tmpi_23/bin.AVX2_256/gmx
+Data prefix:  /home/sethang/.conda/envs/tmpi_23
+Working dir:  /nobackup/scratch/grp/fslg_dellacortelab/t4ss/free_energy/ethan
+Command line:
+  gmx mdrun -deffnm minimization -v
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2023.1-conda_forge
+Source file: src/gromacs/options/options.cpp (line 177)
+Function:    void gmx::internal::OptionSectionImpl::finish()
+
+Error in user input:
+Invalid input values
+  In option s
+    Required option was not provided, and the default file 'topol' does not
+    exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .tpr
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------

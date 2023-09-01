@@ -1,0 +1,47 @@
+Start Minimization
+                :-) GROMACS - gmx grompp, 2023.1-conda_forge (-:
+
+Executable:   /home/sethang/.conda/envs/tmpi_23/bin.AVX2_256/gmx
+Data prefix:  /home/sethang/.conda/envs/tmpi_23
+Working dir:  /nobackup/scratch/grp/fslg_dellacortelab/t4ss/free_energy/ethan
+Command line:
+  gmx grompp -f minimization.mdp -c moonshine.gro -p moonshine.top -o minimization.tpr
+
+Ignoring obsolete mdp entry 'ns_type'
+Number of degrees of freedom in T-Coupling group rest is 3885.00
+The integrator does not provide a ensemble temperature, there is no system ensemble temperature
+
+GROMACS reminds you: "The difficulty lies, not in the new ideas, but in escaping the old ones." (John Maynard Keynes)
+
+Setting the LD random seed to -8455186
+
+Generated 844 of the 356590 non-bonded parameter combinations
+
+Excluding 1 bonded neighbours molecule type 'OCO'
+Analysing residue names:
+There are:   432      Other residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+This run will generate roughly 0 Mb of data
+                :-) GROMACS - gmx mdrun, 2023.1-conda_forge (-:
+
+Executable:   /home/sethang/.conda/envs/tmpi_23/bin.AVX2_256/gmx
+Data prefix:  /home/sethang/.conda/envs/tmpi_23
+Working dir:  /nobackup/scratch/grp/fslg_dellacortelab/t4ss/free_energy/ethan
+Command line:
+  gmx mdrun -deffnm minimization -v
+
+Reading file minimization.tpr, VERSION 2023.1-conda_forge (single precision)
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2023.1-conda_forge
+Source file: src/gromacs/taskassignment/resourcedivision.cpp (line 220)
+
+Fatal error:
+When using GPUs, setting the number of OpenMP threads without specifying the
+number of ranks can lead to conflicting demands. Please specify the number of
+thread-MPI ranks as well (option -ntmpi).
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------

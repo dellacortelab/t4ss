@@ -6,8 +6,9 @@
         - Structure files, atomistic and coarse grain (.pdb and .gro)
         - Topology files (.top and included .itp)
         - Notes for clarification (.txt)
-    - Process tracing
+    - MD process tracing
         - Here you'll find directories that are mostly named in informative ways. There are notes and specific submission scripts for the process from start (martinizing) to finish (MD and some PCA). Most of the run data, due to its size, is stored in the Della Corte file sharing group on Marylou.
+    - Scripts used for free energy analysis on the solvation of IcmX
 
 # T4SS Summary
 

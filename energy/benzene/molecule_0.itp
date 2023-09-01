@@ -1,0 +1,24 @@
+; This file was generated using the following command:
+; /home/sethang/.conda/envs/martinize_env/bin/martinize2 -f benzene.pdb -o benzene.top -x benzene_cg.pdb -dssp /home/sethang/.conda/envs/second_env/bin/dssp -p backbone -ff martini3001
+; martinize with vermouth 0.9.1
+; The following sequence of secondary structure 
+; was used for the full system:
+; 
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+; Alessandri, R; Barnoud, J; Gertsen, A S; Patmanidis, I; de Vries, A H; Souza, P C; Marrink, S J;  Advanced Theory and Simulations 2022
+
+[ moleculetype ]
+molecule_0 1
+
+[ atoms ]
+1 TC5 1 BENZ R1 1 0.0 
+2 TC5 1 BENZ R2 2 0.0 
+3 TC5 1 BENZ R3 3 0.0 
+
+[ constraints ]
+3 1 1 0.290
+1 2 1 0.290
+3 2 1 0.290
+
