@@ -1,4 +1,5 @@
 #!/bin/bash
+# Developed by Brenden Stark. I think this is for ensuring that we have .itp #includes in the right order for the .top files.
 
 rm true_order.txt
 

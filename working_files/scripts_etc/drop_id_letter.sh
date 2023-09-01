@@ -1,5 +1,6 @@
 #!/bin/bash
-#Developed by Ethan Smith + ChatGPT 5/23/23
+# Developed by Ethan Smith + ChatGPT 5/23/23
+# Used for editing structure files that don't have a format friendly to our pipeline
 
 if [ $# -ne 1 ]; then
   echo "Usage: $0 <input_file>"
